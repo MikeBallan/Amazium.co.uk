@@ -58,7 +58,8 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 /***** Side Navigation *****/
 
-.sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; position:fixed; }
+.sidenav                                        { margin:0; padding:0; display:block; width:260px; position:fixed; }
+.sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; }
 .sidenav li                                     { margin:0; padding:0; display:block; }
 .sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#FFF; font-size:12px; border-bottom:1px solid #333; background:transparent url(../images/btn-arrow.png) no-repeat right; }   
 .sidenav li a:hover,
