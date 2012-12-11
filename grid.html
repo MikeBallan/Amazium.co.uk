@@ -33,18 +33,14 @@
     <script type="text/javascript" src="includes/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="includes/jquery.pagescroller.lite.js"></script>    
     <script type="text/javascript" src="includes/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="includes/jquery.ui.totop.js"></script>
     <script type="text/javascript" src="includes/amazium.js"></script>
+    <script type="text/javascript" src="includes/jquery.ui.totop.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(window).resize(function(){
                 $('#content-01').css('margin-top', $(window).height()+'px');    
             });
             $(window).resize();
-            $('body').pageScroller({
-                navigation:     '#sidenav',
-                scrollOffset:   -80
-            });
             $().UItoTop({ easingType: 'easeOutQuart' });
         });
     </script>
@@ -82,18 +78,20 @@
 </div>
 
 <div id="content-02">
-    <div class="row">  
-        <div id="sidenav" class="sidenav">
-            <ul>
-                <li><a href="#">1. The Basics</a></li>
-                <li><a href="#">2. Offsetting</a></li>
-                <li><a href="#">3. Nesting</a></li>
-                <li><a href="#">4. About responsive</a></li>
-                <li><a href="#">5. Show & Hide</a></li>
-                <li><a href="#">6. Media queries</a></li>
-            </ul>
+    <div class="row">
+        <div class="grid_3">
+            <div id="sidenav" class="sidenav">
+                <ul>
+                    <li><a href="#">1. The Basics</a></li>
+                    <li><a href="#">2. Offsetting</a></li>
+                    <li><a href="#">3. Nesting</a></li>
+                    <li><a href="#">4. About responsive</a></li>
+                    <li><a href="#">5. Show & Hide</a></li>
+                    <li><a href="#">6. Media queries</a></li>
+                </ul>
+            </div>
         </div> 
-        <div class="grid_9 offset_3">
+        <div class="grid_9">
             <h3 class="section">The Basics</h3>
             <p>OK so the 960 Grid is what you would expect most modern websites to follow as its set up to be a max width of 960px which will fit the most common screen resolution 1024x768. but as of late I've noticed a lot of sites have been pushing this to 1200 so I've added another query to allow your site to scale to 1200px..! But for the sake of the demos on this site i'll stay with the standard 960px</p>
             <p>Now to date I have not found a simpler way to build a website than this system which only relies on the below code to achieve a solid website. And as most new browsers excepting the "Media Queries" code we are now able to resize the grid based on your screen resolution so if you were to view this on say an iPhone you would get an optimised version of the grid which means you no longer have to zoom in to see text on a website. (Go on give it a try now and see the below stay responsive..!)</p>

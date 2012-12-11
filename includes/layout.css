@@ -58,7 +58,12 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 /***** Side Navigation *****/
 
-.sidenav                                        { margin:0; padding:0; display:block; width:260px; position:fixed; }
+
+
+.sticky #sidenav                                { position:fixed; top:80px; }
+
+
+.sidenav                                        { margin:0; padding:0; display:block; width:260px; }
 .sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; }
 .sidenav li                                     { margin:0; padding:0; display:block; }
 .sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#FFF; font-size:12px; border-bottom:1px solid #333; background:transparent url(../images/btn-arrow.png) no-repeat right; }   
@@ -99,8 +104,8 @@ a.made-by img                                   { width:100%; height:auto; z-ind
 
 /***** Footer*****/
 
-.footer                                         { margin:0; padding:20px 0; width:100%; color:#FFF; }
-.footer a                                       { color:#FFF; text-decoration:none; }
+footer                                          { margin:0; padding:20px 0; width:100%; color:#FFF; }
+footer a                                        -{ color:#FFF; text-decoration:none; }
 
 a.amazium:link, 
 a.amazium:visited                               { margin:20px 0; padding:0 0 0 30px; background:transparent url("../images/amazium.jpg") no-repeat 0 0; display:block; font-style:italic; font-size:12px; line-height:22px; text-decoration:none; }
