@@ -32,19 +32,50 @@
     
     <!-- To Top scripts -->
     <script type="text/javascript" src="includes/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="includes/jquery.pagescroller.lite.js"></script>    
     <script type="text/javascript" src="includes/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="includes/amazium.js"></script>
-    <script type="text/javascript" src="includes/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="includes/waypoints.min.js"></script>
+    <script type="text/javascript" src="includes/jquery.scrollTo-min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $(window).resize(function(){
-                $('#content-01').css('margin-top', $(window).height()+'px');    
+            var nav_container = $("#nav-holder");
+            var nav = $("#sidenav");
+            nav_container.waypoint({
+                handler: function(event, direction) {
+                    nav.toggleClass('sticky', direction=='down');
+                    if (direction == 'down')
+                        nav_container.css({ 'height':nav.outerHeight() });
+                    else
+                        nav_container.css({ 'height':'auto' });
+                },
+                offset: 80
             });
-            $(window).resize();
-            $().UItoTop({ easingType: 'easeOutQuart' });
+            var sections = $('article');
+            var navigation_links = $('#sidenav a');
+            sections.waypoint({
+                handler: function(event, direction) {
+                    // handler code
+                    var active_section;
+                    active_section = $(this);
+                    if (direction === "up") active_section = active_section.prev();
+                    var active_link = $('#sidenav a[href="#' + active_section.attr("id") + '"]');
+                    navigation_links.removeClass("active");
+                    active_link.addClass("active");
+                },
+                offset: '35%'
+            });
+            navigation_links.click( function(event) {
+                $.scrollTo(
+                    $(this).attr("href"),
+                    {
+                        duration: 200,
+                        offset: { 'left':0, 'top':-80 }
+                    }
+                );
+            });
         });
     </script>
+
 </head>
 <body>
 
@@ -81,26 +112,28 @@
 <div id="content-02">
     <div class="row">
         <div class="grid_3">
-            <div id="sidenav" class="sidenav">
-                <ul>
-                    <li><a href="#">1. Download</a></li>
-                    <li><a href="#">2. File structure</a></li>
-                    <li><a href="#">3. What's included</a></li>
-                    <li><a href="#">4. Basic HTML template</a></li>
-                </ul>
+            <div id="nav-holder">
+                <div id="sidenav" class="sidenav">
+                    <ul>
+                        <li><a href="#download">1. Download</a></li>
+                        <li><a href="#file">2. File structure</a></li>
+                        <li><a href="#included">3. What's included</a></li>
+                        <li><a href="#template">4. Basic HTML template</a></li>
+                    </ul>
+                </div>
             </div>
             &nbsp;
         </div>
 
         <div class="grid_9">
-            <article>
+            <article id="download">
                 <h3>Download</h3>
                 <p>Before downloading, be sure to have a code editor (we recommend Sublime Text 2) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.</p>
                 <p>Fastest way to get started: get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
                 <p><a href="#" class="btn">Download here</a></p>
             </article>
 
-            <article>
+            <article id="file">
                 <h3 class="section">File structure</h3>
                 <p>Within the download you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.</p>
                 <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:</p>
@@ -119,7 +152,7 @@
                 <p>Please note that all JavaScript plugins require jQuery to be included.</p>
             </article>
 
-            <article>
+            <article id="included">
                 <h3 class="section">What's included</h3>
                 <p>Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the Bootstrap documentation.</p>
 
@@ -161,7 +194,7 @@
                 <p>In future guides, we may walk through these components individually in more detail. Until then, look for each of these in the documentation for information on how to utilize and customize them.</p>
             </article>
 
-            <article>
+            <article id="template">
                 <h3 class="section">Basic HTML template</h3>
                 <p>With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the File structure.</p>
                 <p>Now, here's a look at a typical HTML file:</p>

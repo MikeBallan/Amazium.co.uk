@@ -60,7 +60,7 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 
 
-.sticky #sidenav                                { position:fixed; top:80px; }
+.sticky			                                { position:fixed; top:80px; }
 
 
 .sidenav                                        { margin:0; padding:0; display:block; width:260px; }
@@ -68,7 +68,7 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 .sidenav li                                     { margin:0; padding:0; display:block; }
 .sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#FFF; font-size:12px; border-bottom:1px solid #333; background:transparent url(../images/btn-arrow.png) no-repeat right; }   
 .sidenav li a:hover,
-.sidenav li.active a                            {  background-color:#2399b5; color:#FFF; }   
+.sidenav li a.active                            {  background-color:#2399b5; color:#FFF; }   
 
 /***** Bokeh *****/
 
