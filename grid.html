@@ -169,50 +169,58 @@
 &lt;/div&gt;</code></pre>
 
             <h3 class="section">About responsive</h3>
-            <p>Media queries allow for custom CSS based on a number of conditions—ratios, widths, display type, etc—but usually focuses around min-width and max-width.</p>
-            <ul>
-                <li>Modify the width of column in our grid</li>
-                <li>Stack elements instead of float wherever necessary</li>
-                <li>Resize headings and text to be more appropriate for devices</li>
-            </ul>
-            <p>Use media queries responsibly and only as a start to your mobile audiences. For larger projects, do consider dedicated code bases and not layers of media queries.</p>
+            <p>Amazium uses 6 main media queries to adjust the layout of your website to match the size of your screen. The media queries in Amazium only target at max and min widths rather than device sizes or orientations, which means that any new mobile or browsers that don't match the exact dimensions will still benefit from the styling.</p>
+            <p>Now I have to say I 'm a little biased towards most things Apple which means the sizes I've chosen works perfectly for iPad & iPhone and everything else I've been able to test Amazium on seems to work fine also..!</p>
 
             <h3>Supported devices</h3>
-            <p>Bootstrap supports a handful of media queries in a single file to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:</p>
+            <p>Amazium supports all the main media queries to make sure your project look the best it can be on all different devices and screen resolutions. Below is a list of what media queries are included:</p>
             <table>
                 <tr>
-                    <th class="first"></th>
+                    <th class="first">&nbsp;</th>
                     <th>Layout width:</th>
                     <th>Column width:</th>
                     <th class="last">Gutter width:</th>
                 </tr>
                 <tr class="even">
-                    <td class="first">Large display</td>
-                    <td>1200px and up</td>
-                    <td>70px</td>
-                    <td class="last">30px</td>
+                    <td class="first">Large</td>
+                    <td>960px and up</td>
+                    <td>60px</td>
+                    <td class="last">40px</td>
                 </tr>
                 <tr class="odd">
-                    <td class="first">Default</td>
-                    <td>980px and up</td>
-                    <td>60px</td>
-                    <td class="last">20px</td>
+                    <td class="first">Default & Tablet Landscape</td>
+                    <td>960px</td>
+                    <td>48px</td>
+                    <td class="last">32px</td>
                 </tr>
                 <tr class="even">
-                    <td class="first">Portrait tablets</td>
-                    <td>768px and above</td>
-                    <td>42px</td>
-                    <td class="last">20px</td>
+                    <td class="first">Tablet Portrait</td>
+                    <td>728px and above</td>
+                    <td>36px</td>
+                    <td class="last">28px</td>
                 </tr>
                 <tr class="odd">
-                    <td class="first">Phones to tablets</td>
-                    <td>456px</td>
+                    <td class="first">Mobile Portrait</td>
+                    <td>300px</td>
+                    <td>-</td>
+                    <td class="last">-</td>
+                </tr>
+                <tr class="even">
+                    <td class="first">Mobile Lanscape</td>
+                    <td>420px</td>
+                    <td>-</td>
+                    <td class="last">-</td>
+                </tr>
+                <tr class="odd">
+                    <td class="first">Hi-res / Retina</td>
+                    <td>Pixel ratio:1.5</td>
                     <td>-</td>
                     <td class="last">-</td>
                 </tr>
             </table>
 
-            <h3 class="section">Show & Hide</h3>
+
+            <h3 class="section">Show &amp; Hide</h3>
             <p>There are times when you may need to only show something on a desktop and not a tablet &amp; phone or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide & show content.</p>
             <div class="example-title">Example</div>
             <div class="example">
@@ -240,17 +248,17 @@
 
 
             <h3 class="section">Media queries</h3>
-            <pre><code>/* Large desktop */
-@media (min-width: 1200px) { ... }
+            <pre><code>/***** Screen Bigger than 960px *****/
+@media only screen and (min-width:1200px) { ... }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+/***** Tablet (Smaller than 959px) *****/
+@media only screen and (min-width: 768px) and (max-width: 959px) { ... }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
+/***** Phone (portrait 300px) *****/
+@media only screen and (max-width: 767px) { ... }
 
-/* Landscape phones and down */
-@media (max-width: 480px) { ... }</code></pre>
+/***** Phone (landscape 420px) *****/
+@media only screen and (min-width: 480px) and (max-width: 767px) { ... }</code></pre>
 
         </div>
     </div>
