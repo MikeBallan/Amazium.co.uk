@@ -34,6 +34,8 @@ div.example .grid_4                             { width:311px; }
 div.example .grid_6                             { width:414px; }
 div.example .grid_9                             { width:654px; }
 div.example .grid_12                            { width:894px; }
+div.example form                                { margin:0; }
+div.example fieldset                            { margin:0 0 16px 0; }
 
 /***** Navigation *****/
 
@@ -152,6 +154,7 @@ ul.gallery-small li h4                          { width:204px; }
 
 /***** Example *****/
 
+div.example .grid_4                             { width:243px; }
 div.example .grid_6                             { width:339px; }
 div.example .grid_12                            { width:708px; }
 
@@ -233,9 +236,9 @@ a.navigation-btn                                { margin:0; display:inline-block
 
 /***** Side Navigation *****/
 
-.sidenav                                        { margin:0 0 30px; width:100%; }
+.sidenav                                        { margin:0 0 30px; width:300px; }
 
-.sticky                                         { position:relative; top:0; }
+.sticky                                         { position:absolute; !important; top:0; }
 
 /***** Content 01 *****/
 
@@ -257,6 +260,7 @@ ul.gallery-small li h4                          { width:130px; font-size: 14px; 
 
 /***** Example *****/
 
+div.example .grid_4,
 div.example .grid_6,
 div.example .grid_12                            { width:422px; }
 
@@ -270,6 +274,10 @@ div.example .grid_12                            { width:422px; }
 /***** Bokeh Intro *****/
 
 #bokeh-intro                                    { height:240px; }
+
+/***** Side Navigation *****/
+
+.sidenav                                        { margin:0 0 30px; width:456px; }
 
 /***** Content 01 *****/
 
