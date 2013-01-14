@@ -1,5 +1,5 @@
 $(document).ready(function(){ 		
 	$(".navigation-btn").click(function(){
-		$(".navigation").slideToggle('slow');
+		$("#navigation-items").toggleClass('show-phone');
 	});
 }); 

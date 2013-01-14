@@ -58,10 +58,7 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 /***** Side Navigation *****/
 
-
-
 .sticky			                                { position:fixed; top:80px; }
-
 
 .sidenav                                        { margin:0; padding:0; display:block; width:260px; }
 .sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; }
