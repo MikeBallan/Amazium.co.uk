@@ -410,7 +410,7 @@
                         <fieldset class="error">
                             <label for="name">Name</label>
                             <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
-                            <small class="error">Invalid entry</small>
+                            <small>Invalid entry</small>
                         </fieldset>
                         <fieldset class="correct">
                             <label for="name">Name</label>
@@ -420,13 +420,13 @@
                 </div>
                 <pre><code>&lt;form name="" id="" method="" action=""&gt;
     &lt;fieldset class="error"&gt;
-    &lt;label for="name"&gt;Name&lt;/label&gt;
-    &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
-    &lt;small class="error"&gt;Invalid entry&lt;/small&gt;
-&lt;/fieldset&gt;
-&lt;fieldset class="correct"&gt;
-    &lt;label for="name"&gt;Name&lt;/label&gt;
-    &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
+        &lt;label for="name"&gt;Name&lt;/label&gt;
+        &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
+        &lt;small&gt;Invalid entry&lt;/small&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset class="correct"&gt;
+        &lt;label for="name"&gt;Name&lt;/label&gt;
+        &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
 &lt;/fieldset&gt;</code></pre>
             </article>
 
@@ -439,8 +439,9 @@
                 <div class="example">
                     <form name="" id="" method="" action="">
                         <fieldset>
-                            <input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit" />
-                            <input type="reset" name="reset" id="submitbtn" class="submitbtn" tabindex="7" value="Reset" />
+                            <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" />
+                            <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
+                            <input type="button" name="button" id="submitbtn" tabindex="7" value="Button" />
                         </fieldset>
                     </form>
                 </div>

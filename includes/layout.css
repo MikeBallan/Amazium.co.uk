@@ -103,8 +103,8 @@ a.made-by img                                   { width:100%; height:auto; z-ind
 
 /***** Footer*****/
 
-footer                                          { margin:0; padding:20px 0; width:100%; color:#FFF; }
-footer a                                        -{ color:#FFF; text-decoration:none; }
+.footer                                         { margin:0; padding:20px 0; width:100%; color:#FFF; background-color:#000; }
+.footer a                                       { color:#FFF; text-decoration:none; }
 
 a.amazium:link, 
 a.amazium:visited                               { margin:20px 0; padding:0 0 0 30px; background:transparent url("../images/amazium.jpg") no-repeat 0 0; display:block; font-style:italic; font-size:12px; line-height:22px; text-decoration:none; }
