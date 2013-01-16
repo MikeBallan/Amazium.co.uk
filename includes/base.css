@@ -190,11 +190,11 @@ form.search input[type="search"]            { width:85%; float:left; border-righ
 
 form.search input[type="button"],
 form.search input[type="submit"],
-form.search input[type="reset"]             { margin:0 !important; padding-right:0 !important; width:15%; float:left; background-image:none; color:#FFF; background-color:#000; border-color:#000; }
+form.search input[type="reset"]             { margin:0 !important; padding-right:0 !important; width:15%; float:left; }
 
 form.search input:hover[type="button"],
 form.search input:hover[type="submit"],
-form.search input:hover[type="reset"]       { margin:0 !important; color:#333; border:1px solid #999; background-color:#999; }
+form.search input:hover[type="reset"]       { margin:0 !important; }
 
 /***** Login *****/
 
@@ -203,11 +203,11 @@ form.login input[type="password"]           { margin-right:1%; width:40%; float:
 
 form.login input[type="button"],
 form.login input[type="submit"],
-form.login input[type="reset"]              { margin:0 !important; padding-right:0 !important; width:18%; float:left; background-image:none; color:#FFF; background-color:#000; border-color:#000; }
+form.login input[type="reset"]              { margin:0 !important; padding-right:0 !important; width:18%; float:left; }
 
 form.login input:hover[type="button"],
 form.login input:hover[type="submit"],
-form.login input:hover[type="reset"]        { margin:0 !important; color:#333; border:1px solid #999; background-color:#999; }
+form.login input:hover[type="reset"]        { margin:0 !important; }
 
 /***** Errors with Labels *****/
 
@@ -216,18 +216,18 @@ fieldset.error :-moz-placeholder            { color:#C60F13; }
 fieldset.error ::-moz-placeholder           { color:#C60F13; }
 fieldset.error :-ms-input-placeholder       { color:#C60F13; }
 
-fieldset.error label                    { color:#C60F13; }
+fieldset.error label                        { color:#C60F13; }
 fieldset.error label + input,
 fieldset.error label + textarea,
-fieldset.error label + select           { margin:0; color:#C60F13 !important; border-color:#C60F13; background-color:#f4cfd0; }
-fieldset.error label + input + small    { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset.error label + select               { margin:0; color:#C60F13 !important; border-color:#C60F13; background-color:#f4cfd0; }
+fieldset.error label + input + small        { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Errors without Labels *****/
 
-fieldset.error label                    { color:#C60F13; }
+fieldset.error label                        { color:#C60F13; }
 fieldset.error input,
 fieldset.error textarea,
-fieldset.error select                   { margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; background-color:#f4cfd0 !important; }
+fieldset.error select                       { margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; background-color:#f4cfd0 !important; }
 form.hide-lables fieldset.error input + small            { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Correct *****/
@@ -246,15 +246,15 @@ fieldset.correct select                 { margin:6px 0 0 0; color:#468847; borde
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                     { margin:6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#fff; border:1px solid #C60F13; float:left; width:auto; background:#C60F13 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                     { margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:bold; color:#fff; border:1px solid #C60F13; float:left; width:auto; background:#C60F13 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
 
-input:hover[type="button"],
-input:hover[type="submit"]              { color:#333; border:1px solid #999; background-color:#999; }
-input:hover[type="reset"]               { color:#FFF; border:1px solid #000; background-color:#000; }
+input[type="button"]                    { color:#FFF; border-color:#000; background-color:#333; }
+input[type="submit"]                    { color:#FFF; border-color:#1c7c93; background-color:#2399B5; }
+input[type="reset"]                     { color:#666; border-color:#999; background-color:#CCC; }
 
-input[type="button"]                    { color:#333; border:1px solid #999; background-color:#999; }
-input[type="submit"]                    { color:#FFF; border:1px solid #468847; background-color:#468847; }
-input[type="reset"]                     { color:#333; border:1px solid #999; background-color:#999; }
+input:hover[type="button"]              { color:#FFF; border-color:#000; background-color:#000; }
+input:hover[type="submit"]              { color:#FFF; border-color:#1c7c93; background-color:#1c7c93; }
+input:hover[type="reset"]               { color:#F1F1F1; border-color:#999; background-color:#999; }
 
 /***** Tables *****/
 
