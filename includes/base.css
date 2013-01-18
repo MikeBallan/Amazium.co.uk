@@ -259,6 +259,7 @@ input:hover[type="reset"]                       { color:#F1F1F1; border-color:#9
 /***** Tables *****/
 
 table                                           { margin:20px 0 40px 0; width:100%; }
+table caption                                   { height:0; text-indent:-99999px;  }
 table th                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; font-weight:bold; border:1px solid #BBB; }
 table td                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; border:1px solid #BBB; }
 table tr.even td                                { background-color:#fff; }

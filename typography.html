@@ -222,9 +222,9 @@
             <article id="lists">
                 <h3 class="section">Lists</h3>  
                 <p>For the standard <code>&lt;ul&gt;</code> bullet point weve replace the normal boring dot with a graphic which can be easily changed as well as that if you wish to have a circle, square or disc all you need to do is include the relevant class to the <code>&lt;ul&gt;</code> as shown in example 3 below.</p>
-                <h3>#01. Unordered list</h3>
                 <div class="example-title">Example</div>
                 <div class="example">
+                    <h4>Unordered list</h4>
                     <ul>
                         <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
                         <li>
@@ -242,9 +242,9 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
          
-                <h3>#02. Ordered list</h3>
                 <div class="example-title">Example</div>
                 <div class="example">
+                    <h4>Ordered list</h4>
                     <ol>
                         <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
                         <li>
@@ -262,9 +262,9 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
           
-                <h3>#03. Circles</h3>
                 <div class="example-title">Example</div>
                 <div class="example">
+                    <h4>Circles</h4>
                     <ul class="circle">
                         <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
                         <li>
@@ -282,9 +282,9 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
           
-                <h3>#04. Squares</h3>
                 <div class="example-title">Example</div>
                 <div class="example">
+                    <h4>Squares</h4>
                     <ul class="square">
                         <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
                         <li>
@@ -326,43 +326,50 @@
                 
                 <div class="example-title">Example</div>
                 <div class="example">
-                    <table>
-                        <tr>
-                            <th class="first last" colspan="4">Title</th>
-                        </tr>
-                        <tr>
-                            <th class="first">Item:</th>
-                            <th>Category:</th>
-                            <th class="last">Size:</th>
-                        </tr>
-                        <tr class="even">
-                            <td class="first">Bananas</td>
-                            <td>Fruit</td>
-                            <td class="last">1KG</td>
-                        </tr>
-                        <tr class="odd">
-                            <td class="first">Apples</td>
-                            <td>Fruit</td>
-                            <td class="last">3KG</td>
-                        </tr>
+                    <table summary="This is an example of a table">
+                        <caption>Caption</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Item:</th>
+                                <th scope="col">Category:</th>
+                                <th scope="col">Size:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="even">
+                                <td>Bananas</td>
+                                <td>Fruit</td>
+                                <td>1KG</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Apples</td>
+                                <td>Fruit</td>
+                                <td>3KG</td>
+                            </tr>    
+                        </tbody>
                     </table>
                 </div>
-                <pre><code>&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th colspan="4"&gt;...&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;...&lt;/th&gt;
-        &lt;th&gt;...&lt;/th&gt;
-        &lt;th&gt;...&lt;/th&gt;
-        &lt;th&gt;...&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;...&lt;/th&gt;
-        &lt;td class="highlight"&gt;...&lt;/th&gt;
-        &lt;td&gt;...&lt;/th&gt;
-        &lt;td&gt;...&lt;/th&gt;
-    &lt;/tr&gt;
+                <pre><code>&lt;table summary="This is an example of a table"&gt;
+    &lt;caption>Caption&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col">Item:&lt;/th&gt;
+            &lt;th scope="col">Category:&lt;/th&gt;
+            &lt;th scope="col">Size:&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr class="even"&gt;
+            &lt;td&gt;Bananas&lt;/td&gt;
+            &lt;td&gt;Fruit&lt;/td&gt;
+            &lt;td&gt;1KG&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class="odd"&gt;
+            &lt;td&gt;Apples&lt;/td&gt;
+            &lt;td&gt;Fruit&lt;/td&gt;
+            &lt;td&gt;3KG&lt;/td&gt;
+        &lt;/tr&gt;  
+    &lt;/tbody>
 &lt;/table&gt;</code></pre>
             </article>
 
