@@ -95,19 +95,15 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 #content-03                                     { margin:0; padding:60px 0; background:#FFF url('../images/old_mathematics.png'); display:block; position:relative; z-index:88; }
 
 .containing-padding                             { padding:8px 0 0 0; }
-a.containing                                    { float:left; margin:0 10px 52px; cursor:pointer; display:block; position:relative; width:353px; text-decoration:none; }
-a .border                                       { background:0 0 #FFF; display:block; height:353px; left:0; position:absolute; top:0; transition:all 0.3s ease 0s; width:353px; z-index:0; }
-a:hover .border                                 { background:0 0 #FFF; display:block; height:369px; left:-8px; position:absolute; top:-8px; width:369px; }
+a.containing                                    { float:left; margin:0 10px 26px; cursor:pointer; display:block; position:relative; width:289px; text-decoration:none; }
+a .border                                       { background:0 0 #FFF; display:block; height:323px; left:0; position:absolute; top:0; transition:all 0.3s ease 0s; width:289px; z-index:0; }
+a:hover .border                                 { background:0 0 #FFF; display:block; height:339px; left:-8px; position:absolute; top:-8px; width:305px; }
 .containing-site                                { padding:5px; position:relative; }
 .containing-img                                 { height:210px; overflow:hidden; position:relative; }
-.containing-img                                 { display:block; width:100%; height:auto; }
+.containing img                                 { display:block; width:100%; height:auto; }
 .containing-info                                { text-align:center; }
-.containing-info h3                             { margin:6px 0; color:#333; font-size:18px; text-transform:uppercase; }
-.containing-info p                              { margin:0; color:#999; font-size:13px; line-height:20px;  }
-a p                                             { text-decoration:none; }
-
-a.made-by                                       { margin:16px 0; position:relative; overflow:hidden; width:275px; height:auto; border:6px solid #FFF; display:block; line-height:0; -moz-box-shadow:0px 1px 1px #999; -webkit-box-shadow:0px 1px 1px #999; box-shadow:0px 1px 1px #999; }
-a.made-by img                                   { width:100%; height:auto; z-index:88; }
+.containing-info h3                             { margin:6px 0; color:#333; font-size:18px; }
+.containing-info p                              { margin:0; color:#999; font-size:13px; line-height:20px; }
 
 /***** Footer*****/
 
@@ -116,8 +112,6 @@ a.made-by img                                   { width:100%; height:auto; z-ind
 
 a.amazium:link, 
 a.amazium:visited                               { margin:20px 0; padding:0 0 0 30px; background:transparent url("../images/amazium.jpg") no-repeat 0 0; display:block; font-style:italic; font-size:12px; line-height:22px; text-decoration:none; }
-
-
 
 
 /***** Screen Bigger than 960px *****/
@@ -146,10 +140,9 @@ div.example .grid_12                            { width:894px; }
 
 /***** Content 01 *****/
 
-a.made-by, 
-ul.gallery li h4                                { width:353px; }
-ul.gallery-small li a.made-by, 
-ul.gallery-small li h4                          { width:204px; }
+a.containing                                    { margin:0 10px 52px; width:366px; }
+a .border                                       { width:366px; z-index:0; }
+a:hover .border                                 { width:382px; }
 
 }
 
@@ -185,11 +178,10 @@ div.example .grid_12                            { width:708px; }
 
 /***** Content 01 *****/
 
-a.made-by, 
-ul.gallery li h4                                { width:213px; }
-ul.gallery-small li a.made-by, 
-ul.gallery-small li h4                          { width:159px; }
-
+a.containing                                    { margin:0 10px 56px; width:226px; }
+a .border                                       { width:226px; height:290px; z-index:0; }
+a:hover .border                                 { width:242px; height:306px; }
+.containing-img                                 { height:150px; }
 
 }
 
@@ -250,12 +242,10 @@ a.navigation-btn                                { margin:0; display:inline-block
 
 /***** Content 01 *****/
 
-a.made-by, 
-ul.gallery li h4                                { width:122px; font-size: 14px; }
-ul.gallery-small li a.made-by, 
-ul.gallery-small li h4                          { width:130px; font-size: 14px; }
-
-
+a.containing                                    { margin:0 10px 56px; width:280px; }
+a .border                                       { width:280px; height:270px; z-index:0; }
+a:hover .border                                 { width:298px; height:286px; }
+.containing-img                                 { height:150px; }
 
 }
 
@@ -289,11 +279,10 @@ div.example .grid_12                            { width:422px; }
 
 /***** Content 01 *****/
 
-a.made-by, 
-ul.gallery li h4                                { width:200px; }
-ul.gallery-small li a.made-by, 
-ul.gallery-small li h4                          { width:210px; }
-
+a.containing                                    { margin:0 10px 56px; width:208px; }
+a .border                                       { width:208px; height:270px; z-index:0; }
+a:hover .border                                 { width:224px; height:286px; }
+.containing-img                                 { height:150px; }
 
 }
 
