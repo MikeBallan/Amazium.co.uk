@@ -25,7 +25,7 @@ span.example                                    { margin-bottom:5px; padding:5px
 span.example span.example                       { margin-bottom:5px; padding:5px 0 5px 0; background-color:#F1F1F1; text-align:center; width:100%; display:block; }
 
 div.example-title                               { margin:6px 0 0 0; padding:3px 10px; background-color:#000; color:#FFF; font-size:12px; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-div.example                                     { margin:0; padding:16px 16px 0 16px; border:1px solid #000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+div.example                                     { margin:0; padding:16px 16px 0 16px; background-color:#FFF; border:1px solid #000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 div.example h2                                  { font-size:32px; line-height:34px; }
 div.example + h3                                { margin-top:60px; }
 div.example + pre                               { margin:0 0 60px 0; }
