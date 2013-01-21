@@ -96,7 +96,7 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 .containing-padding                             { padding:8px 0 0 0; }
 a.containing                                    { float:left; margin:0 10px 26px; cursor:pointer; display:block; position:relative; width:289px; text-decoration:none; }
-a .border                                       { background:0 0 #FFF; display:block; height:323px; left:0; position:absolute; top:0; transition:all 0.3s ease 0s; width:289px; z-index:0; }
+a .border                                       { background:0 0 #FFF; display:block; height:323px; left:0; position:absolute; top:0; transition:all 0.3s ease 0s; width:289px; z-index:0; border:1px solid #BBB; }
 a:hover .border                                 { background:0 0 #FFF; display:block; height:339px; left:-8px; position:absolute; top:-8px; width:305px; }
 .containing-site                                { padding:5px; position:relative; }
 .containing-img                                 { height:210px; overflow:hidden; position:relative; }
