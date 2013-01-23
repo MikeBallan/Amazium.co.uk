@@ -110,85 +110,75 @@
 
 <div id="content-02">
     <div class="row">
-        <div class="grid_3">
+        <div class="grid_2">
             <div id="nav-holder">
                 <div id="sidenav" class="sidenav">
                     <ul>
-                        <li><a href="#headings">1. Headings</a></li>
-                        <li><a href="#generic">2. Generic classes</a></li>
-                        <li><a href="#blockquote">3. Blockquote</a></li>
-                        <li><a href="#lists">4. Lists</a></li>
-                        <li><a href="#tables">5. Tables</a></li>
-                        <li><a href="#images">6. Responsive Images</a></li>
-                        <li><a href="#media">7. Media</a></li>
+                        <li><a href="#headings">Headings</a></li>
+                        <li><a href="#generic">Generic classes</a></li>
+                        <li><a href="#blockquote">Blockquote</a></li>
+                        <li><a href="#lists">Lists</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#images">Images</a></li>
+                        <li><a href="#media">Media</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="grid_9">
+        <div class="grid_10">
             <article id="headings">
-                <h3 class="section">Headings</h3>
-                <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <h1>H1 - Heading 1</h1>
-                    <h2>H2 - Heading 2</h2>
-                    <h3>H3 - Heading 3</h3>
-                    <h4>H4 - Heading 4</h4>
-                    <h5>H5 - Heading 5</h5>
-                    <h6>H6 - Heading 6</h6>
-                </div>
+                <h1>H1 - Heading 1</h1>
+                <h2>H2 - Heading 2</h2>
+                <h3>H3 - Heading 3</h3>
+                <h4>H4 - Heading 4</h4>
+                <h5>H5 - Heading 5</h5>
+                <h6>H6 - Heading 6</h6>
             
                 <h3>Body copy</h3>
                 <p>Amazium have been set up so that all the basic typography styling is 15px Century Gothic, with all regular <code>p</code> paragraphs are setup with 26px line height and 20px padding to the bottom of them. But you can easily change in at the very top of the <code>base.css</code> file.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                </div>
+                <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                
                 
                 <h3>Intro text</h3>
                 <p>There has been times when we've needed to make a paragraph stand out but for it not to be a headings <code>&lt;h1&gt;</code> so we created the class <code>.intro</code> which makes the font-size & line-height 130% and is perfect introduction text</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <p class="intro">Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                </div>
+                <p class="intro">Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;p class="intro"&gt;...&lt;/p&gt;</code></pre>
             </article>
 
             <article id="generic">
                 <h3 class="section">Generic classes</h3>
                 <p>We have slightly styled all the standard emphasis tags you would use on a website like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> as well as adding a few others like the <code>.highlight</code> class.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <div class="row">    
-                        <div class="grid_4">
-                            <p>For some<small>fine print</small>.</p>
-                            <p>For a <strong>bold</strong> word.</p>
-                            <p>For a <em>italicized.</em> word.</p>
-                        </div>
-                        <div class="grid_4">
-                            <p>For a <abbr title="Abbreviations">abbr</abbr> word.</p>
-                            <p>For a <sup>Superscript</sup> word.</p>
-                            <p>For a <sub>Subscript</sub> word.</p>
-                        </div>
+                
+                <div class="row">    
+                    <div class="grid_3">
+                        <p>For some <small>fine print</small>.</p>
+                        <p>For a <strong>Bold</strong> word.</p>
+                    </div>
+                    <div class="grid_3">
+                        <p>For a <em>Italicized.</em> word.</p>
+                        <p>For a <abbr title="Abbreviations">abbr</abbr> word.</p>
+                    </div>
+                    <div class="grid_4">
+                        <p>For a <sup>Superscript</sup> word.</p>
+                        <p>For a <sub>Subscript</sub> word.</p>
                     </div>
                 </div>
+                
 
                 <h3>Addresses</h3>
                 <p>Display your contact information by using <code>&lt;address&gt;</code> and keep the formatting by ending your lines with <code>&lt;br /&gt;</code>.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <address>
-                        <strong>Your Company Name</strong><br>
-                        123 Something Road,<br>
-                        Your City, AB 12345<br>
-                        <abbr title="Telephone">T:</abbr> (123) 456-7890
-                    </address>
-                    <address>
-                        <strong>Your Name</strong><br>
-                        <a href="mailto:#">your.name@yourname.com</a>
-                    </address>  
-                </div>
+                <address>
+                    <strong>Your Company Name</strong><br>
+                    123 Something Road,<br>
+                    Your City, AB 12345<br>
+                    <abbr title="Telephone">T:</abbr> (123) 456-7890
+                </address>
+                <address>
+                    <strong>Your Name</strong><br>
+                    <a href="mailto:#">your.name@yourname.com</a>
+                </address>  
+                <div class="example-title">Code</div>
                 <pre><code>&lt;address&gt;
     &lt;strong>Your Company Name&lt;/strong>&lt;br /&gt;
     123 Something Road,&lt;br /&gt;
@@ -200,15 +190,13 @@
             <article id="blockquote">        
                 <h3 class="section">Blockquote</h3>
                 <p>Present contact information for the nearest ancestor or the entire body of work.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <figure>
-                        <blockquote cite="http://www.amazium.co.uk">
-                            <p>I don't want to sound like a badass but... I eject my usb without removing it safely..!</p>
-                        </blockquote>
-                        <figcaption>Mike Ballan</figcaption>
-                    </figure>
-                </div>
+                <figure>
+                    <blockquote cite="http://www.amazium.co.uk">
+                        <p>I don't want to sound like a badass but... I eject my usb without removing it safely..!</p>
+                    </blockquote>
+                    <figcaption>Mike Ballan</figcaption>
+                </figure>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;figure&gt;
     &lt;blockquote cite="http://www.amazium.co.uk"&gt;
         &lt;p&gt;I don't want to sound like a badass but... I eject my usb without removing it safely..!&lt;/p&gt;
@@ -222,82 +210,75 @@
             <article id="lists">
                 <h3 class="section">Lists</h3>  
                 <p>For the standard <code>&lt;ul&gt;</code> bullet point weve replace the normal boring dot with a graphic which can be easily changed as well as that if you wish to have a circle, square or disc all you need to do is include the relevant class to the <code>&lt;ul&gt;</code> as shown in example 3 below.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <h4>Unordered list</h4>
-                    <ul>
-                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                        <li>
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                            <ul>
-                                <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                            </ul>
-                        </li>
-                        <li>Sed posuere consectetur est at lobortis.</li>
-                    </ul>
-                </div>
+                <h4>Unordered list</h4>
+                <ul>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        <ul>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                        </ul>
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ul>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;ul&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
          
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <h4>Ordered list</h4>
-                    <ol>
-                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                        <li>
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                            <ol>
-                                <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                            </ol>
-                        </li>
-                        <li>Sed posuere consectetur est at lobortis.</li>
-                    </ol>
-                </div>
+                
+                <h4>Ordered list</h4>
+                <ol>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        <ol>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                        </ol>
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ol>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;ol&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
           
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <h4>Circles</h4>
-                    <ul class="circle">
-                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                        <li>
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                            <ul>
-                                <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                            </ul>
-                        </li>
-                        <li>Sed posuere consectetur est at lobortis.</li>
-                    </ul>
-                </div>
+                <h4>Circles</h4>
+                <ul class="circle">
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        <ul>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                        </ul>
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ul>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;ul class="circle"&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
           
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <h4>Squares</h4>
-                    <ul class="square">
-                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                        <li>
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                            <ul>
-                                <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                            </ul>
-                        </li>
-                        <li>Sed posuere consectetur est at lobortis.</li>
-                    </ul>
-                </div>
+                <h4>Squares</h4>
+                <ul class="square">
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        <ul>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                        </ul>
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ul>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;ul class="circle"&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -305,14 +286,12 @@
 
                 <h3>Definition Lists</h3>
                 <p>A list of terms with their associated descriptions.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <dl>
-                        <dt>Definition title</dt>
-                        <dd>Definition data - Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.</dd>
-                        <dd>Definition data - Maecenas faucibus mollis interdum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</dd>
-                    </dl>
-                </div>
+                <dl>
+                    <dt>Definition title</dt>
+                    <dd>Definition data - Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.</dd>
+                    <dd>Definition data - Maecenas faucibus mollis interdum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</dd>
+                </dl>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;dl&gt;
     &lt;dt>Definition title&lt;/dt&gt;
     &lt;dd>Definition data&lt;/dd&gt;
@@ -324,31 +303,29 @@
                 <p>Weve also included some styling for tables which to be honest I haven't used that much outside building emails but it's there in case you ever need it..!</p>
                 <p>In Amazium I've included some styling for table elements like Table Headings <code>&lt;th&gt;</code> and the option to have odd and even table rows as well as the ability to highlight a cell in your table..!</p>
                 
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <table summary="This is an example of a table">
-                        <caption>Caption</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Item:</th>
-                                <th scope="col">Category:</th>
-                                <th scope="col">Size:</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="even">
-                                <td>Bananas</td>
-                                <td>Fruit</td>
-                                <td>1KG</td>
-                            </tr>
-                            <tr class="odd">
-                                <td>Apples</td>
-                                <td>Fruit</td>
-                                <td>3KG</td>
-                            </tr>    
-                        </tbody>
-                    </table>
-                </div>
+                <table summary="This is an example of a table">
+                    <caption>Caption</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Item:</th>
+                            <th scope="col">Category:</th>
+                            <th scope="col">Size:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="even">
+                            <td>Bananas</td>
+                            <td>Fruit</td>
+                            <td>1KG</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Apples</td>
+                            <td>Fruit</td>
+                            <td>3KG</td>
+                        </tr>    
+                    </tbody>
+                </table>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;table summary="This is an example of a table"&gt;
     &lt;caption>Caption&lt;/caption&gt;
     &lt;thead&gt;
@@ -377,17 +354,15 @@
                 <h3 class="section">Responsive Images</h3>
                 <p>Seeing how you website will be responsive there will be times when you will need your images to be responsive to and with this in mind I've made a nice little style to make any image 100% responsive, all you need to do is add this little class to your image: <code>class="max-img"</code> and hay presto responsive images..!</p>
                 <p>The images below are sitting in a <code>grid_6</code> and a <code>grid_3</code> but you will notice that the with and height will change based on the screen size.</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <div class="row">    
-                        <div class="grid_6">        
-                            <p><img src="images/blank.jpg" border="0" alt="blank image" class="max-img"></p>
-                        </div>
-                        <div class="grid_3">        
-                            <p><img src="images/blank.jpg" border="0" alt="blank image" class="max-img"></p>
-                        </div>
+                <div class="row">    
+                    <div class="grid_6">        
+                        <p><img src="images/blank.jpg" border="0" alt="blank image" class="max-img"></p>
+                    </div>
+                    <div class="grid_4">        
+                        <p><img src="images/blank.jpg" border="0" alt="blank image" class="max-img"></p>
                     </div>
                 </div>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;img src="images/blank.jpg" border="0" alt="blank image" class="max-img"&gt;</code></pre>
             </article>
 
@@ -395,23 +370,21 @@
                 <h3 class="section">Media</h3>
                 <p>As mentioned above about images I suspect that you would also like to have all your videos be responsive as well and with this in mind I had to do a little searching around on the web to find the answer for this which is very simple.</p>
                 <p>All you will need to do is wrap your video with a div that has a class called <code>.media</code> and thats it one responsive video..!</p>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <div class="row">
-                        <div class="grid_4">
-                            <h3>Vimeo</h3>
-                            <div class="media">
-                                <iframe src="http://player.vimeo.com/video/21465475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" frameborder="0"></iframe>
-                            </div>
+                <div class="row">
+                    <div class="grid_5">
+                        <h3>Vimeo</h3>
+                        <div class="media">
+                            <iframe src="http://player.vimeo.com/video/21465475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" frameborder="0"></iframe>
                         </div>
-                        <div class="grid_4">
-                            <h3>YouTube</h3>
-                            <div class="media">
-                                <iframe src="http://www.youtube.com/embed/d3J12dNz4xo" frameborder="0" allowfullscreen></iframe>
-                            </div>
+                    </div>
+                    <div class="grid_5">
+                        <h3>YouTube</h3>
+                        <div class="media">
+                            <iframe src="http://www.youtube.com/embed/d3J12dNz4xo" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
+                <div class="example-title">Code</div>
                 <pre><code>&lt;div class="media"&gt;
     &lt;iframe src="video_link_here" frameborder="0"&gt;&lt;/iframe&gt;
 &lt;/div&gt;</code></pre>

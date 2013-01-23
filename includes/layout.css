@@ -34,9 +34,9 @@ div.example .grid_4                             { width:311px; }
 div.example .grid_6                             { width:414px; }
 div.example .grid_9                             { width:654px; }
 div.example .grid_12                            { width:894px; }
-div.example form                                { margin:0; }
-div.example fieldset                            { margin:0 0 16px 0; }
-pre code                                        { margin:0 0 26px 0; }
+form                                			{ margin:0; }
+fieldset                            { margin:0 0 16px 0; }
+pre code                                        { margin:0 0 46px 0; }
 
 /***** Navigation *****/
 
@@ -63,9 +63,9 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 .sticky			                                { position:fixed; top:80px; }
 
-.sidenav                                        { margin:0; padding:0; display:block; width:208px; }
+.sidenav                                        { margin:0; padding:0; display:block; width:100%; }
 .sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; }
-.sidenav li                                     { margin:0; padding:0; display:block; }
+.sidenav li                                     { margin:0; padding:0; display:block; background-image:none; }
 .sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#FFF; font-size:12px; border-bottom:1px solid #333; background:transparent url(../images/btn-arrow.png) no-repeat right; }   
 .sidenav li a:hover,
 .sidenav li a.active                            {  background-color:#2399b5; color:#FFF; }   
@@ -136,7 +136,7 @@ div.example .grid_12                            { width:894px; }
 
 /***** Side Navigation *****/
 
-.sidenav                                        { width:260px; }
+.sidenav                                        { width:160px; }
 
 /***** Content 01 *****/
 
