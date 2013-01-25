@@ -161,16 +161,16 @@ select                                          { padding:3px 3px 3px 4px; }
 optgroup                                        { font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; background-color:#f1f1f1; }
 optgroup option                                 { background-color:#FFF; }
 
-form.icons input[type="name"]                   { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 0; }
-form.icons input[type="text"]                   { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -50px; }
-form.icons input[type="search"]                 { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -100px; }
-form.icons input[type="url"]                    { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -150px; }
-form.icons input[type="email"]                  { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -200px; }
-form.icons input[type="tel"]                    { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -250px; }
-form.icons input[type="password"]               { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -300px; }
+form.icons input[type="name"]                   { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 0; }
+form.icons input[type="text"]                   { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 -50px; }
+form.icons input[type="search"]                 { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 -100px; }
+form.icons input[type="url"]                    { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 -150px; }
+form.icons input[type="email"]                  { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 -200px; }
+form.icons input[type="tel"]                    { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 -250px; }
+form.icons input[type="password"]               { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 -300px; }
 
 textarea                                        { resize:vertical; height:122px; }
-form.icons textarea.icon                        { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -350px; }
+form.icons textarea.icon                        { padding-left:30px; background:#FFF url('../images/form.png') no-repeat 0 -350px; }
 
 input[type="checkbox"]                          { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:checkbox !important; }
 input[type="radio"]                             { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:radio !important; }
