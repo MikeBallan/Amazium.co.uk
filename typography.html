@@ -144,6 +144,7 @@
                 <p class="intro">Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
                 <div class="example-title">Code</div>
                 <pre><code>&lt;p class="intro"&gt;...&lt;/p&gt;</code></pre>
+                <hr />
             </article>
 
             <article id="generic">
@@ -184,7 +185,8 @@
     123 Something Road,&lt;br /&gt;
     Your City, AB 12345&lt;br /&gt;
     &lt;abbr title="Telephone">T:&lt;/abbr&gt; (123) 456-7890
-&lt;/address&gt;</em></code></pre>
+&lt;/address&gt;</code></pre>
+                <hr />
             </article>
 
             <article id="blockquote">        
@@ -205,84 +207,92 @@
         Mike Ballan
     &lt;/figcaption&gt;
 &lt;/figure&gt;</em></code></pre>
+                <hr />
             </article>
 
             <article id="lists">
                 <h3 class="section">Lists</h3>  
                 <p>For the standard <code>&lt;ul&gt;</code> bullet point weve replace the normal boring dot with a graphic which can be easily changed as well as that if you wish to have a circle, square or disc all you need to do is include the relevant class to the <code>&lt;ul&gt;</code> as shown in example 3 below.</p>
-                <h4>Unordered list</h4>
-                <ul>
-                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                    <li>
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                <div class="row">
+                    <div class="grid_5">
+                        <h4>Unordered list</h4>
                         <ul>
-                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                            <li>
+                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                <ul>
+                                    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                    <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                                </ul>
+                            </li>
+                            <li>Sed posuere consectetur est at lobortis.</li>
                         </ul>
-                    </li>
-                    <li>Sed posuere consectetur est at lobortis.</li>
-                </ul>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;ul&gt;
+                        <div class="example-title">Code</div>
+                        <pre><code>&lt;ul&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-         
-                
-                <h4>Ordered list</h4>
-                <ol>
-                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                    <li>
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </div>
+                    <div class="grid_5"> 
+                        <h4>Ordered list</h4>
                         <ol>
-                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                            <li>
+                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                <ol>
+                                    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                    <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                                </ol>
+                            </li>
+                            <li>Sed posuere consectetur est at lobortis.</li>
                         </ol>
-                    </li>
-                    <li>Sed posuere consectetur est at lobortis.</li>
-                </ol>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;ol&gt;
+                        <div class="example-title">Code</div>
+                        <pre><code>&lt;ol&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-          
-                <h4>Circles</h4>
-                <ul class="circle">
-                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                    <li>
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                        <ul>
-                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                        </ul>
-                    </li>
-                    <li>Sed posuere consectetur est at lobortis.</li>
-                </ul>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;ul class="circle"&gt;
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_5">
+                    <h4>Circles</h4>
+                    <ul class="circle">
+                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                        <li>
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                            <ul>
+                                <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                                <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                            </ul>
+                        </li>
+                        <li>Sed posuere consectetur est at lobortis.</li>
+                    </ul>
+                    <div class="example-title">Code</div>
+                    <pre><code>&lt;ul class="circle"&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-          
-                <h4>Squares</h4>
-                <ul class="square">
-                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                    <li>
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                        <ul>
-                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                    </div>
+                    <div class="grid_5">
+                        <h4>Squares</h4>
+                        <ul class="square">
+                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                            <li>
+                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                <ul>
+                                    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                    <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                                </ul>
+                            </li>
+                            <li>Sed posuere consectetur est at lobortis.</li>
                         </ul>
-                    </li>
-                    <li>Sed posuere consectetur est at lobortis.</li>
-                </ul>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;ul class="circle"&gt;
+                        <div class="example-title">Code</div>
+                        <pre><code>&lt;ul class="circle"&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-       
+                    </div>
+                </div>
 
                 <h3>Definition Lists</h3>
                 <p>A list of terms with their associated descriptions.</p>
@@ -296,13 +306,13 @@
     &lt;dt>Definition title&lt;/dt&gt;
     &lt;dd>Definition data&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
+                <hr />
             </article>
 
             <article id="tables">
                 <h3 class="section">Tables</h3>
                 <p>Weve also included some styling for tables which to be honest I haven't used that much outside building emails but it's there in case you ever need it..!</p>
                 <p>In Amazium I've included some styling for table elements like Table Headings <code>&lt;th&gt;</code> and the option to have odd and even table rows as well as the ability to highlight a cell in your table..!</p>
-                
                 <table summary="This is an example of a table">
                     <caption>Caption</caption>
                     <thead>
@@ -348,6 +358,7 @@
         &lt;/tr&gt;  
     &lt;/tbody>
 &lt;/table&gt;</code></pre>
+                <hr />
             </article>
 
             <article id="images">
@@ -388,7 +399,7 @@
                 <pre><code>&lt;div class="media"&gt;
     &lt;iframe src="video_link_here" frameborder="0"&gt;&lt;/iframe&gt;
 &lt;/div&gt;</code></pre>
-            <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
             </article>
         </div>
     </div>

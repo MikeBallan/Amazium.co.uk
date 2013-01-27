@@ -239,7 +239,7 @@ fieldset.correct select                         { margin:6px 0 0 0; color:#46884
 
 /***** Buttons *****/
 
-a.btn                           				{ margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:bold; color:#fff; border:1px solid #000; width:auto; text-decoration:none; background:#000 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
+a.btn                           				{ margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:bold; color:#fff; border:1px solid #000; width:auto; text-decoration:none; background:#73a7cf url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
 
 input[type="button"],
 input[type="submit"],
@@ -273,11 +273,11 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
 
-.text-big                                       { color:#a2bd30; font-weight:bold; line-height:26px; }
-.text-left                                      { text-align:left; }
-.text-right                                     { text-align:right; }
-.text-center                                    { text-align:center; }
-.text-justify                                   { text-align:justify; }
+.tet-big                                       { color:#a2bd30; font-weight:bold; line-height:26px; }
+.tet-left                                      { text-align:left; }
+.tet-right                                     { text-align:right; }
+.tet-center                                    { text-align:center; }
+.tet-justify                                   { text-align:justify; }
 
 .normal                                         { font-weight:normal; }
 .bold                                           { font-weight:bold; }

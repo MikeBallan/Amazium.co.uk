@@ -11,31 +11,29 @@ body                                            { background:#000 url('../images
 
 h1                                              { color:#333; font-size:40px; line-height:42px; }
 h1 sup                                          { top:-15px; font-size:50%; }
-h2                                              { color:#333; font-size:18px; line-height:20px; }
+pre												{ display:block; overflow:hidden; }
 pre + h3                                        { margin-top:60px; }
 
-.grid_4_5                                       { width:328px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+article											{ margin:0 0 20px 0; display:inline-block; }
+
+hr												{ margin:50px 0; padding:0; height:7px; background:transparent url('../images/divider.png') no-repeat; border:none; }
 
 #homepage hr                                    { margin:75px 0 70px 0; border:none; height:15px; text-align:left; background:transparent url('../images/hr.png') no-repeat center 0; background-size:100% auto; }
 #homepage .intro                                { margin:0 0 40px 0; font-size:130%; line-height:130%; }
 
 /***** Example *****/
 
-span.example                                    { margin-bottom:5px; padding:5px 0 5px 0; background-color:#FFF; text-align:center; width:100%; display:block; }
-span.example span.example                       { margin-bottom:5px; padding:5px 0 5px 0; background-color:#F1F1F1; text-align:center; width:100%; display:block; }
+span.example                                    { margin-bottom:5px; padding:5px 0 5px 0; background-color:#FFF; border:1px solid #ccc; text-align:center; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+span.example span.example-left                  { margin-bottom:0; padding:5px 0 5px 0; border:1px solid #ccc; border-left:none; text-align:center; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+span.example span.example-right                 { margin-bottom:0; padding:5px 0 5px 0; border:1px solid #ccc; border-right:none; text-align:center; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 div.example-title                               { margin:6px 0 0 0; padding:3px 10px; background-color:#000; color:#FFF; font-size:12px; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 div.example                                     { margin:0; padding:16px 16px 0 16px; background-color:#FFF; border:1px solid #000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 div.example h2                                  { font-size:32px; line-height:34px; }
 div.example + h3                                { margin-top:60px; }
 div.example + pre                               { margin:0 0 60px 0; }
-div.example address                             { margin:0 0 16px 0; }
-div.example .grid_4                             { width:311px; }
-div.example .grid_6                             { width:414px; }
-div.example .grid_9                             { width:654px; }
-div.example .grid_12                            { width:894px; }
 form                                			{ margin:0; }
-fieldset                            { margin:0 0 16px 0; }
+fieldset                            			{ margin:0 0 16px 0; }
 pre code                                        { margin:0 0 46px 0; }
 
 /***** Navigation *****/
@@ -63,12 +61,13 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 .sticky			                                { position:fixed; top:80px; }
 
-.sidenav                                        { margin:0; padding:0; display:block; width:100%; }
-.sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; }
-.sidenav li                                     { margin:0; padding:0; display:block; background-image:none; }
-.sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#FFF; font-size:12px; border-bottom:1px solid #333; background:transparent url(../images/btn-arrow.png) no-repeat right; }   
+.sidenav                                        { margin:0; padding:0; display:block; width:100%; font-family:"Georgia", Times New Roman, Times, serif; }
+.sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; }
+.sidenav li                                     { margin:0 0 5px; padding:0; display:block; background-image:none; font-style:italic; }
+.sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#333; font-size:14px; border-left:3px solid #333; background:; }   
 .sidenav li a:hover,
-.sidenav li a.active                            {  background-color:#2399b5; color:#FFF; }   
+.sidenav li a.active,
+.sidenav li a.first                            {  background-color:#000; color:#FFF; }   
 
 /***** Bokeh *****/
 
@@ -86,13 +85,13 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 #bokeh-intro                                    { margin:0; padding:120px 0 70px 0; width:100%; height:300px; background:transparent; }
 #bokeh-intro h1                                 { color:#FFF; text-shadow: #000 0 2px 2px; }
-#bokeh-intro h2                                 { color:#FFF; text-shadow: #000 0 2px 2px; }
+#bokeh-intro h2                                 { color:#FFF; text-shadow: #000 0 2px 2px; font-size:16px; line-height:20px; }
 
 /***** Content 01 *****/
 
 #content-01                                     { margin:0; padding:60px 0; background:#FFF url('../images/overlay.png') no-repeat 0 0; display:block; background-size:100% 100%; position:relative; z-index:88; }
-#content-02                                     { margin:0; padding:60px 0; background:#FFF url('../images/old_mathematics.png'); display:block; position:relative; z-index:88; }
-#content-03                                     { margin:0; padding:60px 0; background:#FFF url('../images/old_mathematics.png'); display:block; position:relative; z-index:88; }
+#content-02                                     { margin:0; padding:60px 0; background:#FFF url('../images/old_mathematics.png') fixed; display:block; position:relative; z-index:88; }
+#content-03                                     { margin:0; padding:60px 0; background:#FFF url('../images/old_mathematics.png') fixed; display:block; position:relative; z-index:88; }
 
 .containing-padding                             { padding:8px 0 0 0; }
 a.containing                                    { float:left; margin:0 10px 26px; cursor:pointer; display:block; position:relative; width:289px; text-decoration:none; }

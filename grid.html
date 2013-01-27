@@ -110,21 +110,20 @@
 
 <div id="content-02">
     <div class="row">
-        <div class="grid_3">
+        <div class="grid_2">
             <div id="nav-holder">
                 <div id="sidenav" class="sidenav">
                     <ul>
-                        <li><a href="#basics">1. The Basics</a></li>
-                        <li><a href="#offsetting">2. Offsetting</a></li>
-                        <li><a href="#nesting">3. Nesting</a></li>
-                        <li><a href="#responsive">4. About responsive</a></li>
-                        <li><a href="#show-hide">5. Show & Hide</a></li>
-                        <li><a href="#media-queries">6. Media queries</a></li>
+                        <li><a href="#basics">The Basics</a></li>
+                        <li><a href="#offsetting">Offsetting</a></li>
+                        <li><a href="#nesting">Nesting</a></li>
+                        <li><a href="#show-hide">Show &amp; Hide</a></li>
+                        <li><a href="#media-queries">Media queries</a></li>
                     </ul>
                 </div>
             </div>
         </div> 
-        <div class="grid_9">
+        <div class="grid_10">
             <article id="basics">
                 <h3 class="section">The Basics</h3>
                 <p>OK so the 960 Grid is what you would expect most modern websites to follow as its set up to be a max width of 960px which will fit the most common screen resolution 1024x768. but as of late I've noticed a lot of sites have been pushing this to 1200 so I've added another query to allow your site to scale to 1200px..! But for the sake of the demos on this site i'll stay with the standard 960px</p>
@@ -140,23 +139,27 @@
                     <div class="grid_1"><span class="example">1</span></div>
                     <div class="grid_1"><span class="example">1</span></div>
                     <div class="grid_1"><span class="example">1</span></div>
+                    <div class="grid_1"><span class="example">1</span></div>
                 </div>
                 <div class="row">
                     <div class="grid_2"><span class="example">2</span></div>
-                    <div class="grid_3"><span class="example">3</span></div>
-                    <div class="grid_4"><span class="example">4</span></div>
+                    <div class="grid_2"><span class="example">2</span></div>
+                    <div class="grid_2"><span class="example">2</span></div>
+                    <div class="grid_2"><span class="example">2</span></div>
+                    <div class="grid_2"><span class="example">2</span></div>
                 </div>
                 <div class="row">
-                    <div class="grid_4"><span class="example">4</span></div>
+                    <div class="grid_5"><span class="example">5</span></div>
                     <div class="grid_5"><span class="example">5</span></div>
                 </div>
                 <div class="row">
-                    <div class="grid_9"><span class="example">9</span></div>
+                    <div class="grid_10"><span class="example">10</span></div>
                 </div>
                 <div class="example-title">Code</div>
                 <pre><code>&lt;div class="row"&gt;
     &lt;div class="grid_6"&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+                <hr />
             </article>
 
             <article id="offsetting">
@@ -164,14 +167,14 @@
                 <p>Amazium also has the option to offset a column, which should make life all the bit easier if you you need to add an extra bit of space between columns. This is done by adding the class <code>offset</code> followed by how many columns you want the offset to be i.e. if you want to have an offset of 4 then a column of 8 all you need to do is add <code>offset_4</code> after <code>grid_8</code>.</p>
                 <div class="row">
                     <div class="grid_4"><span class="example">4</span></div>
-                    <div class="grid_3 offset_2"><span class="example">3 with 2 offset</span></div>
+                    <div class="grid_4 offset_2"><span class="example">3 with 2 offset</span></div>
                 </div>
                 <div class="row">
                     <div class="grid_3 offset_1"><span class="example">3 with offset 1</span></div>
-                    <div class="grid_4 offset_1"><span class="example">4 with 1 offset</span></div>
+                    <div class="grid_5 offset_1"><span class="example">4 with 1 offset</span></div>
                 </div>
                 <div class="row">
-                    <div class="grid_7 offset_2"><span class="example">7 with 2 offset</span></div>
+                    <div class="grid_8 offset_2"><span class="example">7 with 2 offset</span></div>
                 </div>
 
                 <div class="example-title">Code</div>
@@ -179,6 +182,7 @@
     &lt;div class="grid_4"&gt;...&lt;/div&gt;
     &lt;div class="grid_4 offset_4"&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+                <hr />
             </article>
 
             <article id="nesting">
@@ -187,11 +191,11 @@
 
                 <span class="example">
                     <div class="row">
-                        <div class="grid_9">
+                        <div class="grid_10">
                             <p>9</p>
                             <div class="row">
-                                <div class="grid_4"><span class="example">4 nested</span></div>
-                                <div class="grid_5"><span class="example">5 nested</span></div>
+                                <div class="grid_5"><span class="example-left">4 nested</span></div>
+                                <div class="grid_5"><span class="example-right">5 nested</span></div>
                             </div>
                         </div>
                     </div>
@@ -207,9 +211,50 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+                <hr />
             </article>
 
-            <article id="responsive">
+            <article id="show-hide">
+                <h3 class="section">Show &amp; Hide</h3>
+                <p>There are times when you may need to only show something on a desktop and not a tablet &amp; phone or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide & show content.</p>
+                <p class="show-tablet"><img src="images/tablet.png" alt="tablet" class="max-img"></p>
+                <p class="show-screen"><img src="images/screen.png" alt="Screen" class="max-img"></p>
+                <p class="show-phone"><img src="images/phone.png" alt="phone" class="max-img"></p>
+                <table>
+                    <tr class="even">
+                        <td class="first">hide-tablet</td>
+                        <td>hide-screen</td>
+                        <td class="last">hide-phone</td>
+                    </tr>
+                    <tr class="even">
+                        <td class="first">show-tablet</td>
+                        <td>show-screen</td>
+                        <td class="last">show-phone</td>
+                    </tr>
+                </table>
+                <div class="example-title">Code</div>
+                <pre><code>&lt;img src="images/tablet.png" alt="tablet" class="hide-tablet"&gt;</code></pre>
+                <hr />
+            </article>
+
+            <article id="media-queries">
+                <h3 class="section">Media queries</h3>
+                <p>Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</p>
+                <p>Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                <div class="example-title">Code</div>
+                <pre><code>/***** Screen Bigger than 960px *****/
+@media only screen and (min-width:1200px) { ... }
+
+/***** Tablet (Smaller than 959px) *****/
+@media only screen and (min-width: 768px) and (max-width: 959px) { ... }
+
+/***** Phone (portrait 300px) *****/
+@media only screen and (max-width: 767px) { ... }
+
+/***** Phone (landscape 420px) *****/
+@media only screen and (min-width: 480px) and (max-width: 767px) { ... }</code></pre>
+                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+            
                 <h3 class="section">About responsive</h3>
                 <p>Amazium uses 6 main media queries to adjust the layout of your website to match the size of your screen. The media queries in Amazium only target at max and min widths rather than device sizes or orientations, which means that any new mobile or browsers that don't match the exact dimensions will still benefit from the styling.</p>
                 <p>Now I have to say I 'm a little biased towards most things Apple which means the sizes I've chosen works perfectly for iPad & iPhone and everything else I've been able to test Amazium on seems to work fine also..!</p>
@@ -260,47 +305,6 @@
                         <td class="last">-</td>
                     </tr>
                 </table>
-            </article>
-            
-            <article id="show-hide">
-                <h3 class="section">Show &amp; Hide</h3>
-                <p>There are times when you may need to only show something on a desktop and not a tablet &amp; phone or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide & show content.</p>
-                <p class="show-tablet"><img src="images/tablet.png" alt="tablet" class="max-img"></p>
-                <p class="show-screen"><img src="images/screen.png" alt="Screen" class="max-img"></p>
-                <p class="show-phone"><img src="images/phone.png" alt="phone" class="max-img"></p>
-                <table>
-                    <tr class="even">
-                        <td class="first">hide-tablet</td>
-                        <td>hide-screen</td>
-                        <td class="last">hide-phone</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="first">show-tablet</td>
-                        <td>show-screen</td>
-                        <td class="last">show-phone</td>
-                    </tr>
-                </table>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;img src="images/tablet.png" alt="tablet" class="hide-tablet"&gt;</code></pre>
-            </article>
-            
-            <article id="media-queries">
-                <h3 class="section">Media queries</h3>
-                <p>Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</p>
-                <p>Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                <div class="example-title">Code</div>
-                <pre><code>/***** Screen Bigger than 960px *****/
-@media only screen and (min-width:1200px) { ... }
-
-/***** Tablet (Smaller than 959px) *****/
-@media only screen and (min-width: 768px) and (max-width: 959px) { ... }
-
-/***** Phone (portrait 300px) *****/
-@media only screen and (max-width: 767px) { ... }
-
-/***** Phone (landscape 420px) *****/
-@media only screen and (min-width: 480px) and (max-width: 767px) { ... }</code></pre>
-                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
             </article>
         </div>
     </div>
