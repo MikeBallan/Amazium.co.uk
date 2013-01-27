@@ -239,11 +239,11 @@ fieldset.correct select                         { margin:6px 0 0 0; color:#46884
 
 /***** Buttons *****/
 
-a.btn                           				{ margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:bold; color:#fff; border:1px solid #000; width:auto; text-decoration:none; background:#73a7cf url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
+a.btn                           				{ margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:normal; color:#fff; border:1px solid #000; width:auto; text-decoration:none; background:#73a7cf url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                             { margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:bold; color:#fff; border:1px solid #000; float:left; width:auto; background:#000 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                             { margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background:#000 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
 
 input[type="button"]                            { color:#FFF; border-color:#000; background-color:#333; }
 input[type="submit"]                            { color:#FFF; border-color:#1c7c93; background-color:#2399B5; }

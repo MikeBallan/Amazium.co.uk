@@ -36,6 +36,8 @@ form                                			{ margin:0; }
 fieldset                            			{ margin:0 0 16px 0; }
 pre code                                        { margin:0 0 46px 0; }
 
+.btn.download									{ background:#000 url('../images/icon-download-small.png') no-repeat right 8px; }
+
 /***** Navigation *****/
 
 .navigation                                     { overflow:hidden; height:auto; position:relative; top:0px; }
