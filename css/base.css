@@ -52,7 +52,7 @@ h2                                              { margin:0 0 10px 0; padding:0; 
 h3                                              { margin:0 0 10px 0; padding:0; font-size:24px; line-height:26px; color:#333; }
 h4                                              { margin:0 0 10px 0; padding:0; font-size:17px; line-height:19px; color:#333; }
 h5                                              { margin:0 0 10px 0; padding:0; font-size:14px; line-height:16px; color:#333; }
-h6                                              { margin:0 0 20px 0; padding:0; font-size:11px; line-height:13px; color:#333; }
+h6                                              { margin:0 0 10px 0; padding:0; font-size:11px; line-height:13px; color:#333; }
 
 p                                               { margin:0 0 20px 0; padding:0; line-height:26px; }
 
@@ -129,134 +129,27 @@ img                                             { border:0; vertical-align:middl
 .media object,  
 .media embed                                    { position:absolute; top:0; left:0; width:100%; height:100%; }
 
-/***** Forms *****/
+/***** Buttons  *****/
 
-form                                            { margin:16px 0; padding:0; display:inline-block; width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-form label                                      { margin:6px 0 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:30%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-form label.checkbox,
-form label.radio                                { text-align:left; width:auto; }
-form span                                       { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
-fieldset                                        { margin:16px 0 0 0; padding:0; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+a.btn, 
+.btn                                     		{ margin:5px 10px 5px 0; padding:0 20px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
+a:hover.btn                                     { color:#333; border:1px solid #CCC; background-color:#FFF; }
 
-::-webkit-input-placeholder                     { color:#999; }
-:-moz-placeholder                               { color:#999; }
-::-moz-placeholder                              { color:#999; }
-:-ms-input-placeholder                          { color:#999; }
+a.btn.small, 
+.btn.small                         				{ padding:0 10px; font-size:12px; line-height:25px; }
 
-input,
-textarea,
-select                                          { margin:0; padding:4px 4px 4px 6px; display:inline-block; border:solid 1px #BBB; background-color:#FFF; border-radius:0; width:100%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#999; overflow:hidden; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
+.btn.white										{ border-color:#CCC; background-color:#FFF; color:#333; }
+a:hover.btn.white								{ border-color:#000; background-color:#000; color:#FFF; }			
 
-form label + input,
-form label + textarea,
-form label + select                             { float:right; width:70%; }
+.btn.red										{ border-color:#E74C3C; background-color:#E74C3C; }
+a:hover.btn.red									{ border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
 
-form.hide-lables label + input,
-form.hide-lables label + textarea,
-form.hide-lables label + select                 { float:left; width:100%; }
-
-form.hide-lables label                          { display:none; }
-
-select                                          { padding:3px 3px 3px 4px; }
-optgroup                                        { font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; background-color:#f1f1f1; }
-optgroup option                                 { background-color:#FFF; }
-
-form.icons input[type="name"]                   { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 0; }
-form.icons input[type="text"]                   { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -50px; }
-form.icons input[type="search"]                 { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -100px; }
-form.icons input[type="url"]                    { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -150px; }
-form.icons input[type="email"]                  { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -200px; }
-form.icons input[type="tel"]                    { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -250px; }
-form.icons input[type="password"]               { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -300px; }
-
-textarea                                        { resize:vertical; height:122px; }
-form.icons textarea.icon                        { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -350px; }
-
-input[type="checkbox"]                          { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:checkbox !important; }
-input[type="radio"]                             { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:radio !important; }
-
-input:focus,
-textarea:focus,
-select:focus                                    { color:#000; border-color:#333; outline:0 none; }
-
-/***** Search *****/
-
-form.search input[type="search"]                { width:85%; float:left; border-right:none; }
-
-form.search input[type="button"],
-form.search input[type="submit"],
-form.search input[type="reset"]                 { margin:0 !important; padding-right:0 !important; width:15%; float:left; }
-
-form.search input:hover[type="button"],
-form.search input:hover[type="submit"],
-form.search input:hover[type="reset"]           { margin:0 !important; }
-
-/***** Login *****/
-
-form.login input[type="email"],
-form.login input[type="password"]               { margin-right:1%; width:40%; float:left; }
-
-form.login input[type="button"],
-form.login input[type="submit"],
-form.login input[type="reset"]                  { margin:0 !important; padding-right:0 !important; width:18%; float:left; }
-
-form.login input:hover[type="button"],
-form.login input:hover[type="submit"],
-form.login input:hover[type="reset"]            { margin:0 !important; }
-
-/***** Errors with Labels *****/
-
-fieldset.error ::-webkit-input-placeholder      { color:#C60F13; }
-fieldset.error :-moz-placeholder                { color:#C60F13; }
-fieldset.error ::-moz-placeholder               { color:#C60F13; }
-fieldset.error :-ms-input-placeholder           { color:#C60F13; }
-
-fieldset.error label                            { color:#C60F13; }
-fieldset.error label + input,
-fieldset.error label + textarea,
-fieldset.error label + select                   { margin:0; color:#C60F13 !important; border-color:#C60F13; background-color:#f4cfd0; }
-fieldset.error label + input + small            { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-
-/***** Errors without Labels *****/
-
-fieldset.error label                            { color:#C60F13; }
-fieldset.error input,
-fieldset.error textarea,
-fieldset.error select                           { margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; background-color:#f4cfd0 !important; }
-form.hide-lables fieldset.error input + small   { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-
-/***** Correct *****/
-
-fieldset.correct ::-webkit-input-placeholder    { color:#468847; }
-fieldset.correct :-moz-placeholder              { color:#468847; }
-fieldset.correct ::-moz-placeholder             { color:#468847; }
-fieldset.correct :-ms-input-placeholder         { color:#468847; }
-
-fieldset.correct form label                     { color:#468847; }
-fieldset.correct input,
-fieldset.correct textarea,
-fieldset.correct select                         { margin:6px 0 0 0; color:#468847; border-color:#468847; background-color:#dae7da !important; }
-
-/***** Buttons *****/
-
-a.btn                           				{ margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:normal; color:#fff; border:1px solid #000; width:auto; text-decoration:none; background:#73a7cf url(../img/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
-
-input[type="button"],
-input[type="submit"],
-input[type="reset"]                             { margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background:#000 url(../img/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
-
-input[type="button"]                            { color:#FFF; border-color:#000; background-color:#333; }
-input[type="submit"]                            { color:#FFF; border-color:#1c7c93; background-color:#2399B5; }
-input[type="reset"]                             { color:#666; border-color:#999; background-color:#CCC; }
-
-input:hover[type="button"]                      { color:#FFF; border-color:#000; background-color:#000; }
-input:hover[type="submit"]                      { color:#FFF; border-color:#1c7c93; background-color:#1c7c93; }
-input:hover[type="reset"]                       { color:#F1F1F1; border-color:#999; background-color:#999; }
+.btn.blue										{ border-color:#3498DB; background-color:#3498DB; }
+a:hover.btn.blue								{ border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
 
 /***** Tables *****/
 
 table                                           { margin:20px 0 40px 0; width:100%; }
-table caption                                   { height:0; text-indent:-99999px;  }
 table th                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; font-weight:bold; border:1px solid #BBB; }
 table td                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; border:1px solid #BBB; }
 table tr.even td                                { background-color:#fff; }
@@ -273,11 +166,11 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
 
-.txt-big                                       { color:#a2bd30; font-weight:bold; line-height:26px; }
-.txt-left                                      { text-align:left; }
-.txt-right                                     { text-align:right; }
-.txt-center                                    { text-align:center; }
-.txt-justify                                   { text-align:justify; }
+.txt-big                                       	{ color:#a2bd30; font-weight:bold; line-height:26px; }
+.txt-left                                      	{ text-align:left; }
+.txt-right                                     	{ text-align:right; }
+.txt-center                                    	{ text-align:center; }
+.txt-justify                                   	{ text-align:justify; }
 
 .normal                                         { font-weight:normal; }
 .bold                                           { font-weight:bold; }
@@ -301,13 +194,5 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 #toTop                                          { display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../img/ui.totop.png) no-repeat left top; z-index:99; }
 #toTopHover                                     { background:url(../img/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
 #toTop:active, #toTop:focus                     { outline:none; }
-
-/***** Phone (portrait 300px) *****/
-@media only screen and (max-width: 767px) {
-
-form label                                      { margin:0; text-align:left; float:left; width:100%; }
-form label + input,
-form label + textarea,
-form label + select                             { float:left; width:100%; }
 
 }
