@@ -121,7 +121,7 @@
                         <li><a href="#form-icons">Icons</a></li>
                         <li><a href="#radio-checkboxes">Radio &amp; Checkboxes</a></li>
                         <li><a href="#form-validation">Form Validation</a></li>
-                        <li><a href="#form-actions">Form Actions</a></li>
+                        <li><a href="#form-buttons">Form Buttons</a></li>
                         <li><a href="#other">Other Form elements</a></li>
                     </ul>
                 </div>
@@ -130,7 +130,7 @@
         <div class="grid_10">
             <article id="form-with">
                 <h3 class="section">The basic Form</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+                <p>Your basic form with some styling like a 1px border to all inputs and a set width of 70% as well as lables width of 30% of the container there in.</p>
                 <form name="" id="" method="" action="">
                     <div class="row">
                         <div class="grid_5">
@@ -158,6 +158,11 @@
                                 <label for="search">Search</label>
                                 <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
                             </fieldset>
+                            <fieldset>
+                                <label for="checkbox_1" class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</label>
+                                <label for="checkbox_2" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 2</label>
+                                <label for="checkbox_3" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 3</label>
+                            </fieldset>
                         </div>
                         <div class="grid_5">
                             <fieldset>
@@ -185,6 +190,10 @@
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
                             </fieldset>
+                            <fieldset>
+                                <label for="radio_1" class="radio"><input type="radio" name="radio" checked />Yes - Cras justo odio, dapibus ac facilisis in, egestas eget quam.</label>
+                                <label for="radio_2" class="radio"><input type="radio" name="radio" />No - Maecenas sed diam eget risus varius blandit sit amet non magna.</label>
+                            </fieldset>
                         </div>
                     </div>
                 </form>
@@ -195,12 +204,13 @@
         &lt;input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" /&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
+                <hr />
             </article>
 
 
             <article id="form-without">
                 <h3 class="section">Forms without Lables</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+                <p>So if like me you dont like the lables next to you inputs and would rather not have them all you need to do is add a class to your form called <code>class="hide-lables"</code> and all lables will be hidden from the browser..! In hiding the labels Amazium resets the width of the inputs to 100%.</p>
                 <form name="" id="" method="" action="" class="hide-lables">
                     <div class="row">
                         <div class="grid_5">
@@ -228,6 +238,11 @@
                                 <label for="search">Search</label>
                                 <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
                             </fieldset>
+                            <fieldset>
+                                <label for="checkbox_1" class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</label>
+                                <label for="checkbox_2" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 2</label>
+                                <label for="checkbox_3" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 3</label>
+                            </fieldset>
                         </div>
                         <div class="grid_5">
                             <fieldset>
@@ -255,6 +270,10 @@
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
                             </fieldset>
+                            <fieldset>
+                                <label for="radio_1" class="radio"><input type="radio" name="radio" checked />Yes - Cras justo odio, dapibus ac facilisis in, egestas eget quam.</label>
+                                <label for="radio_2" class="radio"><input type="radio" name="radio" />No - Maecenas sed diam eget risus varius blandit sit amet non magna.</label>
+                            </fieldset>
                         </div>
                     </div>
                 </form>
@@ -265,12 +284,13 @@
         &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
     &lt;fieldset&gt;
 &lt;/form&gt;</code></pre>
+                <hr />
             </article>
 
 
             <article id="form-icons">
                 <h3 class="section">Icons</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+                <p>Just as adding <code>class="hide-lables"</code> to your form to hide labels you can also add some nice icons to your inputs by adding the class <code>class="icons"</code> which will give you a nice icon depending on what type of input your using.</p>
                 <form name="" id="" method="" action="" class="hide-lables icons">
                     <div class="row">
                         <div class="grid_5">
@@ -335,12 +355,13 @@
         &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
+                <hr />
             </article>
 
 
             <article id="radio-checkboxes">
-                <h3 class="section">Check Boxes</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+                <h3 class="section">Radio &amp; Check Boxes</h3>
+                <p>I really dont like Checkboxes and Radio buttons but i do understand you need them so ive done a little stying on how they work by wrapping them in a lable so you can have the Checkboxes / Radio buttons inline rather than under each other.</p>
                 <form name="" id="" method="" action="">
                     <fieldset>
                         <label for="checkbox_1" class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</label>
@@ -366,8 +387,6 @@
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
                 
-                <h3 class="section">Radio Buttons</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
                 <form name="" id="" method="" action="">
                     <fieldset>
                         <label for="radio_1" class="radio"><input type="radio" name="radio" checked />Yes - Cras justo odio, dapibus ac facilisis in, egestas eget quam.</label>
@@ -387,21 +406,18 @@
         &lt;/label&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
+                <hr />
             </article>
 
 
             <article id="form-validation">        
                 <h3 class="section">Form Validation</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+                <p>Form validation is never fun but in amazium i hope to make live a little simpler by adding in the class <code>class="error"</code> to a lable and then restyling the input with a red border. As well as that if you put an error message wrapped in a <code>small</code> tag this will show up under your input with a red background.</p>
                 <form name="" id="" method="" action="" class="hide-lables">
                     <fieldset>
                         <label for="name" class="error">Name</label>
                         <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
                         <small>Invalid entry</small>
-                    </fieldset>
-                    <fieldset>
-                        <label for="name" class="correct">Name</label>
-                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
                     </fieldset>
                 </form>
                 <div class="example-title">Code</div>
@@ -410,18 +426,15 @@
         &lt;label for="name"&gt;Name&lt;/label&gt;
         &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
         &lt;small&gt;Invalid entry&lt;/small&gt;
-    &lt;/fieldset&gt;
-    &lt;fieldset class="correct"&gt;
-        &lt;label for="name"&gt;Name&lt;/label&gt;
-        &lt;input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" /&gt;
-&lt;/fieldset&gt;</code></pre>
+    &lt;/fieldset&gt;</code></pre>
+                <hr />
             </article>
 
 
-            <article id="form-actions">
-                <h3 class="section">Form Actions</h3>
-                <p>End a form with a group of actions (buttons). When placed within a .form-horizontal, the buttons will automatically indent to line up with the form controls.</p>
-                <form name="" id="" method="" action="">
+            <article id="form-buttons">
+                <h3 class="section">Form Buttons</h3>
+                <p>As with all forms you will need buttons and here you can see Amazium has a style for each of the 3 button types Submit, Reset &amp; Button. You will see that if a button is placed next to another it will be on the same line and have a small margin to its right.</p>
+                <form name="" id="" method="" action="" class="hide-lables">
                     <fieldset>
                         <input type="submit" name="submit" id="submitbtn" tabindex="7" value="This is a Submit Button" />
                         <input type="reset" name="reset" id="submitbtn" tabindex="7" value="This is a Reset Button" />
@@ -436,12 +449,13 @@
         &lt;iinput type="button" name="button" id="submitbtn" tabindex="7" value="Button" /&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
+                <hr />
             </article>
 
 
             <article id="other">
                 <h3 class="section">Search</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+                <p>Just incase you need a search form Amazium has a default for you</p>
                 <form name="" id="" method="" action="" class="search">
                     <fieldset>
                         <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" >
@@ -457,7 +471,7 @@
 &lt;/form&gt;</code></pre>
 
                 <h3 class="section">Login</h3>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+                <p>As with the Search form the Login form have also been styled.</p>
                 <form name="" id="" method="" action="" class="login">
                     <fieldset>
                         <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" >

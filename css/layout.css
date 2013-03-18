@@ -36,7 +36,7 @@ form                                			{ margin:0; }
 fieldset                            			{ margin:0 0 16px 0; }
 pre code                                        { margin:0 0 46px 0; }
 
-.btn.download									{ background:#000 url('../img/icon-download-small.png') no-repeat right 8px; }
+.btn.download									{ padding:0 40px 0 20px; background:#000 url('../img/icon-download-small.png') no-repeat right 8px; }
 
 /***** Navigation *****/
 
