@@ -217,52 +217,57 @@
 
             <article id="show-hide">
                 <h3 class="section">Show &amp; Hide</h3>
-                <p>There are times when you may need to only show something on a desktop and not a tablet &amp; phone or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide & show content.</p>
+                <p>There are times when you may need to only show something on a desktop and not a tablet &amp; phone or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide &amp; show content.</p>
                 <p class="show-tablet"><img src="img/tablet.png" alt="tablet" class="max-img"></p>
                 <p class="show-screen"><img src="img/screen.png" alt="Screen" class="max-img"></p>
                 <p class="show-phone"><img src="img/phone.png" alt="phone" class="max-img"></p>
-                <table>
+                <table class="show-hide">
                     <tr class="even">
-                        <td class="first">hide-tablet</td>
-                        <td>hide-screen</td>
-                        <td class="last">hide-phone</td>
+                        <td class="hide-tablet">
+                            hide-tablet
+                        </td>
+                        <td class="hide-screen">
+                            hide-screen
+                        </td>
+                        <td class="hide-phone">
+                            hide-phone
+                        </td>
                     </tr>
                     <tr class="even">
-                        <td class="first">show-tablet</td>
-                        <td>show-screen</td>
-                        <td class="last">show-phone</td>
+                        <td class="show-tablet">
+                            show-tablet
+                        </td>
+                        <td class="show-screen">
+                            show-screen
+                        </td>
+                        <td class="show-phone">
+                            show-phone
+                        </td>
                     </tr>
                 </table>
+                <p>The code below will hide the image from only the Tablet view but if you only wanted an image to show on Table view you would use the other class <code>class="show-tablet"</code>.
                 <div class="example-title">Code</div>
                 <pre><code>&lt;img src="img/tablet.png" alt="tablet" class="hide-tablet"&gt;</code></pre>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <hr />
             </article>
 
             <article id="media-queries">
                 <h3 class="section">Media queries</h3>
-                <p>Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</p>
-                <p>Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                <p>Media queries are what makes it possible to change our websites to fit on all the different devices we use day to day and as there are so mny differnt screen sizes to display for, we have setup Amazium to have to have 4 set Media queries which are:
                 <div class="example-title">Code</div>
-                <pre><code>/***** Screen Bigger than 960px *****/
-@media only screen and (min-width:1200px) { ... }
+                <pre><code>/***** Screen 1200px+ *****/
+All Default CSS is put at the top.
+
+/***** Screen Smaller than 1200px *****/
+@media only screen and (min-width: 960px) and (max-width: 1199px) {...}
 
 /***** Tablet (Smaller than 959px) *****/
-@media only screen and (min-width: 768px) and (max-width: 959px) { ... }
+@media only screen and (min-width: 768px) and (max-width: 959px) {...}
 
-/***** Phone (portrait 300px) *****/
-@media only screen and (max-width: 767px) { ... }
-
-/***** Phone (landscape 420px) *****/
-@media only screen and (min-width: 480px) and (max-width: 767px) { ... }</code></pre>
-                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-            
-                <h3 class="section">About responsive</h3>
-                <p>Amazium uses 6 main media queries to adjust the layout of your website to match the size of your screen. The media queries in Amazium only target at max and min widths rather than device sizes or orientations, which means that any new mobile or browsers that don't match the exact dimensions will still benefit from the styling.</p>
+/***** Mobile *****/
+/***** Updated based on essencious Mobile version *****/
+@media only screen and (max-width: 767px) {...}</code></pre>
                 <p>Now I have to say I 'm a little biased towards most things Apple which means the sizes I've chosen works perfectly for iPad & iPhone and everything else I've been able to test Amazium on seems to work fine also..!</p>
-
-                <h3>Supported devices</h3>
-                <p>Amazium supports all the main media queries to make sure your project look the best it can be on all different devices and screen resolutions. Below is a list of what media queries are included:</p>
                 <table>
                     <tr>
                         <th class="first">Screen type</th>
@@ -272,7 +277,7 @@
                     </tr>
                     <tr class="even">
                         <td class="first">Large</td>
-                        <td>960px and up</td>
+                        <td>1200+px</td>
                         <td>60px</td>
                         <td class="last">40px</td>
                     </tr>
@@ -289,25 +294,12 @@
                         <td class="last">28px</td>
                     </tr>
                     <tr class="odd">
-                        <td class="first">Mobile Portrait</td>
+                        <td class="first">Mobile</td>
                         <td>300px</td>
-                        <td>-</td>
-                        <td class="last">-</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="first">Mobile Lanscape</td>
-                        <td>420px</td>
-                        <td>-</td>
-                        <td class="last">-</td>
-                    </tr>
-                    <tr class="odd">
-                        <td class="first">Hi-res / Retina</td>
-                        <td>Pixel ratio:1.5</td>
-                        <td>-</td>
+                        <td>100%</td>
                         <td class="last">-</td>
                     </tr>
                 </table>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </article>
         </div>
     </div>

@@ -36,8 +36,6 @@ form                                			{ margin:0; }
 fieldset                            			{ margin:0 0 16px 0; }
 pre code                                        { margin:0 0 46px 0; }
 
-.btn.download									{ padding:0 40px 0 20px; background:#000 url('../img/icon-download-small.png') no-repeat right 8px; }
-
 /***** Navigation *****/
 
 .navigation                                     { overflow:hidden; height:auto; position:relative; top:0px; }
@@ -106,6 +104,14 @@ a:hover .border                                 { background:0 0 #FFF; display:b
 .containing-info                                { text-align:center; }
 .containing-info h3                             { margin:6px 0; color:#333; font-size:18px; }
 .containing-info p                              { margin:0; color:#999; font-size:13px; line-height:20px; }
+
+.show-hide .show-phone                          { display:table-cell !important; background-color:#FFF; color:#000; }
+.show-hide .show-tablet                         { display:table-cell !important; background-color:#FFF; color:#000; }
+.show-hide .show-screen                         { display:table-cell !important; background-color:#CCC; color:#000; }
+
+.show-hide .hide-phone                          { display:table-cell !important; background-color:#CCC; color:#000; }
+.show-hide .hide-tablet                         { display:table-cell !important; background-color:#CCC; color:#000; }
+.show-hide .hide-screen                         { display:table-cell !important; background-color:#FFF; color:#000; }
 
 /***** Footer*****/
 
@@ -185,6 +191,14 @@ a .border                                       { width:226px; height:290px; z-i
 a:hover .border                                 { width:242px; height:306px; }
 .containing-img                                 { height:150px; }
 
+.show-hide .show-phone                          { display:table-cell !important; background-color:#FFF; color:#000; }
+.show-hide .show-tablet                         { display:table-cell !important; background-color:#CCC; color:#000; }
+.show-hide .show-screen                         { display:table-cell !important; background-color:#FFF; color:#000; }
+
+.show-hide .hide-phone                          { display:table-cell !important; background-color:#CCC; color:#000; }
+.show-hide .hide-tablet                         { display:table-cell !important; background-color:#FFF; color:#000; }
+.show-hide .hide-screen                         { display:table-cell !important; background-color:#CCC; color:#000; }
+
 }
 
 
@@ -249,6 +263,14 @@ a.containing                                    { margin:0 10px 56px; width:280p
 a .border                                       { width:280px; height:270px; z-index:0; }
 a:hover .border                                 { width:298px; height:286px; }
 .containing-img                                 { height:150px; }
+
+.show-hide .show-phone                          { display:table-cell !important; background-color:#CCC; color:#000; }
+.show-hide .show-tablet                         { display:table-cell !important; background-color:#FFF; color:#000; }
+.show-hide .show-screen                         { display:table-cell !important; background-color:#FFF; color:#000; }
+
+.show-hide .hide-phone                          { display:table-cell !important; background-color:#FFF; color:#000; }
+.show-hide .hide-tablet                         { display:table-cell !important; background-color:#CCC; color:#000; }
+.show-hide .hide-screen                         { display:table-cell !important; background-color:#CCC; color:#000; }
 
 }
 

@@ -129,7 +129,7 @@
                 <h3 class="section">Download</h3>
                 <p>Ok so first things first you will need to download Amazium from here of that big button below, Once you have the .zip extract it and you will find all the files you need to start your responsive project. Now im sure we don't have to tell you this but you will need a code editor (we recommend Sublime Text 2) and of course a working knowledge of HTML &amp; CSS otherwise things could be a little difficult for you.</p>
                 <p>Saying this we have tryed to make Amazium as easy to use and set up as possible and most classes have already been defined for you like &lt;h1&gt;, links, blockquotes, bullets and well i could be a long time if i tryed to list all the different things we have styled for you.</p>
-                <p><a href="#" class="btn download">Download here</a></p>
+                <p><a href="#" class="btn">Download here</a></p>
                 <hr />
             </article>
 
@@ -141,6 +141,7 @@
 ├── css/
 │   ├── amazium.css
 │   ├── base.css
+│   ├── form.css
 │   ├── layout.css
 ├── js/
 │   ├── amazium.js
@@ -152,6 +153,7 @@
     ├── apple-touch-icon-114x114.png
     ├── apple-touch-icon-144x144.png
     ├── apple-touch-icon.png
+    ├── blank.jpg
     ├── btn-arrow.png
     ├── bullet.png
     ├── favicon.ico
@@ -163,62 +165,54 @@
 
             <article id="template">
                 <h3 class="section">Basic HTML template</h3>
-                <p>Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                <p>Now, here's a look at a typical HTML file:</p>
+                <p>To start you project of quickly Amazium compes with an Example html page with some commpn elements you might need. But if you just need to see something quickly below is a typical HTML page setup.</p>
                 <div class="example-title">Code</div>
                 <pre><code>&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="utf-8" /&gt;
-    &lt;title&gt;Amazium - The responsive web framework..!</title&gt;
+    &lt;title&gt;Amazium example&lt;/title&gt;
     &lt;meta name="description" content=""&gt;
     &lt;meta name="author" content=""&gt;
     &lt;!--[if lt IE 9]&gt;
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;</script&gt;
-    &lt;![endif]-->
+        &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
     
     &lt;!-- Mobile Specific Metas --&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt; 
     
     &lt;script type="text/javascript"&gt;
-        var browser         = navigator.userAgent;
-        var browserRegex    = /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
-        var isMobile        = false;
-        if(browser.match(browserRegex)) {
-            isMobile            = true;
-            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-            function hideURLbar(){
-                window.scrollTo(0,1);
-            }
-        }
+        /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+          if (!pageYOffset) window.scrollTo(0, 1);
+        }, 1000);
     &lt;/script&gt;
     
     &lt;!-- CSS --&gt;
-    &lt;link rel="stylesheet" href="includes/base.css"&gt;
-    &lt;link rel="stylesheet" href="includes/amazium.css"&gt;
-    &lt;link rel="stylesheet" href="includes/layout.css"&gt;
+    &lt;link rel="stylesheet" href="css/base.css"&gt;
+    &lt;link rel="stylesheet" href="css/amazium.css"&gt;
+    &lt;link rel="stylesheet" href="css/form.css"&gt;
+    &lt;link rel="stylesheet" href="css/layout.css"&gt;
     
     &lt;!-- Favicons --&gt;
-    &lt;link rel="shortcut icon" href="img/favicon.ico"&gt;
-    &lt;link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png"&gt;
-    &lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" /&gt;
+    &lt;link rel="shortcut icon" href="images/favicon.ico"&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" /&gt;
     &lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" /&gt;
+    &lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" /&gt;
+    &lt;link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png"&gt;
     
-    &lt;!-- To Top scripts --&gt;
-    &lt;script src="includes/smoothscroll.js"type="text/javascript"&gt;&lt;/script&gt;
-    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
-    &lt;script src="includes/jquery.easing.1.3.js" type="text/javascript"&gt;&lt;/script&gt;
-    &lt;script src="includes/jquery.ui.totop.js" type="text/javascript"&gt;&lt;/script&gt;
-    &lt;script src="includes/amazium.js" type="text/javascript"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript"&gt;
-        $(document).ready(function() {
-            $(window).resize(function(){
-                $('#content-01').css('top', $(window).height()+'px');   
+    &lt;/head&gt;
+    &lt;body&gt;
+        Page content here
+
+        &lt;!-- Scripts --&gt;
+        &lt;script type="text/javascript" src="js/jquery-1.8.0.min.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="js/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="js/jquery.ui.totop.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript"&gt;
+            $(document).ready(function() {
+                $().UItoTop({ easingType: 'easeOutQuart' });
             });
-            $(window).resize();
-            $().UItoTop({ easingType: 'easeOutQuart' });
-        });
-    &lt;/script&gt;
+        &lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
             </article>
