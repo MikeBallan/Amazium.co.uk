@@ -61,7 +61,7 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 .sticky			                                { position:fixed; top:80px; }
 
-.sidenav                                        { margin:0; padding:0; display:block; width:100%; font-family:"Georgia", Times New Roman, Times, serif; }
+.sidenav                                        { margin:0; padding:0; display:block; width:128px; font-family:"Georgia", Times New Roman, Times, serif; }
 .sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; }
 .sidenav li                                     { margin:0 0 5px; padding:0; display:block; background-image:none; font-style:italic; }
 .sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#333; font-size:14px; border-left:3px solid #333; background:; }   
@@ -104,14 +104,6 @@ a:hover .border                                 { background:0 0 #FFF; display:b
 .containing-info                                { text-align:center; }
 .containing-info h3                             { margin:6px 0; color:#333; font-size:18px; }
 .containing-info p                              { margin:0; color:#999; font-size:13px; line-height:20px; }
-
-.show-hide .show-phone                          { display:table-cell !important; background-color:#FFF; color:#000; }
-.show-hide .show-tablet                         { display:table-cell !important; background-color:#FFF; color:#000; }
-.show-hide .show-screen                         { display:table-cell !important; background-color:#CCC; color:#000; }
-
-.show-hide .hide-phone                          { display:table-cell !important; background-color:#CCC; color:#000; }
-.show-hide .hide-tablet                         { display:table-cell !important; background-color:#CCC; color:#000; }
-.show-hide .hide-screen                         { display:table-cell !important; background-color:#FFF; color:#000; }
 
 /***** Footer*****/
 
@@ -182,7 +174,7 @@ div.example .grid_12                            { width:708px; }
 
 /***** Side Navigation *****/
 
-.sidenav                                        { width:164px; }
+.sidenav                                        { width:100px; }
 
 /***** Content 01 *****/
 
@@ -190,14 +182,6 @@ a.containing                                    { margin:0 10px 56px; width:226p
 a .border                                       { width:226px; height:290px; z-index:0; }
 a:hover .border                                 { width:242px; height:306px; }
 .containing-img                                 { height:150px; }
-
-.show-hide .show-phone                          { display:table-cell !important; background-color:#FFF; color:#000; }
-.show-hide .show-tablet                         { display:table-cell !important; background-color:#CCC; color:#000; }
-.show-hide .show-screen                         { display:table-cell !important; background-color:#FFF; color:#000; }
-
-.show-hide .hide-phone                          { display:table-cell !important; background-color:#CCC; color:#000; }
-.show-hide .hide-tablet                         { display:table-cell !important; background-color:#FFF; color:#000; }
-.show-hide .hide-screen                         { display:table-cell !important; background-color:#CCC; color:#000; }
 
 }
 
@@ -228,8 +212,8 @@ div.example .grid_12                            { width:262px; }
 #navigation ul li.logo,
 #navigation ul li.download                      { display:none; }
 
-a.amazium-phone                                 { float:left; height:40px; overflow:hidden; }
-a.amazium-phone img                             { padding:7px 0 0 0; height:50px; }
+a.amazium-mobile                                { float:left; height:40px; overflow:hidden; }
+a.amazium-mobile img                            { padding:7px 0 0 0; height:50px; }
 
 a.navigation-btn                                { margin:0; display:inline-block; }
 .navigation                                     { display:none; width:300px; }
@@ -263,14 +247,6 @@ a.containing                                    { margin:0 10px 56px; width:280p
 a .border                                       { width:280px; height:270px; z-index:0; }
 a:hover .border                                 { width:298px; height:286px; }
 .containing-img                                 { height:150px; }
-
-.show-hide .show-phone                          { display:table-cell !important; background-color:#CCC; color:#000; }
-.show-hide .show-tablet                         { display:table-cell !important; background-color:#FFF; color:#000; }
-.show-hide .show-screen                         { display:table-cell !important; background-color:#FFF; color:#000; }
-
-.show-hide .hide-phone                          { display:table-cell !important; background-color:#FFF; color:#000; }
-.show-hide .hide-tablet                         { display:table-cell !important; background-color:#CCC; color:#000; }
-.show-hide .hide-screen                         { display:table-cell !important; background-color:#CCC; color:#000; }
 
 }
 

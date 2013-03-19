@@ -82,7 +82,7 @@
 <div id="navigation">
     <div class="row">
         <div class="grid_12">
-            <a href="index.html" class="amazium-phone show-phone"><img src="img/amazium-logo.png"></a>
+            <a href="index.html" class="amazium-mobile show-mobile"><img src="img/amazium-logo.png"></a>
             <a href="#" class="navigation-btn"><img src="img/icon-menu.png" width="35" height="35"></a>
             <div class="navigation" id="navigation-items">
                 <ul>
@@ -128,7 +128,7 @@
             <article id="basics">
                 <h3 class="section">The Basics</h3>
                 <p>OK so the 960 Grid is what you would expect most modern websites to follow as its set up to be a max width of 960px which will fit the most common screen resolution 1024x768. but as of late I've noticed a lot of sites have been pushing this to 1200 so I've added another query to allow your site to scale to 1200px..! But for the sake of the demos on this site i'll stay with the standard 960px</p>
-                <p>Now to date I have not found a simpler way to build a website than this system which only relies on the below code to achieve a solid website. And as most new browsers excepting the "Media Queries" code we are now able to resize the grid based on your screen resolution so if you were to view this on say an iPhone you would get an optimised version of the grid which means you no longer have to zoom in to see text on a website. (Go on give it a try now and see the below stay responsive..!)</p>
+                <p>Now to date I have not found a simpler way to build a website than this system which only relies on the below code to achieve a solid website. And as most new browsers excepting the "Media Queries" code we are now able to resize the grid based on your screen resolution so if you were to view this on say an imobile you would get an optimised version of the grid which means you no longer have to zoom in to see text on a website. (Go on give it a try now and see the below stay responsive..!)</p>
                 <p>Now as you can see from the grid layout below we have made Amazium have 16px gutters/margins left &amp; right which could be changed if you wanted less or more.</p>
                 <div class="row">
                     <div class="grid_1"><span class="example">1</span></div>
@@ -217,32 +217,20 @@
 
             <article id="show-hide">
                 <h3 class="section">Show &amp; Hide</h3>
-                <p>There are times when you may need to only show something on a desktop and not a tablet &amp; phone or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide &amp; show content.</p>
+                <p>There are times when you may need to only show something on a desktop and not a tablet &amp; mobile or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide &amp; show content.</p>
                 <p class="show-tablet"><img src="img/tablet.png" alt="tablet" class="max-img"></p>
                 <p class="show-screen"><img src="img/screen.png" alt="Screen" class="max-img"></p>
-                <p class="show-phone"><img src="img/phone.png" alt="phone" class="max-img"></p>
+                <p class="show-mobile"><img src="img/mobile.png" alt="mobile" class="max-img"></p>
                 <table class="show-hide">
                     <tr class="even">
-                        <td class="hide-tablet">
-                            hide-tablet
-                        </td>
-                        <td class="hide-screen">
-                            hide-screen
-                        </td>
-                        <td class="hide-phone">
-                            hide-phone
-                        </td>
+                        <td class="first">hide-tablet<br /><small>Hides only on "Tablet" view</small></td>
+                        <td>hide-screen<br /><small>Hides only on "Screen" view</small></td>
+                        <td class="last">hide-mobile<br /><small>Hides only on "Moblie" view</small></td>
                     </tr>
                     <tr class="even">
-                        <td class="show-tablet">
-                            show-tablet
-                        </td>
-                        <td class="show-screen">
-                            show-screen
-                        </td>
-                        <td class="show-phone">
-                            show-phone
-                        </td>
+                        <td class="first">show-tablet<br /><small>Shows only on Tablet view</small></td>
+                        <td>show-screen<br /><small>Shows only on Tablet view</small></td>
+                        <td class="last">show-mobile<br /><small>Shows only on Tablet view</small></td>
                     </tr>
                 </table>
                 <p>The code below will hide the image from only the Tablet view but if you only wanted an image to show on Table view you would use the other class <code>class="show-tablet"</code>.
@@ -267,7 +255,7 @@ All Default CSS is put at the top.
 /***** Mobile *****/
 /***** Updated based on essencious Mobile version *****/
 @media only screen and (max-width: 767px) {...}</code></pre>
-                <p>Now I have to say I 'm a little biased towards most things Apple which means the sizes I've chosen works perfectly for iPad & iPhone and everything else I've been able to test Amazium on seems to work fine also..!</p>
+                <p>Now I have to say I 'm a little biased towards most things Apple which means the sizes I've chosen works perfectly for iPad & imobile and everything else I've been able to test Amazium on seems to work fine also..!</p>
                 <table>
                     <tr>
                         <th class="first">Screen type</th>
