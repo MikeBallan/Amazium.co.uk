@@ -1,168 +1,126 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Amazium - The responsive web framework..!</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    
+	<meta charset="utf-8" />
+	<title>Amazium</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
     <script type="text/javascript">
         /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
           if (!pageYOffset) window.scrollTo(0, 1);
         }, 1000);
     </script>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/amazium.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/layout.css">
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-    
-    <!-- To Top scripts -->
-    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.pagescroller.lite.js"></script>    
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/amazium.js"></script>
-    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(window).resize(function(){
-                $('#content-01').css('margin-top', $(window).height()+'px');    
-            });
-            $(window).resize();
-            $().UItoTop({ easingType: 'easeOutQuart' });
-        });
-    </script>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
 </head>
-<body>
-    
-<div id="navigation">
+<body class="">
+
+<header>
     <div class="row">
-        <div class="grid_12">
-            <a href="index.html" class="amazium-mobile show-mobile"><img src="img/amazium-logo.png"></a>
-            <a href="#" class="navigation-btn"><img src="img/icon-menu.png" width="35" height="35"></a>
-            <div class="navigation" id="navigation-items">
-                <ul>
-                    <li class="logo"><a href="index.html"><img src="img/amazium-logo-small.png"></a></li>
-                    <li><a href="setting-up.html">Setting up</a></li>
-                    <li><a href="grid.html">Grid</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li><a href="forms.html">Forms</a></li>
-                    <li class="last"><a href="containing.html">Containing</a></li>
-                    <li class="download"><a href="#">Download Amazium</a></li>
-                </ul>
-            </div>
-        </div>
+        <nav class="grid_12">
+            <a href="index.html" class="logo">&#xe000;</a>
+            <ol>
+                <li><a href="setup.html">Setup &amp; Grid</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li class="download"><a href="https://github.com/MikeBallan/Amazium" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
+            </ol>
+        </nav>
     </div>
+</header>
+
+<section class="bokeh">
+    <article class="welcome">
+        <h1>Welcome to Amazium</h1>
+        <p class="intro">The clean &amp; simple responsive framework..!</p>
+        <p><a href="https://github.com/MikeBallan/Amazium" target="_blank" class="btn">Download the latest version over on Github</a></p>
+    </article>
+</section>
+
+<div class="content">
+    <a href=""></a>
+    <section class="row">
+        <article class="grid_12 txt-center">
+            <h2>Introducing Amazium...</h2>
+            <h3>So what is Amazium I hear you ask, well you may have been hearing the term "Responsive Web Design" being thrown around the past few months, which simply means a website that can adjust to your screen size without having to make a separate website!</h3>
+            <section class="row">
+                <article class="grid_3">
+                    <h4 class="icon-rapid">Rapid Prototyping</h4>
+                    <p>Time is a very precious thing these days and with Amazium we've done all the basics for you so you can very quickly setup your website ready for styling using our 12 coloumn grid.</p>
+                </article>
+                <article class="grid_3">
+                    <h4 class="icon-simple">Simple Code Base</h4>
+                    <p>We have tried to keep Amazium clean &amp; simple so all you have to worry about adding all the nice touches to make your site awesome.</p>
+                </article>
+                <article class="grid_3">
+                    <h4 class="icon-corners">4 corners</h4>
+                    <p>Amazium is built to do all the hard work of resizing your content using 4 media queries (1200px, 960px, 768px &amp; < 767px)</p>
+                </article>
+                <article class="grid_3">
+                    <h4 class="icon-open">Open Source</h4>
+                    <p>As with all good things Amazium is open source which means your free to do what you want, and with your help make it even better..!</p>
+                </article>
+            </section>
+            <hr />
+            <h2>Containing Amazium</h2>
+            <h3>Amazium has been available for over 3 years so we thought it would be good if we put a small collection of wesites that are using Amazium. If you would like to add your own site email us and were be happy to add it to the collection.</h3>
+            <ol class="containing">
+                <li><a href="#"><img src="img/containing/levelselect.jpg" alt="">Levelselect</a></li>
+                <li><a href="#"><img src="img/containing/jellyfish.jpg" alt="">Jellyfish</a></li>
+                <li><a href="#"><img src="img/containing/punchoutphp.jpg" alt="">Punchout PHP</a></li>
+                <li><a href="#"><img src="img/containing/psvcabins.jpg" alt="">PSV Cabins</a></li>
+                <li><a href="#"><img src="img/containing/protegem.jpg" alt="">Protegem</a></li>
+                <li><a href="#"><img src="img/containing/getlashedupbeauty.jpg" alt="">Get Lashed Up Beauty</a></li>
+                <li><a href="#"><img src="img/containing/carmeleta.jpg" alt="">Carmeleta</a></li>
+                <li><a href="#"><img src="img/containing/nhu.jpg" alt="">NHU</a></li>
+            </ol>
+            <p><a href="#" class="btn">View all</a></p>
+        </article>
+    </section>
 </div>
 
-<div id="bokeh">
-    <div class="row">
-        <div class="grid_12">
-            <div id="sidenav" class="bokeh-content">
-                <a href="#">
-                    <img src="img/az-logo.png" class="az">
-                    <img src="img/amazium-logo.png" class="amazium">
-                    <p class="strapline">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula.</p>
-                </a>
-                <p class="download-btn hide-mobile"><a href="#" class="btn">Download Amazium</a></p>
-                <p class="version hide-mobile">Version 3.1</p>
-            </div>
-        </div>
-    </div>
-</div>
+<footer>
+    <section class="row">
+        <article class="grid_6">
+            <p><a href="http://www.mikeballan.co.uk" target="_blank" class="contain">This site may contain traces of Amazium</a></p>
+        </article>
+        <article class="grid_6 txt-right">
+            <p><a href="https://github.com/MikeBallan/Amazium" target="_blank">View Amazium on Github</a></p>
+        </article>
+    </section>
+</footer>
 
-<div id="content-01">
-    <div class="row">
-        <div class="grid_12 txt-center">
-            <h1 class="section">Introducing Amazium.</h1>
-            <p class="intro">So what is Amazium I hear you ask, well you may have been hearing the term "Responsive Web Design" being thrown around the past few months, which simply means a website that can adjust to your screen size without having to make a separate website!</p>
-            <p>This came about from the simple fact that a lot of people have been making demos of this responsive web design but none seem to be using 960 grid system with 12 columns, and because of this I was forced to make my own..!</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="grid_4 txt-center">
-            <p><img src="img/icon-grid.png"></p>
-            <h2>Rapid Prototyping</h2>
-            <p>The Grid lets you lay out pages quickly and logically with a flexible, nestable system. Even better, the Grid can be whatever size you need — it's easily adapted to any size screens, from mobiles to TVs.</p>
-        </div>
-        <div class="grid_4 txt-center">
-            <p><img src="img/icon-code.png"></p>
-            <h2>Simple Code Base</h2>
-            <p>Foundation includes dozens of styles and elements to help you quickly put together clickable prototypes, that can then be adapted and styled into polished production code. Forms, buttons, tabs, all kinds of good stuff.</p>
-        </div>
-        <div class="grid_4 txt-center">
-            <p><img src="img/icon-multidevice.png"></p>
-            <h2>Multidevice Mobility</h2>
-            <p>The Grid lets you quickly put together page layouts for mobile devices and the desktop. You don't need two different sites — the Grid is built to create a rock-solid experience on all kinds of devices with the exact same markup.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="grid_4 txt-center">
-            <p><img src="img/icon-grid.png"></p>
-            <h2>Rapid Prototyping</h2>
-            <p>The Grid lets you lay out pages quickly and logically with a flexible, nestable system. Even better, the Grid can be whatever size you need — it's easily adapted to any size screens, from mobiles to TVs.</p>
-        </div>
-        <div class="grid_4 txt-center">
-            <p><img src="img/icon-code.png"></p>
-            <h2>Simple Code Base</h2>
-            <p>Foundation includes dozens of styles and elements to help you quickly put together clickable prototypes, that can then be adapted and styled into polished production code. Forms, buttons, tabs, all kinds of good stuff.</p>
-        </div>
-        <div class="grid_4 txt-center">
-            <p><img src="img/icon-multidevice.png"></p>
-            <h2>Multidevice Mobility</h2>
-            <p>The Grid lets you quickly put together page layouts for mobile devices and the desktop. You don't need two different sites — the Grid is built to create a rock-solid experience on all kinds of devices with the exact same markup.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="grid_12 txt-center">
-            <p><img src="img/icon-containing.png"></p>
-            <h1>Containing Amazium.</h1>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="grid_4">
-            <!-- Project -->
-            <a href="/en/work/snapshots_2012" class="containing"><img alt="Protègèm" src="containing-amazium/protegem.jpg"></a>
-            <!-- // END Project -->
-        </div>
-        <div class="grid_4">
-            <!-- Project -->
-            <a href="/en/work/snapshots_2012" class="containing"><img alt="Protègèm" src="containing-amazium/protegem.jpg"></a>
-            <!-- // END Project -->
-        </div>
-        <div class="grid_4">
-            <!-- Project -->
-            <a href="/en/work/snapshots_2012" class="containing"><img alt="Protègèm" src="containing-amazium/protegem.jpg"></a>
-            <!-- // END Project -->
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="row">
-        <div class="grid_12">
-            <p><a href="http://www.mikeballan.co.uk" target="_blank" class="amazium">This site may contain traces of Amazium</a></p>
-        </div>
-    </div>
-</div>
-
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(window).resize(function(){
+            $('.bokeh').css('height', $(window).height()+'px');
+        });
+        $(window).resize();
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
 
 </body>
 </html>
