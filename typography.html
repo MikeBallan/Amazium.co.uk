@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Amazium - The responsive web framework..!</title>
+    <title>Amazium</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <!--[if lt IE 9]>
@@ -19,173 +19,88 @@
     </script>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/amazium.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/layout.css">
     
     <!-- Favicons -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-    
-    <!-- To Top scripts -->
-    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/amazium.js"></script>
-    <script type="text/javascript" src="js/waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var nav_container = $("#nav-holder");
-            var nav = $("#sidenav");
-            nav_container.waypoint({
-                handler: function(event, direction) {
-                    nav.toggleClass('sticky', direction=='down');
-                    if (direction == 'down')
-                        nav_container.css({ 'height':nav.outerHeight() });
-                    else
-                        nav_container.css({ 'height':'auto' });
-                },
-                offset: 80
-            });
-            var sections = $('article');
-            var navigation_links = $('#sidenav a');
-            sections.waypoint({
-                handler: function(event, direction) {
-                    // handler code
-                    var active_section;
-                    active_section = $(this);
-                    if (direction === "up") active_section = active_section.prev();
-                    var active_link = $('#sidenav a[href="#' + active_section.attr("id") + '"]');
-                    navigation_links.removeClass("active");
-                    active_link.addClass("active");
-                },
-                offset: 80
-            });
-            navigation_links.click( function(event) {
-                $.scrollTo(
-                    $(this).attr("href"),
-                    {
-                        duration: 1000,
-                        offset: { 'left':0, 'top':-80 }
-                    }
-                );
-            });
-        });
-    </script>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
 </head>
-<body>
+<body class="">
 
-<div id="navigation">
+<header>
     <div class="row">
-        <div class="grid_12">
-            <a href="index.html" class="amazium-mobile show-mobile"><img src="img/amazium-logo.png"></a>
-            <a href="#" class="navigation-btn"><img src="img/icon-menu.png" width="35" height="35"></a>
-            <div class="navigation" id="navigation-items">
-                <ul>
-                    <li class="logo"><a href="index.html"><img src="img/amazium-logo-small.png"></a></li>
-                    <li><a href="setting-up.html">Setting up</a></li>
-                    <li><a href="grid.html">Grid</a></li>
-                    <li class="current"><a href="typography.html">Typography</a></li>
-                    <li><a href="forms.html">Forms</a></li>
-                    <li class="last"><a href="containing.html">Containing</a></li>
-                    <li class="download"><a href="#">Download Amazium</a></li>
-                </ul>
-            </div>
-        </div>
+        <nav class="grid_12">
+            <a href="index.html" class="logo">&#xe000;</a>
+            <ol>
+                <li><a href="setup.html">Setup &amp; Grid</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li class="download"><a href="https://github.com/MikeBallan/Amazium" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
+            </ol>
+        </nav>
     </div>
-</div>
+</header>
 
-<div id="bokeh-intro">
-    <div class="row">
-        <div class="grid_12">
-            <img src="img/icon-code-white.png" class="img-left">
-            <h1>Typography</h1>
-            <h2>Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </h2>
-        </div>
-    </div>
-</div>
-
-<div id="content-02">
-    <div class="row">
-        <div class="grid_2">
-            <div id="nav-holder">
-                <div id="sidenav" class="sidenav">
-                    <ul>
-                        <li><a href="#generic">Generic classes</a></li>
-                        <li><a href="#blockquote">Blockquote</a></li>
-                        <li><a href="#lists">Lists</a></li>
-                        <li><a href="#tables">Tables</a></li>
-                        <li><a href="#images">Images &amp; Media</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div> 
-        <div class="grid_10">
-            <article id="generic">
-                <h3>Generic classes</h3>
-                <p>Amazium comes with all the styling you need for H1 to H6 with the default font family set to Georgia/Times New Roman which gives a nice contrast to the body copy which is set at Century Gothic/Trebuchet MS 15px with a line height of 20px. As well as sorting out the body copy weve also created a class for an intro paragrahp which is set to have a font-size &amp; line height of 130% the base font size which make helps if you dont want to use an <code>H2</code> and <code>strong</code> isnt enough.</p>
-                <h1>H1 - Heading 1</h1>
-                <h2>H2 - Heading 2</h2>
-                <h3>H3 - Heading 3</h3>
-                <h4>H4 - Heading 4</h4>
-                <h5>H5 - Heading 5</h5>
-                <h6>H6 - Heading 6</h6>
-                <p class="intro">Intro copy. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                <p>Some normal copy inside a <cod>P</code> tag. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Donec sed odio dui.</p>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;p class="intro"&gt;...&lt;/p&gt;</code></pre>
-                <hr />
-                <h3 class="section">Buttons</h3>
-                <p>Buttons are aways needed on a website and so we have styled some buttons for you to use from the start by simply adding <code>class="btn"</code> to your link. As well as this you can string a color to the btn class <code>class="btn red"</code>.</p>
-                <p>
-                    <a href="#" class="btn">Default Button</a>
-                    <a href="#" class="btn red">Red Button</a>
-                    <a href="#" class="btn blue">Blue Button</a>
-                    <a href="#" class="btn green">Green Button</a>
-                    <a href="#" class="btn white">White Button</a>
-                </p>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;p&gt;
-    &lt;a href="#" class="btn"&gt;Default Button&lt;/a&gt;
-    &lt;a href="#" class="btn red"&gt;Red Button&lt;/a&gt;
-    &lt;a href="#" class="btn blue"&gt;Blue Button&lt;/a&gt;
-    &lt;a href="#" class="btn green"&gt;Green Button&lt;/a&gt;
-    &lt;a href="#" class="btn white"&gt;White Button&lt;/a&gt;
-&lt;/p&gt;</em></code></pre>
-                <p>And if you are in need of a smaller button then all you need to do is add <code>class="btn red small"</code> to your link string and </p>
-                <p>
-                    <a href="#" class="btn small">Default Button</a>
-                    <a href="#" class="btn red small">Red Button</a>
-                    <a href="#" class="btn blue small">Blue Button</a>
-                    <a href="#" class="btn green small">Green Button</a>
-                    <a href="#" class="btn white small">White Button</a>
-                </p>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;p&gt;
-    &lt;a href="#" class="btn small"&gt;Default Button&lt;/a&gt;
-    &lt;a href="#" class="btn red small"&gt;Red Button&lt;/a&gt;
-    &lt;a href="#" class="btn blue small"&gt;Blue Button&lt;/a&gt;
-    &lt;a href="#" class="btn green small"&gt;Green Button&lt;/a&gt;
-    &lt;a href="#" class="btn white small"&gt;White Button&lt;/a&gt;
-&lt;/p&gt;</em></code></pre>
-                <hr />
-            </article>
-
-            <article id="blockquote">        
-                <h3 class="section">Blockquote</h3>
-                <p>So for a long time i've been using the <code>cite</code> in my Blockquote as the author of the quote but doing some reasearch into the correct use i found out that the <code>cite</code> should be the url sorce which should be in the blockquote as below.</p>
-                <figure>
-                    <blockquote cite="http://www.amazium.co.uk">
-                        <p>I don't want to sound like a badass but... I eject my usb without removing it safely..!</p>
-                    </blockquote>
-                    <figcaption>Mike Ballan</figcaption>
-                </figure>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;figure&gt;
+<section class="row">
+    <article class="grid_12">
+        <h1>Typography</h1>
+        <p>Amazium comes with all the styling you need for H1 to H6 with the default font family set to <strong>Sans-Serif</strong> which gives a nice contrast to the body copy which is set at <strong>15px Sans-Serif</strong> with a <strong>line height of 20px</strong>. As well as sorting out the body copy weve also created a class for an intro paragrahp which is set to have a <strong>font-size &amp; line height of 130%</strong> the base font size which make helps if you dont want to use an H2 and strong isnt enough.</p>
+        <p class="intro">Hi, I'm an intro paragraph..!</p>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;p class="intro"&gt;...&lt;/div&gt;</code></pre>
+        <hr />
+        <h2>Button's</h2>
+        <p>Buttons are aways needed on a website and so we have styled some buttons for you to use from the start by simply adding <strong>class="btn"</strong> to your link. As well as this you can string a color to the btn class <strong>class="btn red"</strong>.</p>
+        <p>
+            <a href="#" class="btn">Default link Button</a>
+            <a href="#" class="btn red">Red link Button</a>
+            <a href="#" class="btn blue">Blue link Button</a>
+            <a href="#" class="btn green">Green link Button</a>
+            <a href="#" class="btn white">White link Button</a>
+        </p>
+        <p>If you are in need of a smaller button then all you need to do is add the class <strong>"small"</strong> to your link string and you will get smaller buttons.</p>
+        <p>
+            <a href="#" class="btn small">Default Small link Button</a>
+            <a href="#" class="btn red small">Red Small link Button</a>
+            <a href="#" class="btn blue small">Blue Small link Button</a>
+            <a href="#" class="btn green small">Green Small link Button</a>
+            <a href="#" class="btn white small">White Small link Button</a>
+        </p>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;a href="#" class="btn"&gt;...&lt;/a&gt;
+&lt;a href="#" class="btn red"&gt;...&lt;/a&gt;
+&lt;a href="#" class="btn small"&gt;...&lt;/a&gt;</code></pre>
+        <p>And finally if you need to use a button the same code as above applys too..!</p>
+        <p>
+            <button class="btn">Default Button</button>
+            <button class="btn red">Red Button</button>
+            <button class="btn blue">Blue Button</button>
+            <button class="btn green">Green Button</button>
+            <button class="btn white">White Button</button>
+        </p>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;button class="btn"&gt;...&lt;/button&gt;
+&lt;button class="btn red"&gt;...&lt;/button&gt;
+&lt;button class="btn small"&gt;...&lt;/button&gt;</code></pre>
+        <hr />
+        <h2>Blockquote</h2>
+        <p>So for a long time i've been using the cite in my Blockquote as the author of the quote but doing some reasearch into the correct use i found out that the cite should be the url sorce which should be in the blockquote as below.</p>
+        <figure>
+            <blockquote cite="http://www.amazium.co.uk">
+                <p>I don't want to sound like a badass but... I eject my usb without removing it safely..!</p>
+            </blockquote>
+            <figcaption>
+                Mike Ballan
+            </figcaption>
+        </figure>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;figure&gt;
     &lt;blockquote cite="http://www.amazium.co.uk"&gt;
         &lt;p&gt;I don't want to sound like a badass but... I eject my usb without removing it safely..!&lt;/p&gt;
     &lt;/blockquote&gt;
@@ -193,123 +108,120 @@
         Mike Ballan
     &lt;/figcaption&gt;
 &lt;/figure&gt;</em></code></pre>
-                <hr />
-            </article>
-
-            <article id="lists">
-                <h3 class="section">Lists</h3>  
-                <p>For the standard <code>&lt;ul&gt;</code> bullet point weve replace the normal boring dot with a graphic which can be easily changed as well as that if you wish to have a circle, square or disc all you need to do is include the relevant class to the <code>&lt;ul&gt;</code> as shown in example 3 below.</p>
-                <div class="row">
-                    <div class="grid_5">
-                        <h4>Unordered list</h4>
+        <hr />
+        <h2>Lists</h2>
+        <p>For the standard <code>&lt;ul&gt;</code> bullet point weve replace the normal boring dot with a graphic which can be easily changed as well as that if you wish to have a circle, square or disc all you need to do is include the relevant class to the <code>&lt;ul&gt;</code> as shown in examples 3 &amp 4.</p>
+        <section class="row">
+            <article class="grid_6">
+                <h4>1. Unordered list</h4>
+                <ul>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                         <ul>
-                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                            <li>
-                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                <ul>
-                                    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                    <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                                </ul>
-                            </li>
-                            <li>Sed posuere consectetur est at lobortis.</li>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
                         </ul>
-                        <div class="example-title">Code</div>
-                        <pre><code>&lt;ul&gt;
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ul>
+                <div class="example-title">Code</div>
+                <pre><code>&lt;ul&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                    </div>
-                    <div class="grid_5"> 
-                        <h4>Ordered list</h4>
+            </article>
+            <article class="grid_6"> 
+                <h4>2. Ordered list</h4>
+                <ol>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                         <ol>
-                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                            <li>
-                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                <ol>
-                                    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                    <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                                </ol>
-                            </li>
-                            <li>Sed posuere consectetur est at lobortis.</li>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
                         </ol>
-                        <div class="example-title">Code</div>
-                        <pre><code>&lt;ol&gt;
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ol>
+                <div class="example-title">Code</div>
+                <pre><code>&lt;ol&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-                </div>
-            </div>
-            <div class="row">
-                <div class="grid_5">
-                    <h4>Circles</h4>
-                    <ul class="circle">
-                        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                        <li>
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                            <ul>
-                                <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                            </ul>
-                        </li>
-                        <li>Sed posuere consectetur est at lobortis.</li>
-                    </ul>
-                    <div class="example-title">Code</div>
-                    <pre><code>&lt;ul class="circle"&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                    </div>
-                    <div class="grid_5">
-                        <h4>Squares</h4>
-                        <ul class="square">
-                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                            <li>
-                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                <ul>
-                                    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                    <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                                </ul>
-                            </li>
-                            <li>Sed posuere consectetur est at lobortis.</li>
-                        </ul>
-                        <div class="example-title">Code</div>
-                        <pre><code>&lt;ul class="circle"&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                    </div>
-                </div>
-                <hr />
             </article>
-
-            <article id="tables">
-                <h3 class="section">Tables</h3>
-                <p>Also included are styling for tables which to be honest I haven't used that much outside building emails but it's there in case you ever need it..!</p>
-                <table summary="This is an example of a table">
-                    <caption>Caption</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Item:</th>
-                            <th scope="col">Category:</th>
-                            <th scope="col">Size:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="even">
-                            <td>Bananas</td>
-                            <td>Fruit</td>
-                            <td>1KG</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Apples</td>
-                            <td>Fruit</td>
-                            <td>3KG</td>
-                        </tr>    
-                    </tbody>
-                </table>
+        </section>
+        <section class="row">
+            <article class="grid_6">
+                <h4>3. Circles</h4>
+                <ul class="circle">
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        <ul>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                        </ul>
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ul>
                 <div class="example-title">Code</div>
-                <pre><code>&lt;table summary="This is an example of a table"&gt;
-    &lt;caption>Caption&lt;/caption&gt;
+                <pre><code>&lt;ul class="circle"&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </article>
+            <article class="grid_6"> 
+                <h4>4. Squares</h4>
+                <ul class="square">
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        <ul>
+                            <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                            <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                        </ul>
+                    </li>
+                    <li>Sed posuere consectetur est at lobortis.</li>
+                </ul>
+                <div class="example-title">Code</div>
+                <pre><code>&lt;ul class="circle"&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </article>
+        </section>
+        <hr />
+        <h2>Tables</h2>
+        <p>Also included are styling for tables which to be honest I haven't used that much outside building emails but it's there in case you ever need it..!</p>
+        <table summary="This is an example of a table">
+            <thead>
+                <tr>
+                    <th scope="col">Item:</th>
+                    <th scope="col">Category:</th>
+                    <th scope="col">Size:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="even">
+                    <td>Bananas</td>
+                    <td>Fruit</td>
+                    <td>1KG</td>
+                </tr>
+                <tr class="odd">
+                    <td>Apples</td>
+                    <td>Fruit</td>
+                    <td>3KG</td>
+                </tr>
+                <tr class="even">
+                    <td>Oranges</td>
+                    <td>Fruit</td>
+                    <td>2KG</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;table summary="This is an example of a table"&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th scope="col">Item:&lt;/th&gt;
@@ -330,60 +242,73 @@
         &lt;/tr&gt;  
     &lt;/tbody>
 &lt;/table&gt;</code></pre>
-                <hr />
+        <hr />
+        <h2>Images &amp; Media</h2>
+        <p>Seeing how you website will be responsive there will be times when you will need your images to be responsive to and with this in mind I've made a nice little style to make any image 100% responsive, all you need to do is add this little class to your image: <code>class="max-img"</code> and hay presto responsive images..!</p>
+        <section class="row">    
+            <article class="grid_4">
+                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="max-img"></p>
             </article>
-
-            <article id="images">
-                <h3 class="section">Images &amp; Media</h3>
-                <p>Seeing how you website will be responsive there will be times when you will need your images to be responsive to and with this in mind I've made a nice little style to make any image 100% responsive, all you need to do is add this little class to your image: <code>class="max-img"</code> and hay presto responsive images..!</p>
-                <div class="row">    
-                    <div class="grid_6">        
-                        <p><img src="img/blank.jpg" border="0" alt="blank image" class="max-img"></p>
-                    </div>
-                    <div class="grid_4">        
-                        <p><img src="img/blank.jpg" border="0" alt="blank image" class="max-img"></p>
-                    </div>
-                </div>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;img src="img/blank.jpg" border="0" alt="blank image" class="max-img"&gt;</code></pre>
-                <p>The images sbove are sitting in a <code>grid_5</code> a&amp; <code>grid_5</code> but you'll notice that the width &amp; height changes based on the screen size.</p>
-                <hr />
+            <article class="grid_2">
+                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="max-img"></p>
             </article>
-
-            <article id="media">
-                <h3 class="section">Media</h3>
-                <p>As mentioned above about images I suspect that you would also like to have all your videos be responsive as well and with this in mind I had to do a little searching around on the web to find the answer for this which is very simple.</p>
-                <p>All you will need to do is wrap your video with a div that has a class called <code>.media</code> and thats it one responsive video..!</p>
-                <div class="row">
-                    <div class="grid_5">
-                        <h3>Vimeo</h3>
-                        <div class="media">
-                            <iframe src="http://player.vimeo.com/video/21465475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                    <div class="grid_5">
-                        <h3>YouTube</h3>
-                        <div class="media">
-                            <iframe src="http://www.youtube.com/embed/d3J12dNz4xo" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
+            <article class="grid_6">
+                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="max-img"></p>
+            </article>
+        </section>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;img src="img/blank.jpg" border="0" alt="blank image" class="max-img"&gt;</code></pre>
+        <p>The images sbove are sitting in a <code>grid_5</code> a&amp; <code>grid_5</code> but you'll notice that the width &amp; height changes based on the screen size.</p>
+        <hr />
+        <h2>Media</h2>
+        <p>As mentioned above about images I suspect that you would also like to have all your videos be responsive as well and with this in mind I had to do a little searching around on the web to find the answer for this which is very simple.</p>
+        <p>All you will need to do is wrap your video with a div that has a class called <code>.media</code> and thats it one responsive video..!</p>
+        <section class="row">
+            <article class="grid_6">
+                <h3>Vimeo</h3>
+                <div class="media">
+                    <iframe src="http://player.vimeo.com/video/21465475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" frameborder="0"></iframe>
                 </div>
-                <div class="example-title">Code</div>
-                <pre><code>&lt;div class="media"&gt;
+            </article>
+            <article class="grid_6">
+                <h3>YouTube</h3>
+                <div class="media">
+                    <iframe src="http://www.youtube.com/embed/d3J12dNz4xo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;div class="media"&gt;
     &lt;iframe src="video_link_here" frameborder="0"&gt;&lt;/iframe&gt;
 &lt;/div&gt;</code></pre>
-            </article>
-        </div>
-    </div>
-</div>
+        <hr />
+    </article>
+</section>
 
-<div class="footer">
-    <div class="row">
-        <div class="grid_12">
-            <p><a href="http://www.mikeballan.co.uk" target="_blank" class="amazium">This site may contain traces of Amazium</a></p>
-        </div>
-    </div>
-</div>
+<footer>
+    <section class="row">
+        <article class="grid_6">
+            <p><a href="http://www.mikeballan.co.uk" target="_blank" class="contain">This site may contain traces of Amazium</a></p>
+        </article>
+        <article class="grid_6 txt-right">
+            <p><a href="https://github.com/MikeBallan/Amazium" target="_blank">View Amazium on Github</a></p>
+        </article>
+    </section>
+</footer>
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(window).resize(function(){
+            $('.bokeh').css('height', $(window).height()+'px');
+        });
+        $(window).resize();
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
 
 </body>
 </html>
