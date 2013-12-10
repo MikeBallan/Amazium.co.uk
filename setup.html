@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Amazium</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <script type="text/javascript">
+        /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+          if (!pageYOffset) window.scrollTo(0, 1);
+        }, 1000);
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+</head>
+<body class="">
+
+<header>
+    <div class="row">
+        <nav class="grid_12">
+            <a href="index.html" class="logo">&#xe000;</a>
+            <ol>
+                <li><a href="setup.html">Setup &amp; Grid</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li class="download"><a href="https://github.com/MikeBallan/Amazium" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
+            </ol>
+        </nav>
+    </div>
+</header>
+
+<section class="row">
+    <article class="grid_12">
+        <h1>Setup &amp; Grid</h1>
+        <h2>Download</h2>
+        <p>Ok so first things first you will need to download Amazium from here of that big button below, Once you have the .zip extract it and you will find all the files you need to start your responsive project. Now im sure we don't have to tell you this but you will need a code editor (we recommend Sublime Text 2) and of course a working knowledge of HTML & CSS otherwise things could be a little difficult for you.</p>
+        <p>Saying this we have tryed to make Amazium as easy to use and set up as possible and most classes have already been defined for you like headings, links, blockquotes, bullets and well it could be a long time if i tryed to list all the different things we have styled for you.</p>
+        <p><a href="https://github.com/MikeBallan/Amazium" target="_blank" class="btn">Download from Github</a></p>
+        <hr />
+        <h2>The Basics</h2>
+        <p>OK so the 960 Grid is what you would expect most modern websites to follow as its set up to be a max width of 960px which will fit the most common screen resolution 1024x768. but as of late I've noticed a lot of sites have been pushing this to 1200 so I've added another query to allow your site to scale to 1200px..! But for the sake of the demos on this site i'll stay with the standard 960px</p>
+        <p>Now to date I have not found a simpler way to build a website than this system which only relies on the below code to achieve a solid website. And as most new browsers excepting the "Media Queries" code we are now able to resize the grid based on your screen resolution so if you were to view this on say an imobile you would get an optimised version of the grid which means you no longer have to zoom in to see text on a website. (Go on give it a try now and see the below stay responsive..!)</p>
+        <p>Now as you can see from the grid layout below we have made Amazium have 16px gutters/margins left & right which could be changed if you wanted less or more.</p>
+    </article>
+</section>
+<section class="row example">
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+</section>
+<section class="row example">
+    <article class="grid_3">3</article>
+    <article class="grid_3">3</article>
+    <article class="grid_3">3</article>
+    <article class="grid_3">3</article>
+</section>
+<section class="row example">
+    <article class="grid_4">4</article>
+    <article class="grid_4">4</article>
+    <article class="grid_4">4</article>
+</section>
+<section class="row example">
+    <article class="grid_6">6</article>
+    <article class="grid_6">6</article>
+</section>
+<section class="row example">
+    <article class="grid_12">12</article>
+</section>
+<section class="row">
+    <article class="grid_12">
+        <div class="example-title">Code</div>
+        <pre><code>&lt;div class="row"&gt;
+    &lt;div class="grid_6"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </article>
+</section>
+
+
+<section class="row">
+    <article class="grid_12">
+        <hr />
+        <h2>Offsetting</h2>
+        <p>Amazium also has the option to offset a column, which should make life all the bit easier if you you need to add an extra bit of space between columns. This is done by adding the class offset followed by how many columns you want the offset to be i.e. if you want to have an offset of 4 then a column of 8 all you need to do is add offset_4 after grid_8.<p>
+    </article>
+</section>  
+<section class="row example">
+    <article class="grid_6">6</article>
+    <article class="grid_3 offset_3">3 <em>(offset 3)</em></article>
+</section>
+<section class="row example">
+    <article class="grid_1">1</article>
+    <article class="grid_6 offset_5">6 <em>(offset 5)</em></article>
+</section>
+<section class="row example">
+    <article class="grid_11 offset_1">11 <em>(offset 1)</em></article>
+</section>
+<section class="row">
+    <article class="grid_12">
+        <div class="example-title">Code</div>
+        <pre><code>&lt;div class="row"&gt;
+    &lt;div class="grid_6"&gt;...&lt;/div&gt;
+    &lt;div class="grid_3 offset_3"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </article>
+</section>
+
+<section class="row">
+    <article class="grid_12">
+        <hr />
+        <h2>Nesting</h2>
+        <p>If you wanted to nest two columns inside a larger this is no problem either as the below code shows and there is no need to add/change your CSS either..!</p>
+    </article>
+</section>
+<section class="row example">
+    <article class="grid_12">
+        12
+        <section class="row">
+            <article class="grid_6">6 <em>(Nested 6)</em></article>
+            <article class="grid_6">6 <em>(Nested 6)</em></article>
+        </section>
+    </article>
+</section>
+<section class="row">
+    <article class="grid_12">
+        <div class="example-title">Code</div>
+        <pre><code>&lt;div class="row"&gt;
+    &lt;div class="grid_12"&gt;
+        ...
+        &lt;div class="row"&gt;
+            &lt;div class="grid_6"&gt;...&lt;/div&gt;
+            &lt;div class="grid_6"&gt;...&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <hr />
+    </article>
+</section>
+
+<footer>
+    <section class="row">
+        <article class="grid_6">
+            <p><a href="http://www.mikeballan.co.uk" target="_blank" class="contain">This site may contain traces of Amazium</a></p>
+        </article>
+        <article class="grid_6 txt-right">
+            <p><a href="https://github.com/MikeBallan/Amazium" target="_blank">View Amazium on Github</a></p>
+        </article>
+    </section>
+</footer>
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(window).resize(function(){
+            $('.bokeh').css('height', $(window).height()+'px');
+        });
+        $(window).resize();
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+
+</body>
+</html>
