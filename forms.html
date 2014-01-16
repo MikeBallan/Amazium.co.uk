@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<title>Amazium example</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <meta charset="utf-8" />
+    <title>Amazium - The responsive web framework..!</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <script type="text/javascript">
         /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
@@ -18,276 +18,500 @@
         }, 1000);
     </script>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/amazium.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/amazium-percent.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/form.css">
-	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/layout.css">
 
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1682054-15']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
 <body>
 
+<header>
+    <div class="row">
+        <nav class="grid_12">
+            <a href="http://www.amazium.co.uk" class="logo">&#xe000;</a>
+            <a href="#" class="mobile-nav show-mobile">&#xe003;</a>
+            <ol class="navigation">
+                <li class="show-mobile"><a href="http://www.amazium.co.uk">Homepage</a></li>
+                <li><a href="setup.html">Setup &amp; Grid</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li class="download"><a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
+            </ol>
+        </nav>
+    </div>
+</header>
+
 <section class="row">
     <article class="grid_12">
-        <h1>Amazium Forms</h1>
+        <h1>Forms</h1>
         <p>Now forms can be one of the biggest pains in the neck for web developers, so I have included a simple form in Amazium with some very basic styling which has all the elements you will need to make your own form.</p>
-    </article>
-</section>
+        <p>So below os a basic form with labels which we have styled all the normal form elements you would expect to see in a for including Select, Radio &amp; Checkboxes which will invove you adding some extra markup.</p>
+        <section class="row">
+            <form name="" id="" method="" action="" class="">
+                <article class="grid_6">
+                    <fieldset>
+                        <label for="text">Text</label>
+                        <input type="text" name="text" id="text" placeholder="Text" tabindex="1" />
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" tabindex="2" />
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="url">URL</label>
+                        <input type="url" name="url" id="url" placeholder="Url" tabindex="3" />
+                        <small>URL's must start with http(s):</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="tel">Tel</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Tel" tabindex="5" pattern="[0-9\-.\(\)\+\s]+" />
+                        <small>Numbers only</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="radio">Checkboxes</label>
+                        <div class="checkbox">
+                            <span>
+                                <input type="checkbox" tabindex="7" name="c1" id="c1">
+                                <label for="c1">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="8" name="c2" id="c2">
+                                <label for="c2">Curabitur blandit.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="9" name="c3" id="c3">
+                                <label for="c3">Risus Condimentum.</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </article>
+                <article class="grid_6">
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" tabindex="6" />
+                        <small>Must be a vaild email address</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="options">Options</label>
+                        <span class="select">
+                            <select id="dropdown" name="dropdown" tabindex="10" />
+                                <option selected>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </span>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message..." tabindex="13"></textarea>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="radio">Radio Buttons</label>
+                        <div class="radio">
+                            <span>
+                                <input type="radio" tabindex="14" name="r1" id="r1">
+                                <label for="r1">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="15" name="r1" id="r2">
+                                <label for="r2">Yes</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="16" name="r1" id="r3">
+                                <label for="r3">No</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </article>
+            </form>
+        </section>
 
-<section class="row">
-    <article class="grid_6">
-        <form name="" id="" method="" action="" class="hide-lables">
-            <h3>Form without Labels</h3>
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="3" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" />
-                <small>URL's must start with http(s):</small>
-            </fieldset>
-            <fieldset>
-                <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="16" pattern="[0-9\-.\(\)\+\s]+" />
-                <small>Numbers only</small>
-            </fieldset>
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
-                <small>Must be a vaild email address</small>
-            </fieldset>
-            <fieldset>
-                <label for="options">Options</label>
-                <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="18" />
-                        <option selected>Option 1</option>
-                        <option>Option 2</option>
-                        <optgroup label="Option group 1">
-                            <option>Sub option 1</option>
-                            <option>Sub option 2</option>
-                            <option>Sub option 3</option>
-                        </optgroup>
-                        <option>Option 3</option>
-                    </select>
-                </span>
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="radio">Checkboxes</label>
-                <div class="checkbox">
-                    <span>
-                        <input type="checkbox" tabindex="1" name="c4" id="c4">
-                        <label for="c4" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="1" name="c5" id="c5">
-                        <label for="c5" onclick="">Curabitur blandit.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="1" name="c6" id="c6">
-                        <label for="c6" onclick="">Risus Condimentum.</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <label for="radio">Radio Buttons</label>
-                <div class="radio">
-                    <span>
-                        <input type="radio" tabindex="1" name="r1" id="r4">
-                        <label for="r4" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="1" name="r1" id="r5">
-                        <label for="r5" onclick="">Yes</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="1" name="r1" id="r6">
-                        <label for="r6" onclick="">No</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" class="first" />
-                <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
-            </fieldset>
-        </form>
-    </article>
-    <article class="grid_6">
-        <form name="" id="" method="" action="" class="">
-            <h3>Form with Labels</h3>
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="3" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" />
-                <small>URL's must start with http(s):</small>
-            </fieldset>
-            <fieldset>
-                <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="16" pattern="[0-9\-.\(\)\+\s]+" />
-                <small>Numbers only</small>
-            </fieldset>
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
-                <small>Must be a vaild email address</small>
-            </fieldset>
-            <fieldset>
-                <label for="options">Options</label>
-                <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="18" />
-                        <option selected>Option 1</option>
-                        <option>Option 2</option>
-                        <optgroup label="Option group 1">
-                            <option>Sub option 1</option>
-                            <option>Sub option 2</option>
-                            <option>Sub option 3</option>
-                        </optgroup>
-                        <option>Option 3</option>
-                    </select>
-                </span>
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="checkbox">Checkboxes</label>
-                <div class="checkbox">
-                    <span>
-                        <input type="checkbox" tabindex="1" name="c1" id="c1">
-                        <label for="c1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="1" name="c2" id="c2">
-                        <label for="c2" onclick="">Curabitur blandit.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="1" name="c3" id="c3">
-                        <label for="c3" onclick="">Risus Condimentum.</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <label for="radio">Radio Buttons</label>
-                <div class="radio">
-                    <span>
-                        <input type="radio" tabindex="1" name="r1" id="r1">
-                        <label for="r1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="1" name="r1" id="r2">
-                        <label for="r2" onclick="">Yes</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="1" name="r1" id="r3">
-                        <label for="r3" onclick="">No</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" class="first" />
-                <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
-            </fieldset>
-        </form>
-    </article>
-</section>
-
-
-<section class="row">
-    <article class="grid_12">
+        <div class="example-title">Code</div>
+        <pre><code>&lt;form name="" id="" method="" action=""&gt;
+    &lt;fieldset&gt;
+        &lt;label for="text"&gt;Text&lt;/label&gt;
+        &lt;input type="text" name="text" id="text" placeholder="Text" tabindex="2" /&gt;
+        &lt;small&gt;Invalid entry&lt;/small&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+        <hr />
+        <h2>Form without Labels</h2>
+        <p>Ok, so some times in your design you might not want to have labels showing as in my opinion they take up too much room you can just add <strong>class="hide-lables"</strong> to the form and this will hide all labels like the example below.</p>
+        <section class="row">
+            <form name="" id="" method="" action="" class="hide-lables">
+                <article class="grid_6">
+                    <fieldset>
+                        <label for="text">Text</label>
+                        <input type="text" name="text" id="text" placeholder="Text" tabindex="17" />
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" tabindex="18" />
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="url">URL</label>
+                        <input type="url" name="url" id="url" placeholder="Url" tabindex="19" />
+                        <small>URL's must start with http(s):</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="tel">Tel</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Tel" tabindex="21" pattern="[0-9\-.\(\)\+\s]+" />
+                        <small>Numbers only</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="radio">Checkboxes</label>
+                        <div class="checkbox">
+                            <span>
+                                <input type="checkbox" tabindex="23" name="c4" id="c4">
+                                <label for="c4">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="24" name="c5" id="c5">
+                                <label for="c5">Curabitur blandit.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="25" name="c6" id="c6">
+                                <label for="c6">Risus Condimentum.</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </article>
+                <article class="grid_6">
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" tabindex="22" />
+                        <small>Must be a vaild email address</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="options">Options</label>
+                        <span class="select">
+                            <select id="dropdown" name="dropdown" tabindex="26" />
+                                <option selected>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </span>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message..." tabindex="29"></textarea>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="radio">Radio Buttons</label>
+                        <div class="radio">
+                            <span>
+                                <input type="radio" tabindex="30" name="r2" id="r4">
+                                <label for="r4">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="31" name="r2" id="r5">
+                                <label for="r5">Yes</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="32" name="r2" id="r6">
+                                <label for="r6">No</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </article>
+            </form>
+        </section>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;form name="" id="" method="" action="" class="hide-lables"&gt;
+    ...
+&lt;/form&gt;</code></pre>
+        <hr />
+        <h2>Select's</h2>
+        <p>We all know select inputs look rather rubish so we have done our best to make it looks the same as all the other imputs in Amazium, in doing this you will need to wrap your select in a span with a class of "<strong>select</strong>" to make the magin happen.</p>
+        <section class="row">
+            <article class="grid_6">
+                <form name="" id="" method="" action="" >
+                    <fieldset>
+                        <label for="options">Options</label>
+                        <span class="select">
+                            <select id="dropdown" name="dropdown" tabindex="33" />
+                                <option selected>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </span>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                </form>
+            </article>
+             <article class="grid_6">
+                <form name="" id="" method="" action="" class="hide-lables">
+                    <fieldset>
+                        <label for="options">Options</label>
+                        <span class="select">
+                            <select id="dropdown" name="dropdown" tabindex="34" />
+                                <option selected>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </span>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;fieldset&gt;
+    &lt;label for="options"&gt;Options&lt;/label&gt;
+    &lt;span class="select"&gt;
+        &lt;select id="dropdown" name="dropdown" tabindex="18" /&gt;
+            &lt;option selected&gt;Option 1&lt;/option&gt;
+            &lt;option&gt;Option 2&lt;/option&gt;
+            &lt;option&gt;Option 3&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/span&gt;
+    &lt;small&gt;Invalid entry&lt;/small&gt;
+&lt;/fieldset&gt;</code></pre>
+        <hr />
+        <h2>Radio button's</h2>
+        <p>For a very long time the Radio button along with Checkboxes were left alone as they were a hard egg to crack but this is no longer true as you can see in the examples below you can now have a good looking Radio button &amp; Checkbox..!</p>
+        <section class="row">
+            <article class="grid_6">
+                <form name="" id="" method="" action="" >
+                    <fieldset>
+                        <label for="radio">Radio Buttons</label>
+                        <div class="radio">
+                            <span>
+                                <input type="radio" tabindex="35" name="r3" id="r10">
+                                <label for="r10">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="36" name="r3" id="r11">
+                                <label for="r11">Yes</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="37" name="r3" id="r12">
+                                <label for="r12">No</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+             <article class="grid_6">
+                <form name="" id="" method="" action="" class="hide-lables">
+                    <fieldset>
+                        <label for="radio">Radio Buttons</label>
+                        <div class="radio">
+                            <span>
+                                <input type="radio" tabindex="38" name="r4" id="r13">
+                                <label for="r13">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="39" name="r4" id="r14">
+                                <label for="r14">Yes</label>
+                            </span>
+                            <span>
+                                <input type="radio" tabindex="40" name="r4" id="r15">
+                                <label for="r15">No</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;fieldset&gt;
+    &lt;label for="radio"&gt;Radio Buttons&lt;/label&gt;
+    &lt;div class="radio"&gt;
+        &lt;span&gt;
+            &lt;input type="radio" tabindex="1" name="r1" id="r1"&gt;
+            &lt;label for="r1"&gt;&lt;span&gt;&lt;/span&gt;Maecenas faucibus mollis interdum...&lt;/label&gt;
+        &lt;/span&gt;
+        &lt;span&gt;
+            &lt;input type="radio" tabindex="1" name="r1" id="r2"&gt;
+            &lt;label for="r2"&gt;&lt;span&gt;&lt;/span&gt;Yes&lt;/label&gt;
+        &lt;/span&gt;
+        &lt;span&gt;
+            &lt;input type="radio" tabindex="1" name="r1" id="r3"&gt;
+            &lt;label for="r3"&gt;&lt;span&gt;&lt;/span&gt;No&lt;/label&gt;
+        &lt;/span&gt;
+        &lt;small&gt;Invalid entry&lt;/small&gt;
+    &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+        <hr />
+        <h2>Checkboxes</h2>
+        <p>Checkboxes are almost the same as Radio buttons other than a cross/tick being added by CSS.</p>
+        <section class="row">
+            <article class="grid_6">
+                <form name="" id="" method="" action="" >
+                    <fieldset>
+                        <label for="radio">Checkboxes</label>
+                        <div class="checkbox">
+                            <span>
+                                <input type="checkbox" tabindex="41" name="c7" id="c7">
+                                <label for="c7">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="42" name="c8" id="c8">
+                                <label for="c8">Curabitur blandit.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="43" name="c9" id="c9">
+                                <label for="c9">Risus Condimentum.</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+             <article class="grid_6">
+                <form name="" id="" method="" action="" class="hide-lables">
+                    <fieldset>
+                        <label for="radio">Checkboxes</label>
+                        <div class="checkbox">
+                            <span>
+                                <input type="checkbox" tabindex="1" name="c10" id="c10">
+                                <label for="c10">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="1" name="c11" id="c11">
+                                <label for="c11">Curabitur blandit.</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" tabindex="1" name="c12" id="c12">
+                                <label for="c12">Risus Condimentum.</label>
+                            </span>
+                            <small>Invalid entry</small>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;fieldset&gt;
+    &lt;label for="radio"&gt;Checkboxes&lt;/label&gt;
+    &lt;div class="checkbox"&gt;
+        &lt;span&gt;
+            &lt;input type="checkbox" tabindex="1" name="c1" id="c1"&gt;
+            &lt;label for="c1"&gt;&lt;span&gt;&lt;/span&gt;Maecenas faucibus mollis interdum...&lt;/label&gt;
+        &lt;/span&gt;
+        &lt;span&gt;
+            &lt;input type="checkbox" tabindex="1" name="c2" id="c2"&gt;
+            &lt;label for="c2"&gt;&lt;span&gt;&lt;/span&gt;Curabitur blandit.&lt;/label&gt;
+        &lt;/span&gt;
+        &lt;span&gt;
+            &lt;input type="checkbox" tabindex="1" name="c3" id="c3"&gt;
+            &lt;label for="c3"&gt;&lt;span&gt;&lt;/span&gt;Risus Condimentum.&lt;/label&gt;
+        &lt;/span&gt;
+        &lt;small&gt;Invalid entry&lt;/small&gt;
+    &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+        <hr />
         <h2>Now you see me, Now you don't lables</h2>
         <p>Thanks to the awesome <a href="https://github.com/shahrukhomar" target="_blank">Shahrukh Omar</a> who has made it possible to show the label of an input when the user starts typing in a field so know what each field is. All you will need to do is add <strong>id="nysmnyd"</strong> to your form and make sure you have the Amazium.js file included and you too will have fancy show/hide lables on your inputs.</p>
+        <section class="row">
+            <form name="" id="nysmnyd" method="" action="">
+                <article class="grid_6">
+                    <fieldset>
+                        <label for="text">Text</label>
+                        <input type="text" name="text" id="text" placeholder="Text" tabindex="17" />
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" tabindex="18" />
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="url">URL</label>
+                        <input type="url" name="url" id="url" placeholder="Url" tabindex="19" />
+                        <small>URL's must start with http(s):</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="tel">Tel</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Tel" tabindex="21" pattern="[0-9\-.\(\)\+\s]+" />
+                        <small>Numbers only</small>
+                    </fieldset>
+                </article>
+                <article class="grid_6">
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" tabindex="22" />
+                        <small>Must be a vaild email address</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="options">Options</label>
+                        <span class="select">
+                            <select id="dropdown" name="dropdown" tabindex="26" />
+                                <option selected>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </span>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message..." tabindex="29"></textarea>
+                        <small>Invalid entry</small>
+                    </fieldset>
+                </article>
+            </form>
+        </section>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;form name="" id="nysmnyd" method="" action=""&gt;
+    &lt;fieldset&gt;
+        &lt;label for="text"&gt;Text&lt;/label&gt;
+        &lt;input type="text" name="text" id="text" placeholder="Text" tabindex="2" /&gt;
+        &lt;small&gt;Invalid entry&lt;/small&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+        <hr />
     </article>
 </section>
-<section class="row">
-    <form name="" id="nysmnyd" method="" action="">
-        <article class="grid_6">
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" tabindex="17" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" tabindex="18" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" tabindex="19" />
-                <small>URL's must start with http(s):</small>
-            </fieldset>
-            <fieldset>
-                <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" tabindex="21" pattern="[0-9\-.\(\)\+\s]+" />
-                <small>Numbers only</small>
-            </fieldset>
+
+<footer>
+    <section class="row">
+        <article class="grid_12">
+            <p><a href="http://www.mikeballan.co.uk" target="_blank" class="contain">This site may contain traces of Amazium</a></p>
+            <p><a href="https://github.com/MikeBallan/Amazium" target="_blank">View Amazium on Github</a></p>
         </article>
-        <article class="grid_6">
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" tabindex="22" />
-                <small>Must be a vaild email address</small>
-            </fieldset>
-            <fieldset>
-                <label for="options">Options</label>
-                <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="26" />
-                        <option selected>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                    </select>
-                </span>
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="29"></textarea>
-                <small>Invalid entry</small>
-            </fieldset>
-        </article>
-    </form>
-</section>
+    </section>
+</footer>
 
 <!-- Scripts -->
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
 <script type="text/javascript" src="js/amazium.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $().UItoTop({ easingType: 'easeOutQuart' });
-    });
-</script>
 
 </body>
 </html>
