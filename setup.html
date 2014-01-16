@@ -2,46 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Amazium</title>
+    <title>Amazium - The responsive web framework..!</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
     <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <script type="text/javascript">
         /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
           if (!pageYOffset) window.scrollTo(0, 1);
         }, 1000);
     </script>
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/amazium-percent.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/layout.css">
-    
+
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1682054-15']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
-<body class="">
+<body>
 
 <header>
     <div class="row">
         <nav class="grid_12">
-            <a href="index.html" class="logo">&#xe000;</a>
-            <ol>
+            <a href="http://www.amazium.co.uk" class="logo">&#xe000;</a>
+            <a href="#" class="mobile-nav show-mobile">&#xe003;</a>
+            <ol class="navigation">
+                <li class="show-mobile"><a href="http://www.amazium.co.uk">Homepage</a></li>
                 <li><a href="setup.html">Setup &amp; Grid</a></li>
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="forms.html">Forms</a></li>
-                <li class="download"><a href="https://github.com/MikeBallan/Amazium" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
+                <li class="download"><a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
             </ol>
         </nav>
     </div>
@@ -103,7 +116,7 @@
         <h2>Offsetting</h2>
         <p>Amazium also has the option to offset a column, which should make life all the bit easier if you you need to add an extra bit of space between columns. This is done by adding the class offset followed by how many columns you want the offset to be i.e. if you want to have an offset of 4 then a column of 8 all you need to do is add offset_4 after grid_8.<p>
     </article>
-</section>  
+</section>
 <section class="row example">
     <article class="grid_6">6</article>
     <article class="grid_3 offset_3">3 <em>(offset 3)</em></article>
@@ -154,15 +167,26 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
         <hr />
+        <h2>100%</h2>
+        <p>A few people have been asking for a 100% width version of Amazium so if you are one of those people all you will need to do is use the new "<strong>amazium-max</strong>" stylesheet and then just swap "row" for "<strong>row-max</strong>" to make your site 100% wide.</p>
+        <div class="example-title">Code</div>
+        <pre><code>&lt;div class="row-max"&gt;
+    &lt;div class="grid_12"&gt;
+        ...
+        &lt;div class="row-max"&gt;
+            &lt;div class="grid_6"&gt;...&lt;/div&gt;
+            &lt;div class="grid_6"&gt;...&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <hr />
     </article>
 </section>
 
 <footer>
     <section class="row">
-        <article class="grid_6">
+        <article class="grid_12">
             <p><a href="http://www.mikeballan.co.uk" target="_blank" class="contain">This site may contain traces of Amazium</a></p>
-        </article>
-        <article class="grid_6 txt-right">
             <p><a href="https://github.com/MikeBallan/Amazium" target="_blank">View Amazium on Github</a></p>
         </article>
     </section>
@@ -172,15 +196,7 @@
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(window).resize(function(){
-            $('.bokeh').css('height', $(window).height()+'px');
-        });
-        $(window).resize();
-        $().UItoTop({ easingType: 'easeOutQuart' });
-    });
-</script>
+<script type="text/javascript" src="js/amazium.js"></script>
 
 </body>
 </html>
