@@ -2,46 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Amazium</title>
+	<title>Amazium - The responsive web framework..!</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+
 	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <script type="text/javascript">
         /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
           if (!pageYOffset) window.scrollTo(0, 1);
         }, 1000);
     </script>
-	
+
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/amazium-percent.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/form.css">
-	<link rel="stylesheet" href="css/layout.css">
-	
+    <link rel="stylesheet" href="css/layout.css">
+
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1682054-15']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
-<body class="">
+<body>
 
 <header>
     <div class="row">
         <nav class="grid_12">
-            <a href="index.html" class="logo">&#xe000;</a>
-            <ol>
+            <a href="http://www.amazium.co.uk" class="logo">&#xe000;</a>
+            <a href="#" class="mobile-nav show-mobile">&#xe003;</a>
+            <ol class="navigation">
+                <li class="show-mobile"><a href="http://www.amazium.co.uk">Homepage</a></li>
                 <li><a href="setup.html">Setup &amp; Grid</a></li>
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="forms.html">Forms</a></li>
-                <li class="download"><a href="https://github.com/MikeBallan/Amazium" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
+                <li class="download"><a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
             </ol>
         </nav>
     </div>
@@ -51,7 +64,7 @@
     <article class="welcome">
         <h1>Welcome to Amazium</h1>
         <p class="intro">The clean &amp; simple responsive framework..!</p>
-        <p><a href="https://github.com/MikeBallan/Amazium" target="_blank" class="btn">Download the latest version over on Github</a></p>
+        <p><a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank" class="btn">Download the latest version over on Github</a></p>
     </article>
 </section>
 
@@ -64,45 +77,57 @@
             <section class="row">
                 <article class="grid_3">
                     <h4 class="icon-rapid">Rapid Prototyping</h4>
-                    <p>Time is a very precious thing these days and with Amazium we've done all the basics for you so you can very quickly setup your website ready for styling using our 12 coloumn grid.</p>
+                    <p>Time is a very precious thing these days and with Amazium we've done all the basics for you so you can very quickly setup your website ready for styling using our 12 column grid.</p>
                 </article>
                 <article class="grid_3">
                     <h4 class="icon-simple">Simple Code Base</h4>
-                    <p>We have tried to keep Amazium clean &amp; simple so all you have to worry about adding all the nice touches to make your site awesome.</p>
+                    <p>We have tried to keep Amazium clean &amp; simple so all you have to worry about is adding all the nice touches to make your site awesome.</p>
                 </article>
                 <article class="grid_3">
                     <h4 class="icon-corners">4 corners</h4>
                     <p>Amazium is built to do all the hard work of resizing your content using 4 media queries (1200px, 960px, 768px &amp; < 767px)</p>
                 </article>
                 <article class="grid_3">
-                    <h4 class="icon-open">Open Source</h4>
-                    <p>As with all good things Amazium is open source which means your free to do what you want, and with your help make it even better..!</p>
+                    <h4 class="icon-open">Github</h4>
+                    <p>As with all good things Amazium is on Github, which means you're free to take it and do what you want with it and hopefully make it better for all..!</p>
                 </article>
             </section>
             <hr />
             <h2>Containing Amazium</h2>
-            <h3>Amazium has been available for over 3 years so we thought it would be good if we put a small collection of wesites that are using Amazium. If you would like to add your own site email us and were be happy to add it to the collection.</h3>
+            <h3>Amazium has been available for over 3 years so we thought it would be good if we put a small collection of websites that are using Amazium. If you would like to add your own site email us and we'll be happy to add it to the collection.</h3>
             <ol class="containing">
-                <li><a href="#"><img src="img/containing/levelselect.jpg" alt="">Levelselect</a></li>
-                <li><a href="#"><img src="img/containing/jellyfish.jpg" alt="">Jellyfish</a></li>
-                <li><a href="#"><img src="img/containing/punchoutphp.jpg" alt="">Punchout PHP</a></li>
-                <li><a href="#"><img src="img/containing/psvcabins.jpg" alt="">PSV Cabins</a></li>
-                <li><a href="#"><img src="img/containing/protegem.jpg" alt="">Protegem</a></li>
-                <li><a href="#"><img src="img/containing/getlashedupbeauty.jpg" alt="">Get Lashed Up Beauty</a></li>
-                <li><a href="#"><img src="img/containing/carmeleta.jpg" alt="">Carmeleta</a></li>
-                <li><a href="#"><img src="img/containing/nhu.jpg" alt="">NHU</a></li>
+                <!-- <li><a href="http//:www.levelselect.co.uk"><img src="img/containing/levelselect.jpg" alt="">Levelselect</a></li> -->
+                <li><a href="http://www.jellyfish.co.uk"><img src="img/containing/jellyfish.jpg" alt="">Jellyfish</a></li>
+                <li><a href="http://www.punchoutphp.com"><img src="img/containing/punchoutphp.jpg" alt="">Punchout PHP</a></li>
+                <li><a href="http://www.psvcabins.co.uk"><img src="img/containing/psvcabins.jpg" alt="">PSV Cabins</a></li>
+                <li><a href="http://www.protegem.co.uk"><img src="img/containing/protegem.jpg" alt="">Protegem</a></li>
+                <li><a href="http://www.getlashedupbeauty.co.uk"><img src="img/containing/getlashedupbeauty.jpg" alt="">Get Lashed Up Beauty</a></li>
+                <li><a href="http://www.carmelitawine.com"><img src="img/containing/carmeleta.jpg" alt="">Carmeleta</a></li>
+                <li><a href="http://info.nhu.edu"><img src="img/containing/nhu.jpg" alt="">NHU</a></li>
             </ol>
-            <p><a href="#" class="btn">View all</a></p>
+            <hr />
+            <h2>Feedback</h2>
+            <h3>It's always nice to recieve feedback but if you have something negative I would prefer you not post it here, thanks.</h3>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'amazium'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
         </article>
     </section>
 </div>
 
 <footer>
     <section class="row">
-        <article class="grid_6">
+        <article class="grid_12">
             <p><a href="http://www.mikeballan.co.uk" target="_blank" class="contain">This site may contain traces of Amazium</a></p>
-        </article>
-        <article class="grid_6 txt-right">
             <p><a href="https://github.com/MikeBallan/Amazium" target="_blank">View Amazium on Github</a></p>
         </article>
     </section>
@@ -112,15 +137,7 @@
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(window).resize(function(){
-            $('.bokeh').css('height', $(window).height()+'px');
-        });
-        $(window).resize();
-        $().UItoTop({ easingType: 'easeOutQuart' });
-    });
-</script>
+<script type="text/javascript" src="js/amazium.js"></script>
 
 </body>
 </html>
