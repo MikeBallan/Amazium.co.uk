@@ -2,46 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Amazium</title>
+    <title>Amazium - The responsive web framework..!</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
     <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <script type="text/javascript">
         /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
           if (!pageYOffset) window.scrollTo(0, 1);
         }, 1000);
     </script>
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/amazium-percent.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/layout.css">
-    
+
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1682054-15']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
-<body class="">
+<body>
 
 <header>
     <div class="row">
         <nav class="grid_12">
-            <a href="index.html" class="logo">&#xe000;</a>
-            <ol>
+            <a href="http://www.amazium.co.uk" class="logo">&#xe000;</a>
+            <a href="#" class="mobile-nav show-mobile">&#xe003;</a>
+            <ol class="navigation">
+                <li class="show-mobile"><a href="http://www.amazium.co.uk">Homepage</a></li>
                 <li><a href="setup.html">Setup &amp; Grid</a></li>
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="forms.html">Forms</a></li>
-                <li class="download"><a href="https://github.com/MikeBallan/Amazium" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
+                <li class="download"><a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank"><span>Download from Github</span>&#xe00e;</a></li>
             </ol>
         </nav>
     </div>
@@ -131,7 +144,7 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </article>
-            <article class="grid_6"> 
+            <article class="grid_6">
                 <h4>2. Ordered list</h4>
                 <ol>
                     <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
@@ -171,7 +184,7 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </article>
-            <article class="grid_6"> 
+            <article class="grid_6">
                 <h4>4. Squares</h4>
                 <ul class="square">
                     <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
@@ -239,25 +252,25 @@
             &lt;td&gt;Apples&lt;/td&gt;
             &lt;td&gt;Fruit&lt;/td&gt;
             &lt;td&gt;3KG&lt;/td&gt;
-        &lt;/tr&gt;  
+        &lt;/tr&gt;
     &lt;/tbody>
 &lt;/table&gt;</code></pre>
         <hr />
         <h2>Images &amp; Media</h2>
-        <p>Seeing how you website will be responsive there will be times when you will need your images to be responsive to and with this in mind I've made a nice little style to make any image 100% responsive, all you need to do is add this little class to your image: <code>class="max-img"</code> and hay presto responsive images..!</p>
-        <section class="row">    
+        <p>Seeing how you website will be responsive there will be times when you will need your images to be responsive to and with this in mind I've made a nice little style to make any image 100% responsive, all you need to do is add this little class to your image: <code>class="img-max"</code> and hay presto responsive images..!</p>
+        <section class="row">
             <article class="grid_4">
-                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="max-img"></p>
+                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="img-max"></p>
             </article>
             <article class="grid_2">
-                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="max-img"></p>
+                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="img-max"></p>
             </article>
             <article class="grid_6">
-                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="max-img"></p>
+                <p><img src="img/bg-01.jpg" border="0" alt="blank image" class="img-max"></p>
             </article>
         </section>
         <div class="example-title">Code</div>
-        <pre><code>&lt;img src="img/blank.jpg" border="0" alt="blank image" class="max-img"&gt;</code></pre>
+        <pre><code>&lt;img src="img/blank.jpg" border="0" alt="blank image" class="img-max"&gt;</code></pre>
         <p>The images sbove are sitting in a <code>grid_5</code> a&amp; <code>grid_5</code> but you'll notice that the width &amp; height changes based on the screen size.</p>
         <hr />
         <h2>Media</h2>
@@ -287,10 +300,8 @@
 
 <footer>
     <section class="row">
-        <article class="grid_6">
+        <article class="grid_12">
             <p><a href="http://www.mikeballan.co.uk" target="_blank" class="contain">This site may contain traces of Amazium</a></p>
-        </article>
-        <article class="grid_6 txt-right">
             <p><a href="https://github.com/MikeBallan/Amazium" target="_blank">View Amazium on Github</a></p>
         </article>
     </section>
@@ -300,15 +311,7 @@
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(window).resize(function(){
-            $('.bokeh').css('height', $(window).height()+'px');
-        });
-        $(window).resize();
-        $().UItoTop({ easingType: 'easeOutQuart' });
-    });
-</script>
+<script type="text/javascript" src="js/amazium.js"></script>
 
 </body>
 </html>
