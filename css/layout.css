@@ -44,7 +44,7 @@ body	 								        { background-color:#222; font:18px/20px 'economicaregular'
 
 h1, h2, h3, h4, h5, h6                          { font-family:'economicabold', Sans-Serif; font-weight:normal; color:#BBB; }
 h1                                              { margin:150px 0 30px; font:50px/20px 'economicabold', Sans-Serif; color:#FFF; }
-h2                                              { margin:50px 0 16px; font:36px/20px 'economicabold', Sans-Serif; }
+h2                                              { margin:50px 0 16px; font:36px/20px 'economicabold', Sans-Serif; color:#FFF; }
 h3                                              { margin:30px 0; font:25px/30px 'economicabold', Sans-Serif; }
 h4                                              { margin:20px 0 10px; font:20px/30px 'economicabold', Sans-Serif; color:#FFF; }
 a                                               { color:#269FC3; }
@@ -57,30 +57,26 @@ header                                          { position:fixed; top:40px; left
 header + .content                               { top:90px; }
 
 .logo                                           { font:59px/40px amazium; color:#FFF; text-shadow:0px 4px 4px #000; filter:dropshadow(color=#000, offx=0, offy=4); }
-a.logo:link,
-a.logo:visited,
-a.logo:active                                   { color:#FFF; text-decoration:none; }
+a.logo                                          { color:#FFF; text-decoration:none; }
 a.logo:hover                                    { color:#EEE; }
+
+.mobile-nav                                     { font:59px/40px amazium; color:#FFF; text-shadow:0px 4px 4px #000; filter:dropshadow(color=#000, offx=0, offy=4); float:right; }
+a.mobile-nav                                    { color:#FFF; text-decoration:none; }
+a.mobile-nav:hover                              { color:#EEE; }
 
 nav ol                                          { margin:0; padding:0; float:right; list-style:none; -webkit-box-shadow:0 2px 2px 0 #444; box-shadow:0 2px 2px 0 #444; }
 nav ol li                                       { margin:0; padding:0; float:left; border-left:1px solid #CCC; }
 nav ol li span                                  { padding:0; font:18px/40px 'economicabold', Sans-Serif; color:#269FC3; float:left; width:1px; height:30px; display:block; overflow:hidden; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
-nav ol li a:link,
-nav ol li a:visited,
-nav ol li a:active                              { padding:0 20px; background-color:#FFF; display:block; font:18px/40px 'economicabold', Sans-Serif; text-decoration:none; color:#222; }
+nav ol li a                                     { padding:0 20px; background-color:#FFF; display:block; font:18px/40px 'economicabold', Sans-Serif; text-decoration:none; color:#222; }
 nav ol li a:hover                               { color:#269fc3; }
 nav ol li a:hover span                          { width:166px; color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 
 nav ol li:first-child,
 nav ol li:last-child                            { border:none; }
-nav ol li:last-child a:link,
-nav ol li:last-child a:visited,
-nav ol li:last-child a:active                   { background-color:#269fc3; color:#FFF; }
+nav ol li:last-child a                          { background-color:#269fc3; color:#FFF; }
 nav ol li:last-child a:hover                    { background-color:#1e7f9c; }
 
-nav ol li.download a:link,
-nav ol li.download a:visited,
-nav ol li.download a:active                     { font:30px/40px amazium; }
+nav ol li.download a                            { font:30px/40px amazium; }
 
 .bokeh                                          { background:#FFF url('../img/bg-01.jpg') no-repeat center 0; background-attachment:fixed; color:#FFF; position:relative; top:0; left:0; z-index:10; }
 
@@ -93,8 +89,16 @@ nav ol li.download a:active                     { font:30px/40px amazium; }
 
 .content                                        { padding:50px 0; background-color:#222; z-index:80; position:relative; top:0; left:0; }
 
-.example [class^="grid_"]                       { margin-bottom:10px; background-color:#333; text-align:center; font:16px/30px 'economicabold', Sans-Serif; }
-.example [class^="grid_"] [class^="grid_"]      { background-color:#444; }
+.row.example [class^="grid_"]                  { margin-bottom:10px; background-color:#333; text-align:center; font:16px/30px 'economicabold', Sans-Serif; }
+.row.example [class^="grid_"] [class^="grid_"] { background-color:#444; }
+
+.row-max .grid_1, .row-max .grid_2,
+.row-max .grid_3, .row-max .grid_4,
+.row-max .grid_5, .row-max .grid_6,
+.row-max .grid_7, .row-max .grid_8,
+.row-max .grid_9, .row-max .grid_10,
+.row-max .grid_11, .row-max .grid_12            { margin-bottom:10px; background-color:#333; text-align:center; font:16px/30px 'economicabold', Sans-Serif; }
+
 .example-title                                  { margin:6px 0 0 0; padding:3px 10px; background-color:#111; color:#FFF; font-size:12px; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 .icon-rapid:before                              { content:'\e007'; position:relative; top:0; left:0; float:left; width:100%; font:100px/80px amazium; color:#FFF; text-align:center; }
@@ -106,7 +110,7 @@ a.icon-down                                     { bottom:10px; display:block; fo
 a.icon-down:hover                               { padding:0 0 5px; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 
 table th                                        { background-color:#333; color:#BBB; border:1px solid #444; }
-table td                                        { background-color:#333; color:#333; border:1px solid #444; }
+table td                                        { background-color:#333; color:#CCC; border:1px solid #444; }
 table tr.even td                                { background-color:#555; }
 table tr.odd td                                 { background-color:#666; }
 table td.highlight,
@@ -154,21 +158,20 @@ select:focus                                    { color:#BBB; border-color:#999;
 
 .containing                                     { margin:30px -20px 0 -20px; padding:0; display:inline-block; list-style:none; }
 .containing li                                  { margin:0 20px 30px 20px; width:260px; padding:0; float:left; text-align:center; }
-.containing li a:link,
-.containing li a:visited,
-.containing li a:active                         { color:#FFF; text-decoration:none; display:block; }
+.containing li a                                { color:#FFF; text-decoration:none; display:block; }
 .containing li img                              { margin:0 0 10px; border:5px solid #FFF; }
 
 footer                                          { padding:100px 0 20px; }
-footer a:link,
-footer a:visited,
-footer a:active                                 { color:#FFF; }
+footer a                                        { color:#FFF; }
 footer a.contain:before                         { margin:0 7px 0 0; content:'\e000'; position:relative; top:0; left:0; float:left; font:30px/24px amazium; color:#FFF; }
+
+footer p                                        { font:14px/24px 'economicaregular'; display:inline-block; }
+footer p + p                                    { float:right; }
 
 /***** Screen Smaller than 1199px *****/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
-.example 								{  }
+.example 								       {  }
 
 
 }
@@ -176,20 +179,35 @@ footer a.contain:before                         { margin:0 7px 0 0; content:'\e0
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-.example 								{  }
+.example 								       {  }
 
 }
 
-/***** Mobile (portrait 300px) *****/
-@media only screen and (min-width:481px) and (max-width: 767px) {
+/***** Mobile *****/
+@media only screen and (max-width: 767px) {
 
-.example 								{  }
+header                                          { position:absolute; top:10px; }
+
+nav ol                                          { width:100%; -webkit-box-shadow:none; box-shadow:none; display:none; }
+nav ol li                                       { display:block; float:none; border-bottom:1px solid #CCC; }
+nav ol li:first-child                           { margin:10px 0 0; border-bottom:1px solid #CCC; }
+nav ol li:first-child:before                    { border-left:10px solid transparent; border-right:10px solid transparent; border-bottom:10px solid #FFF; content:''; display:block; height:0; width:0; position:absolute; top:60px; right:30px; }
+nav ol li.download                              { display:none; }
+
+.welcome                                        { margin:0; position:absolute; top:100px; left:20px; height:auto; }
+.welcome:before                                 { display:none; }
+.welcome h1                                     { margin:0 0 16px 0; font:50px/45px 'economicabold', Sans-Serif; }
+.welcome p.intro                                { margin:0 0 16px 0; font:30px/30px 'economicabold', Sans-Serif; }
+.welcome .btn                                   { display:none; }
+
+.containing                                     { margin:0; padding:0; display:inline-block; list-style:none; }
+.containing li                                  { margin:0 0 30px 1%; padding:0; width:49%; float:left; text-align:center; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.containing li:nth-child(odd)                   { margin:0 1% 30px 0; }
+.containing li a                                { color:#FFF; text-decoration:none; display:block; }
+.containing li img                              { margin:0 0 10px; border:5px solid #FFF; width:100%; height:auto; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+
+footer p + p                                    { float:none; display:block; }
+footer p + p:before                             { margin:0 7px 0 0; content:'\e005'; position:relative; top:0; left:0; float:left; font:30px/24px amazium; color:#FFF; }
 
 }
 
-/***** Mobile (landscape 420px) *****/
-@media only screen and (max-width: 480px) {
-
-.example 								{  }
-
-}

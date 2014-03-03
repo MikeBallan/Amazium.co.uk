@@ -1,6 +1,15 @@
 $(document).ready(function(){
+
+
+    $(window).resize(function(){
+        $('.bokeh').css('height', $(window).height()+'px');
+    });
+    $(window).resize();
+    $().UItoTop({ easingType: 'easeOutQuart' });
+
+
     /* Updated November 2012 by Kris Rybak */
-    $('.navigation-btn').click(function(){
+    $('.mobile-nav').click(function(){
         $('.navigation').slideToggle('slow');
     });
     $(window).resize(function(){
@@ -14,14 +23,25 @@ $(document).ready(function(){
             }
         }
     });
-    /* Created November 2013 by Shahrukh Omar */
-    $('#nysmnyd').on('keyup', 'input,textarea', function() {
-        var $this = $(this)
-        var $fs   = $this.parents('fieldset')
-        if ($fs.length && $this.val().length) {
-            $fs.addClass('show-all')
-        } else {
-            $fs.removeClass('show-all')
+
+    /* Updated February 2014 by Shahrukh Omar */
+    var allT=document.getElementsByTagName('*'), i=0, a;
+    while(a=allT[i++]) {
+        if (a.className=='nysmnyd-labels') {
+            var inputs = a.getElementsByTagName("*")
+            for (var j=inputs.length; j--;) {
+                var tag = inputs[j].tagName.toLowerCase();
+                if (tag == 'input' || tag == 'textarea') {
+                    inputs[j].onkeyup = function() {
+                        var fs = this.parentNode
+                        if (fs.type == 'fieldset' && this.value.length) {
+                            fs.className.indexOf('show-all') == -1 && (fs.className = fs.className + ' show-all');
+                        } else {
+                            fs.className = fs.className.replace( /(?:^|\s)show-all(?!\S)/, '' );
+                        }
+                    }
+                }
+            }
         }
-    })
+    }
 });

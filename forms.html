@@ -436,9 +436,9 @@
 &lt;/fieldset&gt;</code></pre>
         <hr />
         <h2>Now you see me, Now you don't lables</h2>
-        <p>Thanks to the awesome <a href="https://github.com/shahrukhomar" target="_blank">Shahrukh Omar</a> who has made it possible to show the label of an input when the user starts typing in a field so know what each field is. All you will need to do is add <strong>id="nysmnyd"</strong> to your form and make sure you have the Amazium.js file included and you too will have fancy show/hide lables on your inputs.</p>
+        <p>Thanks to the awesome <a href="https://github.com/shahrukhomar" target="_blank">Shahrukh Omar</a> who has made it possible to show the label of an input when the user starts typing in a field so know what each field is. All you will need to do is add <strong>class="nysmnyd-labels"</strong> to your form and make sure you have the Amazium.js file included and you too will have fancy show/hide lables on your inputs.</p>
         <section class="row">
-            <form name="" id="nysmnyd" method="" action="">
+            <form name="" method="" action="" class="nysmnyd-labels">
                 <article class="grid_6">
                     <fieldset>
                         <label for="text">Text</label>
@@ -487,7 +487,7 @@
             </form>
         </section>
         <div class="example-title">Code</div>
-        <pre><code>&lt;form name="" id="nysmnyd" method="" action=""&gt;
+        <pre><code>&lt;form name="" method="" action="" class="nysmnyd-labels"&gt;
     &lt;fieldset&gt;
         &lt;label for="text"&gt;Text&lt;/label&gt;
         &lt;input type="text" name="text" id="text" placeholder="Text" tabindex="2" /&gt;
