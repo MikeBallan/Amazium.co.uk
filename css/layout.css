@@ -139,6 +139,8 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 button                                          { font:16px/40px 'economicaregular', Sans-Serif; }
+input[type="reset"]                             { color:#999; border-color:#555; background-color:transparent; }
+
 
 ::-webkit-input-placeholder                     { color:#999;  }
 :-moz-placeholder                               { color:#999;  }
