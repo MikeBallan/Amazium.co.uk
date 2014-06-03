@@ -47,6 +47,7 @@ h1                                              { margin:150px 0 30px; font:50px
 h2                                              { margin:50px 0 16px; font:36px/20px 'economicabold', Sans-Serif; color:#FFF; }
 h3                                              { margin:30px 0; font:25px/30px 'economicabold', Sans-Serif; }
 h4                                              { margin:20px 0 10px; font:20px/30px 'economicabold', Sans-Serif; color:#FFF; }
+p                                               { font:18px/20px 'economicaregular', Sans-Serif; }
 a                                               { color:#269FC3; }
 
 hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #333; border-bottom:1px solid #000; height:2px; width:100%; text-align:left; display:block; }
