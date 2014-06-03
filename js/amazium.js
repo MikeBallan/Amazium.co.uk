@@ -1,12 +1,9 @@
 $(document).ready(function(){
 
-
     $(window).resize(function(){
         $('.bokeh').css('height', $(window).height()+'px');
     });
     $(window).resize();
-    $().UItoTop({ easingType: 'easeOutQuart' });
-
 
     /* Updated November 2012 by Kris Rybak */
     $('.mobile-nav').click(function(){
