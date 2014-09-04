@@ -102,8 +102,8 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" class="first" />
-                        <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
+                        <input class="green" type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" />
+                        <input class="white" type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
                     </fieldset>
                 </article>
                 <article class="grid_6">
@@ -411,6 +411,27 @@
     &lt;/div&gt;
 &lt;/fieldset&gt;</code></pre>
         <hr />
+
+        <h2>Loading states for buttons</h2>
+        <p>For times when you would like to show the user that your form is doing something weve made these classes to add to your buttons: Loading, Success &amp; Error.</p>
+        <form name="" id="" method="" action="" class="">
+            <fieldset>
+                <button type="submit" class="green">Submit</button>
+                <button type="submit" class="green loading">Submit</button>
+                <button type="submit" class="green success">Submit</button>
+                <button type="submit" class="green error">Submit</button>
+            </fieldset>
+        </form>
+
+<div class="example-title">Code</div>
+        <pre><code>&lt;button type="submit" class="green loading"&gt;Submit&lt;/button&gt;
+&lt;button type="submit" class="green success"&gt;Submit&lt;/button&gt;
+&lt;button type="submit" class="green error"&gt;Submit&lt;/button&gt;</code></pre>
+
+
+
+
+        <hr>
         <h2>Errors</h2>
         <p>For form errors we have styled up a small which you can put in you error message and call from you form when sumbitting it. All you need to do is add it after your input like the example below.</p>
         <section class="row">

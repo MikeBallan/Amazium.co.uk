@@ -75,6 +75,7 @@
             <a href="#" class="btn red">Red link Button</a>
             <a href="#" class="btn blue">Blue link Button</a>
             <a href="#" class="btn green">Green link Button</a>
+            <a href="#" class="btn amber">Amber link Button</a>
             <a href="#" class="btn white">White link Button</a>
         </p>
         <p>If you are in need of a smaller button then all you need to do is add the class <strong>"small"</strong> to your link string and you will get smaller buttons.</p>
@@ -83,6 +84,7 @@
             <a href="#" class="btn red small">Red Small link Button</a>
             <a href="#" class="btn blue small">Blue Small link Button</a>
             <a href="#" class="btn green small">Green Small link Button</a>
+            <a href="#" class="btn amber small">Amber link Button</a>
             <a href="#" class="btn white small">White Small link Button</a>
         </p>
         <div class="example-title">Code</div>
@@ -91,11 +93,12 @@
 &lt;a href="#" class="btn small"&gt;...&lt;/a&gt;</code></pre>
         <p>And finally if you need to use a button the same code as above applys too..!</p>
         <p>
-            <button class="btn">Default Button</button>
-            <button class="btn red">Red Button</button>
-            <button class="btn blue">Blue Button</button>
-            <button class="btn green">Green Button</button>
-            <button class="btn white">White Button</button>
+            <button>Default Button</button>
+            <button class="red">Red Button</button>
+            <button class="blue">Blue Button</button>
+            <button class="green">Green Button</button>
+            <button class="amber">Amber Button</button>
+            <button class="white">White Button</button>
         </p>
         <div class="example-title">Code</div>
         <pre><code>&lt;button class="btn"&gt;...&lt;/button&gt;
@@ -208,52 +211,61 @@
         <h2>Tables</h2>
         <p>Also included are styling for tables which to be honest I haven't used that much outside building emails but it's there in case you ever need it..!</p>
         <table summary="This is an example of a table">
-            <thead>
-                <tr>
-                    <th scope="col">Item:</th>
-                    <th scope="col">Category:</th>
-                    <th scope="col">Size:</th>
-                </tr>
-            </thead>
             <tbody>
-                <tr class="even">
-                    <td>Bananas</td>
-                    <td>Fruit</td>
-                    <td>1KG</td>
+                <tr>
+                    <th scope="col">#ID:</th>
+                    <th scope="col">First Name:</th>
+                    <th scope="col">Last Name:</th>
+                    <th scope="col">Location:</th>
                 </tr>
-                <tr class="odd">
-                    <td>Apples</td>
-                    <td>Fruit</td>
-                    <td>3KG</td>
+                <tr>
+                    <td data-title="ID">#1</td>
+                    <td data-title="First Name">Bruce</td>
+                    <td data-title="Last Name">Wayne</td>
+                    <td data-title="Location">Gotham City</td>
                 </tr>
-                <tr class="even">
-                    <td>Oranges</td>
-                    <td>Fruit</td>
-                    <td>2KG</td>
+                <tr>
+                    <td data-title="ID">#2</td>
+                    <td data-title="First Name">Clarke</td>
+                    <td data-title="Last Name">Kent</td>
+                    <td data-title="Location">Metropilis</td>
+                </tr>
+                <tr>
+                    <td data-title="ID">#3</td>
+                    <td data-title="First Name">Oliver</td>
+                    <td data-title="Last Name">Queen</td>
+                    <td data-title="Location">Star City</td>
+                </tr>
+                <tr>
+                    <td data-title="ID">#4</td>
+                    <td data-title="First Name">Dick</td>
+                    <td data-title="Last Name">Grayson</td>
+                    <td data-title="Location">Blüdhaven</td>
+                </tr>
+                <tr>
+                    <td data-title="ID">#5</td>
+                    <td data-title="First Name">Diana</td>
+                    <td data-title="Last Name">Prince</td>
+                    <td data-title="Location">Themyscira</td>
                 </tr>
             </tbody>
         </table>
         <div class="example-title">Code</div>
         <pre><code>&lt;table summary="This is an example of a table"&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th scope="col">Item:&lt;/th&gt;
-            &lt;th scope="col">Category:&lt;/th&gt;
-            &lt;th scope="col">Size:&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
     &lt;tbody&gt;
-        &lt;tr class="even"&gt;
-            &lt;td&gt;Bananas&lt;/td&gt;
-            &lt;td&gt;Fruit&lt;/td&gt;
-            &lt;td&gt;1KG&lt;/td&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;ID:&lt;/th&gt;
+            &lt;th scope="col"&gt;First Name:&lt;/th&gt;
+            &lt;th scope="col"&gt;Last Name:&lt;/th&gt;
+            &lt;th scope="col"&gt;Location:&lt;/th&gt;
         &lt;/tr&gt;
-        &lt;tr class="odd"&gt;
-            &lt;td&gt;Apples&lt;/td&gt;
-            &lt;td&gt;Fruit&lt;/td&gt;
-            &lt;td&gt;3KG&lt;/td&gt;
+        &lt;tr&gt;
+            &lt;td data-title="ID"&gt;#1&lt;/td&gt;
+            &lt;td data-title="First Name"&gt;Bruce&lt;/td&gt;
+            &lt;td data-title="Last Name"&gt;Wayne&lt;/td&gt;
+            &lt;td data-title="Location"&gt;Gotham City&lt;/td&gt;
         &lt;/tr&gt;
-    &lt;/tbody>
+    &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
         <hr />
         <h2>Images &amp; Media</h2>
