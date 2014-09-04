@@ -110,15 +110,10 @@ nav ol li.download a                            { font:30px/40px amazium; }
 a.icon-down                                     { bottom:10px; display:block; font:30px/40px amazium; color:#444; height:40px; background-color:#FFF; left:50%; margin:0 0 0 -20px; position:absolute; text-align:center; width:40px; text-decoration:none; }
 a.icon-down:hover                               { padding:0 0 5px; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 
-table th                                        { background-color:#333; color:#BBB; border:1px solid #444; }
-table td                                        { background-color:#333; color:#CCC; border:1px solid #444; }
-table tr.even td                                { background-color:#555; }
-table tr.odd td                                 { background-color:#666; }
-table td.highlight,
-table tr td.highlight                           { color:#FFF; background-color:#333; }
-
 label                                           { font:14px/40px 'economicabold', Sans-Serif; letter-spacing:1px; color:#BBB; }
 input, textarea, select, textarea               { font:14px/40px 'economicaregular', Sans-Serif; letter-spacing:1px; color:#999; border:solid 1px #555; background-color:#333; }
+
+.error:after                                    { font-size:40px; }
 
 .select                                         { background:#333; border:solid 1px #555; }
 .select:after                                   { color:#999; background:#333; }
@@ -196,6 +191,9 @@ nav ol li                                       { display:block; float:none; bor
 nav ol li:first-child                           { margin:10px 0 0; border-bottom:1px solid #CCC; }
 nav ol li:first-child:before                    { border-left:10px solid transparent; border-right:10px solid transparent; border-bottom:10px solid #FFF; content:''; display:block; height:0; width:0; position:absolute; top:60px; right:30px; }
 nav ol li.download                              { display:none; }
+
+table, tr, tr:hover                             { background-color:transparent; border-color:#333; color:#FFF; }
+td                                              { color:#FFF; }
 
 .welcome                                        { margin:0; position:absolute; top:100px; left:20px; height:auto; }
 .welcome:before                                 { display:none; }
