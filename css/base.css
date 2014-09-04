@@ -4,7 +4,6 @@
 * Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
-
 /***********************************************
 Reset & Basics
 ***********************************************/
@@ -33,23 +32,22 @@ blockquote:before, blockquote:after,
 q:before, q:after                               { content:''; content:none; }
 
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
-body                                            { margin:0; padding:0; background-color:#FFF; font:15px/20px Sans-Serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
-
+body                                            { margin:0; padding:0; background-color:#FFF; font-family:sans-serif; font-size:15px; line-height:20px; color:#333; }
 
 
 /***********************************************
 Typography
 ***********************************************/
-h1, h2, h3, h4, h5, h6                          { margin:0 0 10px; padding:0; font-family:Sans-Serif; color:#333; font-weight:normal; }
+h1, h2, h3, h4, h5, h6                          { margin:0 0 10px; padding:0; color:#333; font-weight:normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
-h1                                              { font:38px/40px Sans-Serif; }
-h2                                              { font:32px/34px Sans-Serif; }
-h3                                              { font:24px/26px Sans-Serif; }
-h4                                              { font:17px/19px Sans-Serif; }
-h5                                              { font:14px/16px Sans-Serif; }
-h6                                              { font:11px/13px Sans-Serif; }
+h1                                              { font-size:38px; line-height:40px; }
+h2                                              { font-size:32px; line-height:34px; }
+h3                                              { font-size:24px; line-height:26px; }
+h4                                              { font-size:17px; line-height:19px; }
+h5                                              { font-size:14px; line-height:16px; }
+h6                                              { font-size:11px; line-height:13px; }
 
-p                                               { margin:0 0 20px 0; padding:0; font:15px/26px Sans-Serif; }
+p                                               { margin:0 0 20px 0; padding:0; font-size:15px; line-height:26px; }
 
 b, strong                                       { font-weight:bold; }
 em                                              { font-style:italic; }
@@ -59,14 +57,13 @@ sup, sub                                        { height:0; line-height:0; verti
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'Consolas', Courier, monospace; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; }
+pre code                                        { margin:16px 0 26px 0; padding:16px; font-family: 'Consolas', Courier, monospace; font-size:12px; line-height:19px; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; }
 
 abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
 address                                         { margin:26px 0; padding:0; display:block; font-style:normal; line-height:20px; }
 
 hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #D6D6D6; height:1px; width:100%; text-align:left; display:block; }
-
 
 
 /***********************************************
@@ -98,7 +95,6 @@ dt                                              { margin:0 0 10px 0; font-size:1
 dd                                              { margin:0 0 10px 10px; }
 
 
-
 /***********************************************
 Blockquotes
 ***********************************************/
@@ -111,7 +107,6 @@ figcaption:before                               { content:"\2014 \202F"; }
 figcaption                                      { margin:6px 0 0 0; padding:0; font-size:11px; }
 
 
-
 /***********************************************
 Links
 ***********************************************/
@@ -119,9 +114,8 @@ a                                               { color:#000; text-decoration:un
 a:focus                                         { outline:none; -moz-outline-style:none; }
 
 
-
 /***********************************************
-Images, iFrames & Videos 
+Images, iFrames & Videos
 ***********************************************/
 img                                             { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic; }
 .img-left                                       { float:left; margin:0 30px 30px 0; border:none; }
@@ -134,36 +128,34 @@ img                                             { border:0; vertical-align:middl
 .media embed                                    { position:absolute; top:0; left:0; width:100%; height:100%; }
 
 
-
 /***********************************************
-Buttons 
+Buttons
 ***********************************************/
-a.btn,
-.btn,
-button                                          { margin:0 5px 5px 0; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
-:hover.btn                                      { border:1px solid #CCC; background-color:#FFF; color:#333; }
+.btn, button                                    { margin:0 5px 5px 0; padding:0 28px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:14px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+.btn:hover, button:hover                        { border:1px solid #CCC; background-color:#FFF; color:#333; }
 
-a.btn.small,
-.btn.small                                      { padding:2px 10px; font-size:12px; line-height:25px; }
+.small                                          { padding:2px 10px; font-size:12px; line-height:25px; }
 
-.btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
-:hover.btn.white                                { border-color:#000; background-color:#000; color:#FFF; }
+.white                                          { border-color:#CCC; background-color:#FFF; color:#333; }
+.white:hover                                    { border-color:#000; background-color:#000; color:#FFF; }
 
-.btn.red                                        { border-color:#E74C3C; background-color:#E74C3C; }
-:hover.btn.red                                  { border-color:#E74C3C; background-color:#B93D30; color:#FFF; }
+.green                                          { border-color:#2ECC71; background-color:#2ECC71; color:#FFF; }
+.green:hover                                    { border-color:#25A35A; background-color:#25A35A; color:#FFF; }
 
-.btn.blue                                       { border-color:#3498DB; background-color:#3498DB; }
-:hover.btn.blue                                 { border-color:#3498DB; background-color:#2A7AAF; color:#FFF; }
+.blue                                           { border-color:#3498DB; background-color:#3498DB; color:#FFF; }
+.blue:hover                                     { border-color:#2A7AAF; background-color:#2A7AAF; color:#FFF; }
 
-.btn.green                                      { border-color:#2ECC71; background-color:#2ECC71; }
-:hover.btn.green                                { border-color:#2ECC71; background-color:#25A35A; color:#FFF; }
+.amber                                          { border-color:#FA9300; background-color:#FA9300; color:#FFF; }
+.amber:hover                                    { border-color:#B46F29; background-color:#B46F29; color:#FFF; }
 
+.red                                            { border-color:#E74C3C; background-color:#E74C3C; color:#FFF; }
+.red:hover                                      { border-color:#B93D30; background-color:#B93D30; color:#FFF; }
 
 
 /***********************************************
 Tables
 ***********************************************/
-table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font:13px/17px Sans-Serif; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
+table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font-size:13px; line-height:17px; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
 caption                                         { margin:0 0 10px; }
 
 tr                                              { background-color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
@@ -175,7 +167,6 @@ th                                              { padding:8px; background-color:
 
 td                                              { padding:8px; min-width:100px; background-color:transparent; color:#666; border:none; border-top:1px solid #D6D6D6; }
 td.highlight                                    { padding:11px 8px; color:#EEE; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
-
 
 /***********************************************
 Global Classes
@@ -206,9 +197,25 @@ Global Classes
 .hidden                                         { display:none; }
 .hide                                           { display:none; }
 
-
 /***********************************************
 Disable Chrome blue border
 ***********************************************/
 input:focus, select:focus,
 textarea:focus, button:focus                    { outline: none; }
+
+
+/***********************************************
+Mobile (portrait 300px)
+***********************************************/
+@media only screen and (max-width:767px) {
+
+table, tbody, tr, th, td                        { border:0; display:block; padding:3px 0; text-align:left; white-space:normal; }
+table                                           { padding:0; border-top:1px solid #D6D6D6; table-layout:fixed; }
+tr                                              { margin:5px 0; padding:0 0 6px; border-bottom:1px solid #D6D6D6; }
+tr:hover                                        { background-color:#FFF; }
+th, td:empty                                    { display:none; visibility:hidden; }
+td:first-child                                  { font-weight:bold; }
+th[data-title]:before, td[data-title]:before    { content:attr(data-title) ":\00A0"; font-weight:bold; }
+
+
+}
