@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Amazium - Grids</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]--> 
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- CSS - Amazium base -->
+  <link rel="stylesheet" href="style/variables.css">
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/utilities.css">
+  <link rel="stylesheet" href="style/grid.css">
+  <link rel="stylesheet" href="style/typography.css">
+  <link rel="stylesheet" href="style/layout.css?refreshcss=3">
+
+  <!-- CSS - Components -->
+  <link rel="stylesheet" href="style/avatar.css">
+  <link rel="stylesheet" href="style/badge.css">
+  <link rel="stylesheet" href="style/button.css">
+  <link rel="stylesheet" href="style/card.css">
+  <link rel="stylesheet" href="style/dialog.css">
+  <link rel="stylesheet" href="style/lists.css">
+  <link rel="stylesheet" href="style/navigation.css?refreshcss=1">
+  <link rel="stylesheet" href="style/table.css">
+
+  <!-- CSS - Forms -->
+  <link rel="stylesheet" href="style/form-reset.css">
+  <link rel="stylesheet" href="style/form-base.css">
+  <link rel="stylesheet" href="style/form-behaviour.css">
+
+  <!-- Scripts -->
+  <script src="js/scripts.js" defer></script>
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+</head>
+<body>
+  <button class="hamburger" id="hamburger" type="button">
+    <svg width="50" height="50" viewBox="0 0 50 50"><line class="line top" x1="12" y1="18" x2="38" y2="18"/><line class="line middle" x1="12" y1="25" x2="38" y2="25"/><line class="line bottom" x1="12" y1="32" x2="38" y2="32"/></svg>
+  </button>
+
+  <nav class="navigation" id="navigation">
+    <div class="navigation__title">
+      <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" class="icon icon--logo"><path d="M63 0v63H0V0zm-3 3H3v57h57zM25.044 18l10.352 28h-6.863l-2.043-5.88H15.77L13.728 46H7l10.352-28zM54 26v4.71l-8.332 9.643H54V46H37.354v-4.567l8.332-9.786h-8.332V26zm-32.802-1-3.427 9h6.854zm30.18-14.233q.224 0 .392.172a.574.574 0 0 1 0 .811.533.533 0 0 1-.786 0 .57.57 0 0 1-.002-.81.54.54 0 0 1 .396-.173m3.402-2.7v.807h-1.437l-.015.595h.361l.2.008q.481.044.768.304.343.312.343.83 0 .597-.392.955-.392.36-1.002.359-.41 0-.751-.144a1.8 1.8 0 0 1-.452-.27l-.124-.114.422-.643.111.094q.122.091.289.165.25.111.5.111.251 0 .385-.123a.43.43 0 0 0 .133-.331q0-.38-.511-.422l-.136-.006h-.907l.047-2.174zM48.956 8q.382 0 .693.128.31.13.498.38a.95.95 0 0 1 .188.585q0 .584-.554.85.645.267.645.88a.92.92 0 0 1-.2.59 1.23 1.23 0 0 1-.532.38 2 2 0 0 1-.738.129q-.407 0-.738-.128a1.23 1.23 0 0 1-.532-.382.92.92 0 0 1-.2-.588q0-.617.642-.882-.55-.265-.55-.85 0-.332.187-.583a1.15 1.15 0 0 1 .496-.38Q48.573 8 48.956 8m-1.767.068v.687l-1.447 3.1h-1.011l1.446-2.973h-1.643v-.814zm1.767 2.212a.62.62 0 0 0-.388.12.39.39 0 0 0-.157.326q0 .207.156.32a.64.64 0 0 0 .389.113.64.64 0 0 0 .386-.113.37.37 0 0 0 .156-.32.39.39 0 0 0-.157-.327.6.6 0 0 0-.385-.119m0-1.504a.53.53 0 0 0-.338.106.35.35 0 0 0-.134.295q0 .192.134.301.134.11.338.11a.5.5 0 0 0 .335-.11.37.37 0 0 0 .134-.301.35.35 0 0 0-.134-.295.53.53 0 0 0-.335-.106"/></svg></a>
+    </div>
+    <ol class="navigation__menu">
+      <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560zm-80 80v-480l320-240 320 240v480H520v-240h-80v240zm320-350"/></svg>Home</a></li>
+      <li><a href="foundations.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon"><path d="M80-160v-480h120v-160h240v160h80v-160h240v160h120v480zm80-80h640v-320H160zm120-400h80v-80h-80zm320 0h80v-80h-80zM160-240h640zm120-400h80zm320 0h80z"/></svg>Foundations</a></li>
+      <li class="active"><a href="grid.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="M120-280v-400q0-33 23.5-56.5T200-760h560q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H200q-33 0-56.5-23.5T120-280m293-240h347v-160H413zm214 240h133v-160H627zm-214 0h134v-160H413zm-213 0h133v-400H200z"/></svg>Grids</a></li>
+      <li><a href="form.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="m424-312 282-282-56-56-226 226-114-114-56 56zM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120zm0-80h560v-560H200zm0-560v560z"/></svg>Forms</a></li>
+      <li><a href="components.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="M120-200v-240h320v240zm400 0v-240h320v240zm-320-80h160v-80H200zm400 0h160v-80H600zM120-520v-240h320v240zm400 0v-240h320v240zm-320-80h160v-80H200zm80-40"/></svg>Components</a></li>
+      <li><a href="https://github.com/MikeBallan/Amazium-5" target="_blank"><svg aria-hidden="true" class="icon" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"></path></svg>Download</a></li>
+    </ol>
+  </nav>
+
+  <aside class="aside">
+    <div class="aside--header">
+      <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63" class="icon icon--amazium"><path d="M63 0v63H0V0zm-3 3H3v57h57zM25.044 18l10.352 28h-6.863l-2.043-5.88H15.77L13.728 46H7l10.352-28zM54 26v4.71l-8.332 9.643H54V46H37.354v-4.567l8.332-9.786h-8.332V26zm-32.802-1-3.427 9h6.854zm30.18-14.233q.224 0 .392.172a.574.574 0 0 1 0 .811.533.533 0 0 1-.786 0 .57.57 0 0 1-.002-.81.54.54 0 0 1 .396-.173m3.402-2.7v.807h-1.437l-.015.595h.361l.2.008q.481.044.768.304.343.312.343.83 0 .597-.392.955-.392.36-1.002.359-.41 0-.751-.144a1.8 1.8 0 0 1-.452-.27l-.124-.114.422-.643.111.094q.122.091.289.165.25.111.5.111.251 0 .385-.123a.43.43 0 0 0 .133-.331q0-.38-.511-.422l-.136-.006h-.907l.047-2.174zM48.956 8q.382 0 .693.128.31.13.498.38a.95.95 0 0 1 .188.585q0 .584-.554.85.645.267.645.88a.92.92 0 0 1-.2.59 1.23 1.23 0 0 1-.532.38 2 2 0 0 1-.738.129q-.407 0-.738-.128a1.23 1.23 0 0 1-.532-.382.92.92 0 0 1-.2-.588q0-.617.642-.882-.55-.265-.55-.85 0-.332.187-.583a1.15 1.15 0 0 1 .496-.38Q48.573 8 48.956 8m-1.767.068v.687l-1.447 3.1h-1.011l1.446-2.973h-1.643v-.814zm1.767 2.212a.62.62 0 0 0-.388.12.39.39 0 0 0-.157.326q0 .207.156.32a.64.64 0 0 0 .389.113.64.64 0 0 0 .386-.113.37.37 0 0 0 .156-.32.39.39 0 0 0-.157-.327.6.6 0 0 0-.385-.119m0-1.504a.53.53 0 0 0-.338.106.35.35 0 0 0-.134.295q0 .192.134.301.134.11.338.11a.5.5 0 0 0 .335-.11.37.37 0 0 0 .134-.301.35.35 0 0 0-.134-.295.53.53 0 0 0-.335-.106"/></svg></a>
+    </div>
+    <div class="aside--body">
+      <ol class="nav--aside">
+        <li class="label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon"><path d="M80-160v-480h120v-160h240v160h80v-160h240v160h120v480zm80-80h640v-320H160zm120-400h80v-80h-80zm320 0h80v-80h-80zM160-240h640zm120-400h80zm320 0h80z"/></svg>Foundations</li>
+        <li><a href="foundations.html">Overview</a></li>
+        <li><a href="bem-methodology.html">BEM methodology</a></li>
+        <li><a href="color.html">Color</a></li>
+        <li><a href="iconography.html">Iconography</a></li>
+        <li><a href="media-queries.html">Media Queries</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="utilities.html">Utilities</a></li>
+
+        <li class="label"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="M120-280v-400q0-33 23.5-56.5T200-760h560q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H200q-33 0-56.5-23.5T120-280m293-240h347v-160H413zm214 240h133v-160H627zm-214 0h134v-160H413zm-213 0h133v-400H200z"/></svg>Grids</li>
+        <li class="active"><a href="grid.html">Overview</a></li>
+        <li><a href="grid-basics.html">Getting started</a></li>
+        <li><a href="fluid-grid.html">Fluid / Responsive</a></li>
+        <li><a href="nested-grid.html">Nested grids</a></li>
+        <li><a href="offsetting-grids.html">Offsetting</a></li>
+        <li><a href="ordering-grids.html">Ordering</a></li>
+
+        <li class="label"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="m424-312 282-282-56-56-226 226-114-114-56 56zM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120zm0-80h560v-560H200zm0-560v560z"/></svg>Forms</li>
+        <li><a href="form.html">Overview</a></li>
+        <li><a href="form-basics.html">Getting started</a></li>
+        <li><a href="checkbox.html">Checkbox</a></li>
+        <li><a href="label.html">Label</a></li>
+        <li><a href="radio.html">Radio</a></li>
+        <li><a href="radio-boxed.html">Radio: Boxed</a></li>
+        <li><a href="select.html">Select</a></li>
+        <li><a href="switch.html">Switch</a></li>
+        <li><a href="textarea.html">Text area</a></li>
+        <li><a href="text-field.html">Text field</a></li>
+        <li><a href="toggle.html">Toggle</a></li>
+
+        <li class="label"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="M120-200v-240h320v240zm400 0v-240h320v240zm-320-80h160v-80H200zm400 0h160v-80H600zM120-520v-240h320v240zm400 0v-240h320v240zm-320-80h160v-80H200zm80-40"/></svg>Components</li>
+        <li><a href="components.html">Overview</a></li>
+        <li><a href="avatar.html">Avatar</a></li>
+        <li><a href="badge.html">Badge</a></li>
+        <li><a href="blockquote.html">Blockquote</a></li>
+        <li><a href="button.html">Button</a></li>
+        <li><a href="card.html">Card</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="table.html">Dynamic table</a></li>
+        <li><a href="image.html">Image</a></li>
+        <li><a href="list.html">List</a></li>
+        <li><a href="modal.html">Modal dialog</a></li>
+        <li><a href="message.html">Section message</a></li>
+      </ol>
+    </div>
+    <div class="aside--footer">
+      <a href="https://github.com/MikeBallan/Amazium-5" target="_blank"><svg aria-hidden="true" class="icon" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"></path></svg>Download</a>
+    </div>
+  </aside>
+
+<section class="section">
+  <div class="grid grid--fluid">
+    <div class="grid__item grid__item--span-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63" class="icon"><path d="M63 0v63H0V0zm-3 3H3v57h57zM25.044 18l10.352 28h-6.863l-2.043-5.88H15.77L13.728 46H7l10.352-28zM54 26v4.71l-8.332 9.643H54V46H37.354v-4.567l8.332-9.786h-8.332V26zm-32.802-1-3.427 9h6.854zm30.18-14.233q.224 0 .392.172a.574.574 0 0 1 0 .811.533.533 0 0 1-.786 0 .57.57 0 0 1-.002-.81.54.54 0 0 1 .396-.173m3.402-2.7v.807h-1.437l-.015.595h.361l.2.008q.481.044.768.304.343.312.343.83 0 .597-.392.955-.392.36-1.002.359-.41 0-.751-.144a1.8 1.8 0 0 1-.452-.27l-.124-.114.422-.643.111.094q.122.091.289.165.25.111.5.111.251 0 .385-.123a.43.43 0 0 0 .133-.331q0-.38-.511-.422l-.136-.006h-.907l.047-2.174zM48.956 8q.382 0 .693.128.31.13.498.38a.95.95 0 0 1 .188.585q0 .584-.554.85.645.267.645.88a.92.92 0 0 1-.2.59 1.23 1.23 0 0 1-.532.38 2 2 0 0 1-.738.129q-.407 0-.738-.128a1.23 1.23 0 0 1-.532-.382.92.92 0 0 1-.2-.588q0-.617.642-.882-.55-.265-.55-.85 0-.332.187-.583a1.15 1.15 0 0 1 .496-.38Q48.573 8 48.956 8m-1.767.068v.687l-1.447 3.1h-1.011l1.446-2.973h-1.643v-.814zm1.767 2.212a.62.62 0 0 0-.388.12.39.39 0 0 0-.157.326q0 .207.156.32a.64.64 0 0 0 .389.113.64.64 0 0 0 .386-.113.37.37 0 0 0 .156-.32.39.39 0 0 0-.157-.327.6.6 0 0 0-.385-.119m0-1.504a.53.53 0 0 0-.338.106.35.35 0 0 0-.134.295q0 .192.134.301.134.11.338.11a.5.5 0 0 0 .335-.11.37.37 0 0 0 .134-.301.35.35 0 0 0-.134-.295.53.53 0 0 0-.335-.106"/></svg></a></li>
+        <li>Grids</li>
+      </ol>
+      <h1>Grids</h1>
+      <p>Grids provide structure and alignment in UI design, ensuring layouts are flexible and responsive. Amazium's grid system is built with SCSS, allowing for customization of parameters like grid width, column count, and gutter spacing.</p>
+      <p>Explore the grid system and its modifiers to create adaptive and structured designs.</p>
+    </div>
+  </div>
+
+  <div class="grid grid--fluid">
+    <div class="grid__item grid__item--span-12">
+      <ol class="cards cards--hover">
+        <li>
+          <div class="card__body">
+            <a href="grid-basics.html" class="overall"></a>
+            <div class="thumb--image">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 154" class="icon">
+                <g fill="#9DA3AE" fill-rule="evenodd">
+                  <rect width="30" height="36" rx="10"/>
+                  <rect x="33" width="30" height="36" rx="10"/>
+                  <rect x="65" width="30" height="36" rx="10"/>
+                  <rect x="98" width="30" height="36" rx="10"/>
+                  <rect x="131" width="30" height="36" rx="10"/>
+                  <rect x="164" width="30" height="36" rx="10"/>
+                  <rect x="196" width="30" height="36" rx="10"/>
+                  <rect x="229" width="30" height="36" rx="10"/>
+                  <rect x="262" width="30" height="36" rx="10"/>
+                  <rect x="295" width="30" height="36" rx="10"/>
+                  <rect x="327" width="30" height="36" rx="10"/>
+                  <rect x="360" width="30" height="36" rx="10"/>
+                  <g transform="translate(0 38)">
+                    <rect width="194" height="36" rx="10"/>
+                    <rect x="196" width="194" height="36" rx="10"/>
+                  </g>
+                  <g transform="translate(0 78)">
+                    <rect width="259" height="36" rx="10"/>
+                    <rect x="262" width="128" height="36" rx="10"/>
+                  </g>
+                  <rect width="390" height="36" rx="10" transform="translate(0 118)"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="h6">Getting started</h2>
+            <p>Customize your grid with SCSS—set column count, gutter width, and overall grid width to fit your design needs.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="card__body">
+            <a href="fluid-grid.html" class="overall"></a>
+            <div class="thumb--image">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 134" class="icon">
+                <g fill="none" fill-rule="evenodd">
+                  <path fill="#6A7281" fill-rule="nonzero" d="m470 67-10 10-1.781-1.75 7-7H450v-2.5h15.219l-7-7L460 57zM0 67l10 10 1.781-1.75-7-7H20v-2.5H4.781l7-7L10 57z"/>
+                  <g transform="translate(40)" fill="#9DA3AE">
+                    <rect width="30" height="134" rx="10"/>
+                    <rect x="33" width="30" height="134" rx="10"/>
+                    <rect x="65" width="30" height="134" rx="10"/>
+                    <rect x="98" width="30" height="134" rx="10"/>
+                    <rect x="131" width="30" height="134" rx="10"/>
+                    <rect x="164" width="30" height="134" rx="10"/>
+                    <rect x="196" width="30" height="134" rx="10"/>
+                    <rect x="229" width="30" height="134" rx="10"/>
+                    <rect x="262" width="30" height="134" rx="10"/>
+                    <rect x="295" width="30" height="134" rx="10"/>
+                    <rect x="327" width="30" height="134" rx="10"/>
+                    <rect x="360" width="30" height="134" rx="10"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h2 class="h6">Fluid / Responsive</h2>
+            <p>Make your layouts fully responsive by adding .grid--fluid, ensuring seamless scaling across all screen sizes.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="card__body">
+            <a href="nested-grid.html" class="overall"></a>
+            <div class="thumb--image">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 154" class="icon">
+                <g fill="none" fill-rule="evenodd">
+                  <rect fill="#6A7281" width="390" height="154" rx="10"/>
+                  <rect fill="#9DA3AE" x="10" y="38" width="239" height="78.5" rx="10"/>
+                  <rect fill="#9DA3AE" x="272" y="38" width="108" height="78.5" rx="10"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="h6">Nested grids items</h2>
+            <p>Easily nest grids within grids without extra CSS. Structure complex layouts effortlessly.</p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="card__body">
+            <a href="offsetting-grids.html" class="overall"></a>
+            <div class="thumb--image">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 116" class="icon">
+                <g fill="#9DA3AE" fill-rule="evenodd">
+                  <rect width="161" height="36" rx="10"/>
+                  <rect x="196" width="194" height="36" rx="10"/>
+                  <g transform="translate(65 40)">
+                    <rect width="194" height="36" rx="10"/>
+                    <rect x="230" width="95" height="36" rx="10"/>
+                  </g>
+                  <rect width="259" height="36" rx="10" transform="translate(98 80)"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="h6">Offsetting</h2>
+            <p>Use offset classes to add extra space between columns for a more balanced layout.</p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="card__body">
+            <a href="ordering-grids.html" class="overall"></a>
+            <div class="thumb--image">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389 156" class="icon">
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="#9DA3AE">
+                    <rect width="95" height="156" rx="10"/>
+                    <rect x="196" width="95" height="156" rx="10"/>
+                    <rect x="98" width="95" height="156" rx="10"/>
+                    <rect x="294" width="95" height="156" rx="10"/>
+                  </g>
+                  <path d="M55.586 91.665V64h-6.253a12.187 12.187 0 0 1-3.34 4.305c-1.422 1.162-3.42 2.158-5.993 2.987v6.197c1.744-.532 3.194-1.088 4.351-1.67 1.157-.581 2.353-1.342 3.59-2.282v18.128h7.645ZM154.354 91.665v-5.084h3.415v-5.863h-3.415V64h-6.586L134 80.365v6.216h13.768v5.084h6.586Zm-6.586-10.947h-7.274l7.274-8.554v8.554ZM254.674 91.665v-6.16h-11.801c.693-.68 1.296-1.23 1.81-1.651.512-.421 1.53-1.157 3.051-2.208 2.56-1.806 4.327-3.464 5.298-4.973.97-1.51 1.456-3.093 1.456-4.75 0-1.559-.423-2.966-1.27-4.221-.848-1.256-2.01-2.187-3.489-2.793-1.478-.606-3.547-.909-6.207-.909-2.548 0-4.542.319-5.983.956-1.442.637-2.558 1.552-3.35 2.746-.791 1.193-1.335 2.854-1.632 4.982l7.57.612c.21-1.534.622-2.604 1.234-3.21.612-.606 1.4-.91 2.366-.91.927 0 1.697.295 2.31.882.612.588.918 1.296.918 2.125 0 .767-.31 1.577-.928 2.43-.618.854-2.034 2.103-4.249 3.748-3.624 2.685-6.095 5.013-7.412 6.986-1.318 1.973-2.106 4.08-2.366 6.318h22.674ZM341.504 92.129c2.536 0 4.583-.393 6.142-1.178 1.558-.786 2.752-1.905 3.58-3.359.83-1.453 1.244-2.972 1.244-4.555 0-1.262-.25-2.347-.752-3.256a5.884 5.884 0 0 0-2.106-2.199c-.556-.346-1.36-.65-2.412-.91 1.299-.717 2.27-1.552 2.913-2.504a5.575 5.575 0 0 0 .965-3.191c0-2.004-.792-3.668-2.375-4.992-1.583-1.323-4.15-1.985-7.7-1.985-3.093 0-5.483.606-7.171 1.818-1.689 1.213-2.83 2.957-3.424 5.233l7.144 1.28c.198-1.348.575-2.291 1.132-2.83.556-.538 1.28-.807 2.17-.807.866 0 1.547.248 2.042.743.494.494.742 1.156.742 1.985 0 .866-.331 1.614-.993 2.245-.662.63-1.487.946-2.477.946-.235 0-.563-.03-.983-.092l-.39 5.399c1.039-.297 1.855-.445 2.45-.445 1.112 0 1.994.346 2.643 1.039.65.692.974 1.67.974 2.931 0 1.237-.337 2.227-1.01 2.97-.675.741-1.52 1.112-2.534 1.112-.964 0-1.76-.293-2.384-.881-.625-.588-1.085-1.642-1.382-3.164L330 84.484c.495 1.695 1.203 3.102 2.125 4.222.921 1.119 2.096 1.97 3.525 2.55 1.429.582 3.38.873 5.854.873Z" fill="#FFF" fill-rule="nonzero"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="h6">Ordering</h2>
+            <p>Reorder grid items dynamically with modifier classes—move columns to the first or last position.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<ol class="pagination">
+  <li>
+    <a href="utilities.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="icon icon--onLeft"><path d="M24 40.55 7.45 24 24 7.45 27.35 10.75 16.5 21.65H40.55V26.35H16.5L27.35 37.2Z"></path></svg>
+      Foundations: Utilities
+    </a>
+  </li>
+
+  <li>
+    <a href="grid-basics.html">
+      Grids: Getting Started
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="icon icon--onRight"><path d="M24 40.55 20.65 37.15 31.5 26.35H7.45V21.65H31.5L20.65 10.8L24 7.45L40.55 24Z"></path></svg>
+    </a>
+  </li>
+</ol>
+
+</body>
+</html>
