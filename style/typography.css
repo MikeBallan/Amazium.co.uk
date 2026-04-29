@@ -1,0 +1,98 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Font-face setup
+***********************************************/
+@font-face {
+  font-family:'txt-body';
+  src:url('../font/mulish-regular.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'txt-title'; /***** Base typography *****/
+  src:url('../font/mark-pro.woff2') format('woff2'),
+      url('../font/mark-pro.woff') format('woff');
+  font-weight:bold;
+  font-style:bold;
+}
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Base typography *****/
+html                                            { font-size:100%; }
+body                                            { margin:0; padding:0; font-family:'txt-body', sans-serif; font-size:var(--text-sm); line-height:var(--leading-sm); background-color:var(--color-brand100); }
+body *                                          { letter-spacing:0.02em; }
+
+/***** Headings *****/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6                    { font-family:'txt-title', serif; margin:0; text-wrap:pretty; }
+
+h1, .h1                                         { font-size:var(--text-4xl); line-height:var(--leading-4xl); }
+h2, .h2                                         { font-size:var(--text-3xl); line-height:var(--leading-3xl); }
+h3, .h3                                         { font-size:var(--text-2xl); line-height:var(--leading-2xl); }
+h4, .h4                                         { font-size:var(--text-xl); line-height:var(--leading-xl); }
+h5, .h5                                         { font-size:var(--text-lg); line-height:var(--leading-lg); }
+h6, .h6                                         { font-size:var(--text-md); line-height:var(--leading-sm); }
+
+/***** Typography Elements *****/
+p                                               { max-width:75ch; margin:0; line-height:var(--leading-sm); text-wrap:pretty; }
+strong                                          { font-weight:bold; color:var(--color-brand700); }
+em                                              { font-style:italic; }
+small                                           { font-size:0.875em; }
+sup, sub                                        { font-size:0.75em; line-height:0; position:relative; vertical-align:baseline; }
+sup                                             { top:-0.4em; }
+sub                                             { bottom:-0.25em; }
+hr                                              { border:0; height:1px; background:var(--color-ui-600); width:60px; margin:2rem 0; }
+
+/***** Links *****/
+a                                               { color:inherit; text-decoration:underline; transition:all 0.2s ease; }
+.overall                                        { width:100%; height:100%; position:absolute; top:0; left:0; z-index:10; cursor:pointer; }
+
+/***** Utility typography *****/
+.txt--strong                                    { font-weight:bold; }
+.txt--link                                      { text-decoration:underline; font-weight:bold; }
+
+/***** Layout helpers *****/
+.flex                                           { display:inline-flex; gap:var(--space-2); align-items:center; }
+
+/***** Definition Q&A block *****/
+.dl-qanda                                       { margin-top:5rem; }
+
+.dl-qanda dt,
+.dl-qanda dd                                    { margin-left:2.5rem; padding-left:1.5rem; border-left:1px solid var(--color-ui-900); position:relative; }
+
+.dl-qanda dt                                    { font-size:2rem; margin-bottom:1rem; }
+.dl-qanda dt::before                            { content:"Q"; position:absolute; left:-2.5rem; top:0; font-weight:bold; color:var(--color-ui-700); }
+
+.dl-qanda dd                                    { margin-bottom:4rem; display:flex; flex-direction:column; gap:2rem; }
+.dl-qanda dd::before                            { content:"A"; position:absolute; left:-2.5rem; top:0; font-weight:bold; color:var(--color-ui-700); }
+
+/***** Blockquotes / Figures *****/
+figure                                          { padding:10px 0 10px 20px; border-left:2px solid var(--color-ui-800); position:relative; }
+
+blockquote                                      { margin:0; padding:0; }
+blockquote p                                    { font-style:italic; }
+blockquote a                                    { display:inline-block; }
+
+figcaption                                      { padding:0; }
+figcaption::before                              { content:'\2014'; display:block; }
+figcaption > span                               { margin:0; padding:0 5px; display:inline-block; background-color:var(--color-ui-900); color:var(--color-ui-0); border-radius:var(--radius-md); }
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px)                        {
+  hr                                            { margin:4rem 0; }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 212">
+  <g fill="none" fill-rule="evenodd">
+    <rect fill="#9DA3AE" width="270" height="14" rx="7"/>
+    <rect fill="#FFF" y="30" width="380" height="54" rx="10"/>
+    <g transform="translate(0 132)">
+      <rect fill="#6A7281" width="30" height="30" rx="4"/>
+      <path fill="#FFF" fill-rule="nonzero" d="M11.882 22.44 5 15.557l1.321-1.321 5.56 5.56L23.68 8 25 9.321 11.882 22.439z"/>
+      <rect fill="#9DA3AE" x="50" y="8" width="270" height="14" rx="7"/>
+    </g>
+    <rect fill="#6A7281" y="182" width="30" height="30" rx="4"/>
+    <rect fill="#9DA3AE" x="50" y="190" width="150" height="14" rx="7"/>
+  </g>
+</svg>

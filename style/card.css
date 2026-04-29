@@ -1,0 +1,62 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Cards *****/
+.card                                                   { margin:0; padding:0; width:100%; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-md); position:relative; transition:all 0.2s ease; }
+
+/***** Header *****/
+.card__header                                           { padding:var(--space-4); border-radius:var(--radius-md) var(--radius-md) 0 0; background-color:var(--color-ui-200); box-shadow:var(--border-default); }
+
+/***** Body *****/
+.card__body                                             { padding:var(--space-4); display:flex; flex-direction:column; gap:var(--space-3); }
+
+/***** Footer *****/
+.card__footer                                           { margin-top:auto; padding:var(--space-4); border-radius:0 0 var(--radius-md) var(--radius-md); }
+
+/***** Tables *****/
+.card--hasTable .card__body                             { padding:0; }
+.card--hasTable table th                                { border-radius:var(--radius-md) var(--radius-md); 0 0; }
+.card--hasTable table tr:last-child td:first-child      { border-radius:0 0 0 var(--radius-md); }
+.card--hasTable table tr:last-child td:last-child       { border-radius:0 0 var(--radius-md) 0; }
+
+/***** List Cards *****/
+.cards                                                  { padding-inline-start:0; list-style:none; display:grid; grid-template-columns:repeat( auto-fit, minmax(300px, 1fr) ); grid-gap:24px; width:100%; }
+.cards li                                               { margin:0; padding:0; display:flex; flex-direction:column; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-md); position:relative; transition:all 0.2s ease; }
+
+/***** Hover *****/
+.cards--hover li:hover                          		{ box-shadow:var(--border-hover); transition:all 0.2s ease; }
+
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px) {
+
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
+}

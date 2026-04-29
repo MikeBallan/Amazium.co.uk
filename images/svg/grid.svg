@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 154">
+  <g fill="#9DA3AE" fill-rule="evenodd">
+    <rect width="30" height="36" rx="10"/>
+    <rect x="33" width="30" height="36" rx="10"/>
+    <rect x="65" width="30" height="36" rx="10"/>
+    <rect x="98" width="30" height="36" rx="10"/>
+    <rect x="131" width="30" height="36" rx="10"/>
+    <rect x="164" width="30" height="36" rx="10"/>
+    <rect x="196" width="30" height="36" rx="10"/>
+    <rect x="229" width="30" height="36" rx="10"/>
+    <rect x="262" width="30" height="36" rx="10"/>
+    <rect x="295" width="30" height="36" rx="10"/>
+    <rect x="327" width="30" height="36" rx="10"/>
+    <rect x="360" width="30" height="36" rx="10"/>
+    <g transform="translate(0 38)">
+      <rect width="194" height="36" rx="10"/>
+      <rect x="196" width="194" height="36" rx="10"/>
+    </g>
+    <g transform="translate(0 78)">
+      <rect width="259" height="36" rx="10"/>
+      <rect x="262" width="128" height="36" rx="10"/>
+    </g>
+    <rect width="390" height="36" rx="10" transform="translate(0 118)"/>
+  </g>
+</svg>

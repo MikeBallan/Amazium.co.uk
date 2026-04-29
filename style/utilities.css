@@ -1,0 +1,115 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Text Utilities *****/
+.txt--truncate                                  { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.txt--noWrap                                    { white-space:nowrap; }
+
+/***** Display Utilities *****/
+.inline                                         { display:inline; }
+.block, .show                                   { display:block; }
+.hidden, .hide                                  { display:none !important; }
+.invisible                                      { display:none !important; visibility:hidden; }
+.visible                                        { display:block !important; visibility:visible; }
+
+.u-center                                       { justify-content:center; align-items:center; }
+
+/***** Border Radius Utilities *****/
+.radius--none                                   { border-radius:var(--radius-none); }
+.radius--sm                                     { border-radius:var(--radius-sm); }
+.radius--md                                     { border-radius:var(--radius-md); }
+.radius--lg                                     { border-radius:var(--radius-lg); }
+.radius--xl                                     { border-radius:var(--radius-xl); }
+.radius--pill,
+.rounded                                        { border-radius:var(--radius-pill); }
+
+/***** Reset Utilities (Legacy Helpers) *****/
+.reset--padding                                 { padding:0 !important; }
+.reset--margin                                  { margin:0 !important; }
+.reset--indent                                  { margin-left:0 !important; padding-left:0 !important; }
+.reset--bullet                                  { list-style:none !important; list-style-image:none !important; }
+.reset--styling                                 { margin:0 !important; padding:0 !important; list-style:none !important; }
+
+/***** Media Embed Utility *****/
+.media                                          { position:relative; width:100%; height:0; padding-bottom:56.25%; background-color:var(--color-ui-400, #E8ECF5); overflow:hidden; }
+.media iframe,
+.media object,
+.media embed                                    { position:absolute; inset:0; width:100%; height:100%; }
+
+/***** Message Blocks *****/
+.message                                        { padding:20px; display:flex; flex-direction:column; gap:8px; flex-grow:1; width:100%; position:relative; box-sizing:border-box; border-radius:var(--radius-md); box-shadow:var(--border-default); background-color:var(--color-ui-100); }
+
+.message--positive                              { background-color:var(--color-positive-100); box-shadow:var(--border-positive); }
+.message--positive strong,
+.message--positive .icon                        { color:var(--color-positive-500); }
+
+.message--info                                  { background-color:var(--color-info-100); box-shadow:var(--border-focus); }
+.message--info strong,
+.message--info .icon                            { color:var(--color-info-500); }
+
+.message--warning                               { background-color:var(--color-warning-100); box-shadow:var(--border-warning); }
+.message--warning strong,
+.message--warning .icon                         { color:var(--color-warning-500); }
+
+.message--negative                              { background-color:var(--color-negative-100); box-shadow:var(--border-negative); }
+.message--negative strong,
+.message--negative .icon                        { color:var(--color-negative-500); }
+
+/***** Show & Hide *****/
+.show--mobile                                     { display:inherit !important; }
+.hide--mobile                                     { display:none !important; }
+
+.show--tablet,
+.show--screen                                     { display:none !important; }
+
+.hide--tablet,
+.hide--screen                                     { display:inherit !important; }
+
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px) {
+  /***** Text alignment *****/
+  .txt--left                                      { text-align:left; justify-content:flex-start; align-items:flex-start; }
+  .txt--right                                     { text-align:right; justify-content:flex-end; align-items:flex-end; }
+  .txt--center                                    { text-align:center; justify-content:center; align-items:center; }
+  .txt--justify                                   { text-align:justify; justify-content:center; align-items:center; }
+
+  /***** Show & Hide *****/
+  .show--mobile                                   { display:none !important; }
+  .hide--mobile                                   { display:inherit !important; }
+
+  .show--tablet                                   { display:inherit !important; }
+  .hide--tablet                                   { display:none !important; }
+
+  .show--screen                                   { display:none !important; }
+  .hide--screen                                   { display:inherit !important; }
+}
+
+
+/***********************************************
+Screen - This applies from 1000px onwards
+***********************************************/
+@media (min-width:1000px) {
+  /***** Show & Hide *****/
+  .show--mobile                                   { display:none !important; }
+  .hide--mobile                                   { display:inherit !important; }
+
+  .show--tablet                                   { display:none !important; }
+  .hide--tablet                                   { display:inherit !important; }
+
+  .show--screen                                   { display:inherit !important; }
+  .hide--screen                                   { display:none !important; }
+}

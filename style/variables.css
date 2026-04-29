@@ -1,0 +1,123 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+:root {
+  /***** Spacing Scale (4px base system) *****/
+  --space-0:              0px;
+  --space-1:              4px;
+  --space-2:              8px;
+  --space-3:              12px;
+  --space-4:              16px;
+  --space-5:              20px;
+  --space-6:              24px;
+  --space-8:              32px;
+  --space-10:             40px;
+  --space-12:             48px;
+  --space-16:             64px;
+
+  /***** Radius Scale *****/
+  --radius-none:          0px;
+  --radius-sm:            4px;
+  --radius-md:            6px;
+  --radius-lg:            12px;
+  --radius-xl:            24px;
+  --radius-pill:          999px;
+
+  /***** Font sizes *****/
+  --text-xs:              0.75rem;      /* 12px */
+  --text-sm:              1rem;         /* 16px */
+  --text-md:              1.25rem;      /* 20px */
+  --text-lg:              1.5rem;       /* 24px */
+  --text-xl:              1.75rem;      /* 28px */
+  --text-2xl:             2rem;         /* 32px */
+  --text-3xl:             2.25rem;      /* 36px */
+  --text-4xl:             2.5rem;       /* 40px */
+
+  /***** Line Heights *****/
+  --leading-xs:           1rem;         /* 16px */
+  --leading-sm:           1.5rem;       /* 24px */
+  --leading-md:           1.75rem;      /* 28px */
+  --leading-lg:           2rem;         /* 32px */
+  --leading-xl:           2.25rem;      /* 36px */
+  --leading-2xl:          2.5rem;       /* 40px */
+  --leading-3xl:          2.75rem;      /* 44px */
+  --leading-4xl:          3rem;         /* 48px */
+
+  /***** Border system using inset shadows *****/
+  --border-default:       inset 0 0 0 1px var(--color-ui-500);
+  --border-focus:         inset 0 0 0 1px var(--color-info-500);
+  --border-hover:         inset 0 0 0 3px var(--color-brand-500);
+  --border-positive:      inset 0 0 0 1px var(--color-positive-500);
+  --border-warning:       inset 0 0 0 1px var(--color-warning-500);
+  --border-negative:      inset 0 0 0 1px var(--color-negative-500);
+
+  /***** Brand Scale *****/
+  --color-brand-100:      #F3F5FF;
+  --color-brand-200:      #E3E7FF;
+  --color-brand-300:      #C7CEFF;
+  --color-brand-400:      #9FA8F5;
+  --color-brand-500:      #6B74E6;      /* primary brand */
+  --color-brand-600:      #4B54C5;
+  --color-brand-700:      #2F368F;
+  --color-brand-800:      #1E255F;
+  --color-brand-900:      #0D1025;
+
+  /***** Accent *****/
+  --color-accent-100:     #F5F3FF;
+  --color-accent-300:     #C4B5FD;
+  --color-accent-500:     #7C3AED;      /* primary accent / secondary */
+  --color-accent-700:     #5B21B6;
+  --color-accent-800:     #4C1D95;
+
+  /***** Semantic Colors *****/
+  --color-positive-100:   #ECFDF3;
+  --color-positive-300:   #86E3B0;
+  --color-positive-500:   #12B76A;
+  --color-positive-700:   #0E8F55;
+  --color-positive-800:   #0A6E44;
+
+  --color-negative-100:   #FEF3F2;
+  --color-negative-300:   #F7A8A3;
+  --color-negative-500:   #F04438;
+  --color-negative-700:   #D92D20;
+  --color-negative-800:   #B42318;
+
+  --color-warning-100:    #FFFAEB;
+  --color-warning-300:    #FDE68A;
+  --color-warning-500:    #F59E0B;
+  --color-warning-700:    #D97706;
+  --color-warning-800:    #B45309;
+
+  --color-info-100:       #EFF6FF;
+  --color-info-300:       #93C5FD;
+  --color-info-500:       #3B82F6;
+  --color-info-700:       #1D4ED8;
+  --color-info-800:       #1E3A8A;
+
+  /***** Neutral scale *****/
+  --color-ui-0:           #FFFFFF;      /* snow */
+  --color-ui-100:         #FAFCFF;      /* haze */
+  --color-ui-200:         #F4F7FB;
+  --color-ui-300:         #EEF2F8;
+  --color-ui-400:         #E8ECF5;      /* mist */
+  --color-ui-500:         #C9D2E3;
+  --color-ui-600:         #AAB7CF;
+  --color-ui-700:         #5A6A85;
+  --color-ui-800:         #2F3F5C;
+  --color-ui-900:         #000D22;      /* black */
+
+  /***** Semantic aliases *****/
+  --color-primary:        var(--color-brand-500);
+  --color-secondary:      var(--color-accent-500);
+  --color-snow:           var(--color-ui-0);
+  --color-haze:           var(--color-ui-50);
+  --color-mist:           var(--color-ui-300);
+  --color-black:          var(--color-ui-900);
+}

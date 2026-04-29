@@ -1,0 +1,64 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Dialog *****/
+.dialog                                         { margin:0; padding:0; width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; background-color:rgba(15, 22, 42, .80); position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+.dialog[open]                                   { display:flex;opacity: 1; pointer-events: auto; }
+.dialog[open] .dialog__wrapper                  { transform:translateY(0) scale(1); opacity: 1; }
+
+.dialog__wrapper                                { transform: translateY(20px) scale(0.96); opacity: 0; transition: all 0.4s ease;  }
+
+.dialog >:first-child                           { border-radius:5px 5px 0 0; }
+.dialog >:last-child                            { border-radius:0 0 5px 5px; }
+.dialog >:only-child                            { border-radius:5px; }
+
+.btn--dialog                                    { padding:0; width:16px; height:16px; background-color:transparent; color:var(--color-ui-600); position:absolute; top:25px; right:28px; left:auto; z-index:10; }
+.btn--dialog:hover                              { background-color:transparent; color:var(--color-ui-900); }
+.btn--dialog .icon                              { width:16px; height:16px; }
+
+/***** Header *****/
+.dialog__header                                 { padding:22px 30px; width:calc(100vw - 40px); display:flex; align-items:center; gap:12px; font-family:'txt-title', serif; font-size:var(--text-md); font-weight:bold; color:var(--color-ui-900); background-color:var(--color-ui-0); position:relative; border-bottom:1px solid var(--color-ui-600);
+  .btn--dialog                                  { top:50%; transform: translateY(-50%); }
+}
+
+/***** Body *****/
+.dialog__body                                   { padding:30px; width:calc(100vw - 40px); max-height:calc(100vh - 200px); background-color:var(--color-ui-0); overflow-y:auto; position:relative; }
+
+/***** Footer *****/
+.dialog__footer                                 { padding:20px 30px; width:calc(100vw - 40px); display:flex; justify-content:flex-end; border-top:1px solid var(--color-ui-600); background-color:var(--color-ui-0); }
+
+/***********************************************
+Tablet - This applies from 768px onwards
+***********************************************/
+@media (min-width:768px) {
+  .dialog__header,
+  .dialog__body,
+  .dialog__footer                               { width:600px; }
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
+}

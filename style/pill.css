@@ -1,0 +1,67 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Pill - Default *****/
+.pill                                           { padding:var(--space-1) var(--space-3); min-height:20px; display:inline-flex; min-height:26px; align-self:flex-start; line-height:initial; align-items:center; justify-content:center; gap:8px; font-size:var(--text-sm); font-weight:bold; background-color:var(--color-mist); fill:currentColor; color:var(--color-ui-900); border:1px solid var(--color-ui-600); border-radius:var(--radius-pill); vertical-align:middle; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+.pill+.pill,
+.pill--right                                  	{ margin-left:6px; }
+
+/***** Sizes *****/
+.pill--sm                                       { padding:4px 8px; font-size:var(--text-xs); min-height:12px; }
+.pill--sm .icon                                 { width:10px; height:10px; }
+.pill--lg                                       { padding:4px 16px; font-size:var(--text-md); min-height:40px; }
+
+/***** Colors *****/
+.pill--default-solid                            { background-color:var(--color-ui-900); color:var(--color-ui-0); border-color:var(--color-ui-900); }
+
+.pill--info                                     { background-color:var(--color-info-100); color:var(--color-info-500); border-color:var(--color-info-500); }
+.pill--info-solid                               { background-color:var(--color-info-500); color:var(--color-ui-0); border-color:var(--color-info-500); }
+
+.pill--negative                                 { background-color:var(--color-negative-100); color:var(--color-negative-500); border-color:var(--color-negative-500); }
+.pill--negative-solid                           { background-color:var(--color-negative-500); color:var(--color-ui-0); border-color:var(--color-negative-500); }
+
+.pill--positive                                 { background-color:var(--color-positive-100); color:var(--color-positive-500); border-color:var(--color-positive-500); }
+.pill--positive-solid                           { background-color:var(--color-positive-500); color:var(--color-ui-0); border-color:var(--color-positive-500); }
+
+.pill--warning                                  { background-color:var(--color-warning-100); color:var(--color-warning-500); border-color:var(--color-warning-500); }
+.pill--warning-solid                            { background-color:var(--color-warning-500); color:var(--color-ui-0); border-color:var(--color-warning-500); }
+
+.pill--snow                                     { background-color:transparent; color:var(--color-ui-0); border-color:var(--color-ui-0); }
+.pill--snow-solid                               { background-color:var(--color-ui-0); border-color:var(--color-ui-0); }
+
+.pill--ghost                                    { background-color:transparent; border-color:var(--color-ui-500); }
+
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px)                        {
+
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) 						{
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
+}

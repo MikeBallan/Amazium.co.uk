@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 134">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#6A7281" fill-rule="nonzero" d="m470 67-10 10-1.781-1.75 7-7H450v-2.5h15.219l-7-7L460 57zM0 67l10 10 1.781-1.75-7-7H20v-2.5H4.781l7-7L10 57z"/>
+    <g transform="translate(40)" fill="#9DA3AE">
+      <rect width="30" height="134" rx="10"/>
+      <rect x="33" width="30" height="134" rx="10"/>
+      <rect x="65" width="30" height="134" rx="10"/>
+      <rect x="98" width="30" height="134" rx="10"/>
+      <rect x="131" width="30" height="134" rx="10"/>
+      <rect x="164" width="30" height="134" rx="10"/>
+      <rect x="196" width="30" height="134" rx="10"/>
+      <rect x="229" width="30" height="134" rx="10"/>
+      <rect x="262" width="30" height="134" rx="10"/>
+      <rect x="295" width="30" height="134" rx="10"/>
+      <rect x="327" width="30" height="134" rx="10"/>
+      <rect x="360" width="30" height="134" rx="10"/>
+    </g>
+  </g>
+</svg>

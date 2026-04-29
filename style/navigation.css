@@ -1,0 +1,75 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/* Hamburger button  */
+.hamburger 																			{ width:50px; height:50px; border:none; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-sm); cursor:pointer; display:flex; align-items:center; justify-content:center; position:fixed; top:var(--space-5); right:var(--space-5); z-index:100; }
+.hamburger .line 																{ stroke:var(--color-ui-900, black); stroke-width:4; stroke-linecap:round; transition:all 400ms cubic-bezier(.84,.06,.52,1.8); transform-box:fill-box; transform-origin:center; }
+.hamburger.active .top 													{ transform:translateY(7px) rotate(45deg); }
+.hamburger.active .bottom 											{ transform:translateY(-7px) rotate(-45deg); }
+.hamburger.active .middle 											{ opacity:0; }
+
+/* Navigation */
+.navigation 																		{ padding:40px; width:100vw; height:100vh; color:var(--color-ui-0); background-color:var(--color-brand-900); display:flex; gap:var(--space-6); flex-direction:column; position:fixed; top:0; left:100vw; z-index:99; transition:all 0.2s ease;
+	&.show 																				{ left:0; transition:all 0.2s ease; }
+}
+
+/* Navigation Title/Logo */
+.navigation__title															{
+	.icon--logo																		{ width:100px; height:100px; }
+}
+
+/* Navigation Menu */
+.navigation__menu 															{ margin:0; padding:0; list-style:none; font-family:'txt-title', sans-serif; font-size:var(--text-md); display:flex; flex-direction:column; gap:var(--space-6);
+	li 																						{ display:flex; }
+	a 																						{ text-decoration:none; display:flex; flex:1; gap:var(--space-2); align-items:center; position:relative; transition:all 0.2s ease; }
+}
+
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px)                        {
+	.hamburger 																		{ display:none; }  
+	
+	.navigation 																	{ margin-top:20px; padding:0 40px; max-width:inherit; height:inherit; color:var(--color-ui-0); background-color:transparent; display:none; flex-direction:row; justify-content:space-between; align-items:center; position:absolute; left:0; }
+	.navigation__title														{
+		.icon--logo																	{ width:40px; height:40px; }
+	}
+
+	.navigation__menu 														{ margin:0; padding:0; list-style:none; font-size:var(--text-sm); display:flex; flex-direction:row; gap:var(--space-6);
+		li 																					{ justify-content:center; }
+		a:hover 																		{ opacity:.8; }
+		a:after 																		{ content:''; height:2px; width:0%; background-color:var(--color-ui-0); border-radius:3px; position:absolute; bottom:-6px; left:50%; transform:translateX(-50%); opacity:0; transition:all 0.2s ease; }
+		a:hover:after, 
+		.active a:after 														{ width:100%; opacity:.5; }
+	}
+
+	.Welcome .navigation													{ display:flex; }
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
+}

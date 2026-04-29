@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 242">
+  <defs>
+    <filter x="-7.7%" y="-15.8%" width="115.4%" height="131.6%" filterUnits="objectBoundingBox" id="a">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.197060752 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#a)" transform="translate(23 23)" fill="none" fill-rule="evenodd">
+    <rect fill="#FFF" width="402" height="196" rx="10"/>
+    <rect fill="#9DA3AE" x="30" y="84" width="149.114" height="14" rx="7"/>
+    <path d="M10 0h382c5.523 0 10 4.477 10 10v50H0V10C0 4.477 4.477 0 10 0Z" fill="#6A7281"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M353.539 40 352 38.462 360.462 30 352 21.538 353.54 20l8.46 8.462L370.462 20 372 21.538 363.54 30l8.46 8.462L370.462 40 362 31.539 353.54 40z"/>
+    <rect fill="#FFF" x="30" y="23" width="14" height="14" rx="7"/>
+    <rect fill="#FFF" x="60" y="23" width="174" height="14" rx="7"/>
+    <rect fill="#9DA3AE" x="30" y="108" width="314" height="14" rx="7"/>
+    <rect fill="#9DA3AE" x="30" y="132" width="243.744" height="14" rx="7"/>
+  </g>
+</svg>

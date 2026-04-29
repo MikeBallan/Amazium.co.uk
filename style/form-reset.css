@@ -1,0 +1,29 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/* Remove browser focus styles (we replace them below) */
+input:focus, select:focus,
+textarea:focus, button:focus                    { outline:none; }
+
+/* IE legacy controls */
+::-ms-clear, ::-ms-reveal                       { display:none; }
+
+/* Base disabled behaviour */
+:disabled                                       { cursor:not-allowed; }
+
+/* Placeholder reset (no colour decisions here) */
+::placeholder                                   { opacity:1; }
+
+/* Remove default spacing inconsistencies */
+input, select, textarea, button                 { margin:0; font:inherit; color:inherit; }

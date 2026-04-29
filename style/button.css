@@ -1,0 +1,89 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Button Reset *****/
+button                                          { font:inherit; }
+button:disabled,
+button[aria-disabled="true"]                    { cursor:not-allowed; }
+
+/***** Base Button *****/
+.btn                                            { display:inline-flex; align-items:center; justify-content:center; gap:var(--space-2); padding:var(--space-2) var(--space-4); font-size:var(--text-sm); line-height:var(--leading-sm); font-weight:bold; width:inherit; border-radius:var(--radius-md); border:1px solid transparent; cursor:pointer; text-decoration:none; transition:all 0.2s ease; background-color:var(--color-primary); color:var(--color-ui-0); }
+.btn:hover                                      { background-color:var(--color-secondary); color:var(--color-ui-0); }
+.btn:focus-visible                              { outline:2px solid var(--color-primary); outline-offset:2px; }
+.btn:disabled, .btn:disabled:hover              { background-color:var(--color-ui-400); color:var(--color-ui-700); }
+
+/***** Sizes *****/
+.btn--sm                                        { padding:var(--space-1) var(--space-3); font-size:var(--text-xs); line-height:var(--leading-xs); min-height:inherit; }
+.btn--md                                        { /* default (no override needed) */ }
+.btn--lg                                        { padding:var(--space-3) var(--space-6); font-size:var(--text-md); line-height:var(--leading-md); }
+
+/***** Variants *****/
+.btn--primary                                   { background-color:var(--color-primary); }
+.btn--primary:hover                             { background-color:var(--color-brand-700); }
+
+/***** Info (default) *****/
+.btn--info                                      { background-color:var(--color-info-500); }
+.btn--info:hover                                { background-color:var(--color-info-800); }
+
+/***** Positive *****/
+.btn--positive                                  { background-color:var(--color-positive-500); }
+.btn--positive:hover                            { background-color:var(--color-positive-800); }
+
+/***** Negative *****/
+.btn--negative                                  { background-color:var(--color-negative-500); }
+.btn--negative:hover                            { background-color:var(--color-negative-800); }
+
+/***** Warning *****/
+.btn--warning                                   { background-color:var(--color-warning-500); }
+.btn--warning:hover                             { background-color:var(--color-warning-800); }
+
+/***** Ghost Variant *****/
+.btn--ghost                                     { background-color:transparent; color:var(--color-ui-900); border-color:var(--color-ui-600);
+	&:hover                               		{ background-color:var(--color-ui-400); color:var(--color-ui-900); }
+}
+
+/***** Hover Variant *****/
+.btn--hoverInfo:hover							{ background-color:var(--color-info-500); border-color:var(--color-info-500); color:var(--color-ui-0); }
+.btn--hoverPositive:hover						{ background-color:var(--color-positive-500); border-color:var(--color-positive-500); color:var(--color-ui-0); }
+.btn--hoverNegative:hover						{ background-color:var(--color-negative-500); border-color:var(--color-negative-500); color:var(--color-ui-0); }
+.btn--hoverWarning:hover						{ background-color:var(--color-warning-500); border-color:var(--color-warning-500); color:var(--color-ui-0); }
+
+/***** Full Width *****/
+.btn--block                                     { width:100%; }
+
+/***** Button Group *****/
+.btn-group                                      { display:inline-flex; }
+.btn-group .btn                                 { border-radius:0; }
+.btn-group .btn:first-child                     { border-radius:var(--radius-md) 0 0 var(--radius-md); }
+.btn-group .btn:last-child                      { border-radius:0 var(--radius-md) var(--radius-md) 0; }
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px)                       {
+  
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
+}
+
+/***** Loading State (cleaned) *****/
+@keyframes spin                                 { to { transform:rotate(360deg); } }
+.btn--loading::before                           { content:""; width:1em; height:1em; border:2px solid currentColor; border-top-color:transparent; border-radius:50%; animation:spin 0.6s linear infinite; }

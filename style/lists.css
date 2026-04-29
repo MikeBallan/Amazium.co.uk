@@ -1,0 +1,48 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** List *****/
+.list                                           { margin-left:0; padding:0; list-style:none; width:100%; }
+*+.list, .list+* 												        { margin-top:20px; }
+
+/***** List - Simple *****/
+.list--simple 											            { margin:0; }
+*+.list--simple,
+.list--simple+*                                 { margin-top:40px; }
+.list--simple li										            { margin:0; padding:0; display:flex; gap:8px; flex-direction:row; align-items:center; }
+.list--simple li+*										          { margin-top:20px; padding-top:20px; border-top:1px solid var(--color-mist); }
+
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px)                        {
+  
+}
+
+
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:1200px) {
+
+}
+
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+
+}

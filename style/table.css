@@ -1,0 +1,112 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px
+***********************************************/
+
+/***** Base *****/
+table                                           { width:100%; border-collapse:separate; border-spacing:0; border-radius:var(--radius-sm); text-align:left; }
+table + *                                       { margin-top:var(--space-6); }
+
+caption                                         { font-weight:700; color:var(--color-ui-900); background-color:var(--color-ui-100); }
+
+thead                                           { display:none; }
+
+tr                                              { display:flex; flex-direction:column; border:1px solid var(--color-ui-600); border-radius:var(--radius-sm); overflow:hidden; transition:background 0.2s ease; }
+tr + tr                                         { margin-top:var(--space-5); }
+
+td                                              { display:block; padding:var(--space-3); min-height:3rem; color:var(--color-ui-800); position:relative; }
+td + td                                         { border-top:1px solid var(--color-ui-600); }
+
+td[data-title]:before                           { content:attr(data-title) ":"; display:inline-block; width:30%; padding-right:var(--space-3); font-weight:700; color:var(--color-ui-900); }
+
+td .cell-content                                { display:inline-block; width:68%; vertical-align:top; }
+
+td.txt--right                                   { text-align:left; }
+
+td small                                        { display:block; color:var(--color-ui-600); }
+
+/***** Helpers *****/
+.td--wrap                                       { word-break:break-word; }
+
+.td--orderLast                                  { display:flex; order:1; border-top:1px solid var(--color-ui-600); }
+.td--orderLast + *                              { border-top:none; }
+
+.td--toggle                                     { width:100%; }
+
+/***********************************************
+Tablet - This applies from 750px onwards
+***********************************************/
+@media (min-width:750px)                        {
+  table                                         { border:1px solid var(--color-ui-600); }
+
+  thead                                         { display:table-header-group; }
+
+  th                                            { padding:var(--space-3); font-weight:bold; }
+
+  tr                                            { display:table-row; border-radius:0; }
+  tr + tr                                       { margin-top:0; }
+  tr:hover                                      { background-color:var(--color-ui-200); }
+
+  td                                            { display:table-cell; padding:var(--space-2) var(--space-3); height:3rem; border-top:1px solid var(--color-ui-600); vertical-align:middle; }
+  td + td                                       {  }
+
+  td[data-title]:before                         { display:none; }
+
+  td .cell-content                              { display:flex; align-items:center; gap:var(--space-2); width:100%; }
+
+  td.txt--right                                 { text-align:right; }
+  td.txt--right .cell-content                   { justify-content:flex-end; }
+
+  th:first-child, td:first-child                { padding-left:var(--space-6); }
+  th:last-child, td:last-child                  { padding-right:var(--space-6); }
+
+  /***** Simple table variant *****/
+  .table--simple                                { border:none; }
+  .table--simple tr:hover                       { background-color:transparent; }
+  .table--simple td                             { padding:var(--space-2) var(--space-3); height:auto; }
+  .table--simple td:first-child                 { padding-left:0; }
+  .table--simple td:last-child                  { padding-right:0; }
+  .table--simple .tr__details > td              { padding-left:var(--space-8); }
+  .table--simple .tr__details > td:before       { left:0; width:3px; height:calc(100% - var(--space-3)); top:var(--space-2); }
+
+  /***** Alignment *****/
+  .td--right,
+  .td--actions                                  { text-align:right; }
+
+  .td--width50px                                { width:50px; }
+  .td--toggle                                   { width:28px; }
+  .td--input                                    { width:220px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+  .td--orderLast                                { display:table-cell; }
+  .td--orderLast + *                            { border-top:1px solid var(--color-ui-600); }
+
+  /***** Visibility utilities (legacy support) *****/
+  td.hideMobile                                 { display:table-cell !important; }
+  td.hideTablet                                 { display:none !important; }
+
+  td.showMobile                                 { display:none !important; }
+  td.showTablet                                 { display:table-cell !important; }
+}
+
+/***********************************************
+Mobile ONLY - This applies from 0px to 749px
+***********************************************/
+@media only screen and (max-width:749px)        {
+  td.hideMobile                                 { display:none !important; }
+  td.hideTablet,
+  td.hideScreen                                 { display:block !important; }
+
+  td.showMobile                                 { display:block !important; }
+  td.showTablet,
+  td.showScreen                                 { display:none !important; }
+}
+

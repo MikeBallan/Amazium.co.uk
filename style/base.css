@@ -1,0 +1,103 @@
+/*
+ * Amazium CSS Framework
+ * https://amazium.co.uk
+ *
+ * A lightweight, modern CSS framework built with Grid & Flexbox.
+ * Designed and maintained by Mike Ballan.
+ *
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/***********************************************
+Mobile First - This applies from 0px to 749px *****/
+
+/***** Reset *****/
+@view-transition                                { navigation:auto; }
+*, *::before, *::after                          { box-sizing:border-box; }
+body                                            { margin:0; }
+html                                            { -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth; }
+
+/***** Document *****/
+body                                            { background-color:var(--color-ui-0, #fff); color:var(--color-ui-900, #000D22); font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+/***** Typography Elements *****/
+p                                               { margin:0; max-width:65ch; }
+small                                           { font-size:0.875em; }
+strong                                          { font-weight:bold; }
+em                                              { font-style:italic; }
+sup, sub                                        { font-size:0.75em; line-height:0; position:relative; vertical-align:baseline; }
+sup                                             { top:-0.4em; }
+sub                                             { bottom:-0.25em; }
+hr                                              { border:none; border-top:1px solid var(--color-ui-400, #e5e5e5); margin-block:var(--space-4, 16px); }
+
+/***** Links *****/
+a                                               { color:inherit; text-decoration:underline; transition:color 0.2s ease; }
+a:hover                                         { text-decoration:none; }
+a:focus-visible                                 { outline:2px solid var(--color-info-500, #3B82F6); outline-offset:2px; }
+
+/***** Lists *****/
+ul, ol, dl                                      { margin:0; padding-inline-start:var(--space-4, 16px); }
+li                                              { margin:0; }
+
+dl                                              { margin-left:0; padding:0; }
+dt                                              { font-weight:bold; }
+dd                                              { margin:0; }
+dd+*                                            { margin-top:var(--space-3); }
+
+.dl-inline dt                                   { margin-top:0; padding:0 10px 16px 0; float:left; width:30%; clear:left; }
+.dl-inline dd                                   { margin-top:0; margin-left:30%; padding-bottom:16px; }
+.dl-inline dd:last-child                        { padding:0; }
+
+/***** Media *****/
+img, picture, video, canvas, svg                { display:block; max-width:100%; height:auto; }
+
+img                                             { border:0; vertical-align:middle; border:none; -ms-interpolation-mode:bicubic; }
+.img--left,
+.img--right,
+.img--max                                       { margin-bottom:16px; max-width:100%; display:block; }
+
+.img--left                                      { margin-right:30px; float:left; }
+.img--right                                     { margin-left:30px; float:right; }
+.img--max                                       { width:100%; height:auto; }
+
+/***** Icons *****/
+.icon                                           { width:16px; height:16px; display:inline-block; flex-shrink:0; fill:currentColor; vertical-align:middle; }
+
+/***** Icon Sizes *****/
+.icon--sm                                       { width:12px; height:12px; }
+.icon--md                                       { width:16px; height:16px;  }
+.icon--lg                                       { width:28px; height:28px; }
+.icon--xl                                       { width:36px; height:36px; }
+.icon--xxl                                      { width:64px; height:64px; }
+
+/***** Icon Spacing *****/
+.icon--left                                     { margin-right:var(--space-2, 8px); }
+.icon--right                                    { margin-left:var(--space-2, 8px); }
+
+/***** Icon Alignment *****/
+.icon--align-right                              { margin-left:auto; }
+
+
+/***** Code *****/
+code, pre                                       { font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size:var(--text-xs); line-height:var(--leading-xs); }
+pre                                             { overflow:auto; display:table; table-layout:fixed; width:100%; }
+pre code                                        { padding:20px; overflow:auto; width:100%; }
+code                                            { margin:0; padding:0.2em 0.4em; text-align:left; text-transform:initial; font-weight:initial; color:var(--color-ui-0); display:inline-block; vertical-align:middle; background-color:var(--color-ui-900); border:1px solid var(--color-ui-400); border-radius:var(--radius-md); overflow:hidden; white-space:pre; }
+
+
+/***** Tables *****/
+table                                           { border-collapse:collapse; width:100%; }
+th, td                                          { text-align:left; padding:var(--space-3, 12px); }
+
+/***** Forms (Minimal Reset) *****/
+input, button, textarea, select                 { font:inherit; color:inherit; }
+button                                          { cursor:pointer; background:none; border:none; }
+
+
+/***********************************************
+Reduced motion support
+***********************************************/
+@media (prefers-reduced-motion: reduce) {
+  html                                          { scroll-behavior:auto; }
+  *, *::before, *::after                        { animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition:none !important; }
+}
