@@ -44,7 +44,7 @@ dt                                              { font-weight:bold; }
 dd                                              { margin:0; }
 dd+*                                            { margin-top:var(--space-3); }
 
-/***** Definition Q&A block *****/
+/***** Definition Inline block *****/
 .dl-inline dt                                   { margin-top:0; padding:0 10px 16px 0; float:left; width:30%; clear:left; }
 .dl-inline dd                                   { margin-top:0; margin-left:30%; padding-bottom:16px; }
 .dl-inline dd:last-child                        { padding:0; }
