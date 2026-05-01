@@ -12,6 +12,8 @@
 Mobile First - This applies from 0px to 749px
 ***********************************************/
 
+body.no-scroll 																	{ overflow:hidden; }
+
 /* Hamburger button  */
 .hamburger 																			{ width:50px; height:50px; border:none; background-color:var(--color-ui-0); box-shadow:var(--border-default); border-radius:var(--radius-sm); cursor:pointer; display:flex; align-items:center; justify-content:center; position:fixed; top:var(--space-5); right:var(--space-5); z-index:100; }
 .hamburger .line 																{ stroke:var(--color-ui-900, black); stroke-width:4; stroke-linecap:round; transition:all 400ms cubic-bezier(.84,.06,.52,1.8); transform-box:fill-box; transform-origin:center; }
@@ -20,7 +22,7 @@ Mobile First - This applies from 0px to 749px
 .hamburger.active .middle 											{ opacity:0; }
 
 /* Navigation */
-.navigation 																		{ padding:40px; width:100vw; height:100vh; color:var(--color-ui-0); background-color:var(--color-brand-900); display:flex; gap:var(--space-6); flex-direction:column; position:fixed; top:0; left:100vw; z-index:99; transition:all 0.2s ease;
+.navigation 																		{ padding:40px; width:100vw; height:100dvh; color:var(--color-ui-0); background-color:var(--color-brand-900); display:flex; gap:var(--space-6); flex-direction:column; position:fixed; top:0; left:100vw; z-index:99; transition:all 0.2s ease;
 	&.show 																				{ left:0; transition:all 0.2s ease; }
 }
 
