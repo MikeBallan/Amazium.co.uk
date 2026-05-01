@@ -23,7 +23,6 @@ Mobile First - This applies from 0px to 749px
 .list--simple li										            { margin:0; padding:0; display:flex; gap:8px; flex-direction:row; align-items:center; }
 .list--simple li+*										          { margin-top:20px; padding-top:20px; border-top:1px solid var(--color-mist); }
 
-
 /***********************************************
 Tablet - This applies from 750px onwards
 ***********************************************/
