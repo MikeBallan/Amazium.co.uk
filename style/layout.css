@@ -209,6 +209,7 @@ Tablet - This applies from 750px onwards
 Desktop - This applies from 1000px onwards
 ***********************************************/
 @media (min-width:1000px)                       {
+  .Welcome .navigation { display:flex; }
   .homepage .header                             { display:flex; }
 
   .aside                                        { display:flex; }
@@ -221,6 +222,7 @@ Desktop - This applies from 1000px onwards
   }
   .section--body                                { padding:120px 40px; }
   .section--hobo                                { padding:0 40px 120px 40px; }
+  .navigation                                   { display:none; }
 }
 
 /***********************************************

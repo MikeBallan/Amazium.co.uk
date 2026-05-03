@@ -53,7 +53,7 @@ Desktop - This applies from 1000px onwards
 @media (min-width:1000px)                       {
 	.hamburger 																		{ display:none; }  
 	
-	.navigation 																	{ padding:20px 40px; display:none; max-width:inherit; height:inherit; color:var(--color-ui-900); background-color:transparent; flex-direction:row; justify-content:space-between; align-items:center; position:fixed; top:0; left:0;
+	.navigation 																	{ padding:20px 40px; display:none; max-width:inherit; height:inherit; color:var(--color-ui-0); background-color:transparent; flex-direction:row; justify-content:space-between; align-items:center; position:fixed; top:0; left:0;
 		&.navigation--active 												{ background-color:var(--color-brand-800); color:var(--color-ui-0); }
 	}
 
