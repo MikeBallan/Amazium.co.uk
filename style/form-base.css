@@ -85,18 +85,14 @@ Tablet - This applies from 750px onwards
   .inline__child--grid-9                        { flex:0 0 90%; }
 }
 
-
 /***********************************************
-Screen - This applies from 1200px onwards
+Desktop - This applies from 1000px onwards
 ***********************************************/
-@media (min-width:1200px) {
-
+@media (min-width:1000px)                       {
 }
-
 
 /***********************************************
 Desktop HD
 ***********************************************/
 @media (min-width:1440px)                       {
-
 }

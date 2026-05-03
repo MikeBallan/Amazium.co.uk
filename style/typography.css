@@ -84,3 +84,15 @@ Tablet - This applies from 750px onwards
 @media (min-width:750px)                        {
   hr                                            { margin:4rem 0; }
 }
+
+/***********************************************
+Desktop - This applies from 1000px onwards
+***********************************************/
+@media (min-width:1000px)                       {
+}
+
+/***********************************************
+Desktop HD
+***********************************************/
+@media (min-width:1440px)                       {
+}

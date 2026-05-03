@@ -119,7 +119,7 @@ pre.demo code                                   { background-color:var(--color-u
 
 .card__demo                                     { margin-top:auto; padding:var(--space-4); border-radius:0 0 var(--radius-md) var(--radius-md);
   pre.demo                                      { margin:0;
-    code                                 { background-color:var(--color-ui-400); border:none; color:var(--color-ui-900);  }
+    code                                        { background-color:var(--color-ui-400); border:none; color:var(--color-ui-900);  }
   }
 }
 
@@ -195,7 +195,6 @@ pre.demo code                                   { background-color:var(--color-u
 
 .table--demo p                                  { width:100%; }
 
-
 /***********************************************
 Tablet - This applies from 750px onwards
 ***********************************************/
@@ -210,7 +209,7 @@ Tablet - This applies from 750px onwards
 Desktop - This applies from 1000px onwards
 ***********************************************/
 @media (min-width:1000px)                       {
-  .homepage .header                               { display:flex; }
+  .homepage .header                             { display:flex; }
 
   .aside                                        { display:flex; }
 
@@ -225,12 +224,10 @@ Desktop - This applies from 1000px onwards
 }
 
 /***********************************************
-Desktop HD - This applies from 1200px onwards
+Desktop HD
 ***********************************************/
-@media (min-width:1200px) {
-  
+@media (min-width:1440px)                       {
 }
-
 
 /***********************************************
 Scroll animation

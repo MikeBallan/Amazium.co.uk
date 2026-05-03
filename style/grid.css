@@ -38,48 +38,48 @@ Tablet - This applies from 750px onwards
   .grid                                         { grid-template-columns:repeat(12, minmax(0, 1fr)); }
   .grid__item                                   { grid-column:span 12; }
 
-  .grid__item--span-1                           { grid-column:span 1; }
-  .grid__item--span-2                           { grid-column:span 2; }
-  .grid__item--span-3                           { grid-column:span 3; }
-  .grid__item--span-4                           { grid-column:span 4; }
-  .grid__item--span-5                           { grid-column:span 5; }
-  .grid__item--span-6                           { grid-column:span 6; }
-  .grid__item--span-7                           { grid-column:span 7; }
-  .grid__item--span-8                           { grid-column:span 8; }
-  .grid__item--span-9                           { grid-column:span 9; }
-  .grid__item--span-10                          { grid-column:span 10; }
-  .grid__item--span-11                          { grid-column:span 11; }
-  .grid__item--span-12                          { grid-column:span 12; }
+  .grid__item--1                                { grid-column:span 1; }
+  .grid__item--2                                { grid-column:span 2; }
+  .grid__item--3                                { grid-column:span 3; }
+  .grid__item--4                                { grid-column:span 4; }
+  .grid__item--5                                { grid-column:span 5; }
+  .grid__item--6                                { grid-column:span 6; }
+  .grid__item--7                                { grid-column:span 7; }
+  .grid__item--8                                { grid-column:span 8; }
+  .grid__item--9                                { grid-column:span 9; }
+  .grid__item--10                               { grid-column:span 10; }
+  .grid__item--11                               { grid-column:span 11; }
+  .grid__item--12                               { grid-column:span 12; }
 
   /***** Tablet override Grid 6 *****/
   .grid.grid--6                                 { grid-template-columns:repeat(6, 1fr); }
-  .grid.grid--6 .grid__item--span-1             { grid-column:span 1; }
-  .grid.grid--6 .grid__item--span-2             { grid-column:span 2; }
-  .grid.grid--6 .grid__item--span-3             { grid-column:span 3; }
-  .grid.grid--6 .grid__item--span-4             { grid-column:span 4; }
-  .grid.grid--6 .grid__item--span-5             { grid-column:span 5; }
-  .grid.grid--6 .grid__item--span-6             { grid-column:span 6; }
-  .grid.grid--6 .grid__item--span-7,
-  .grid.grid--6 .grid__item--span-8,
-  .grid.grid--6 .grid__item--span-9,
-  .grid.grid--6 .grid__item--span-10,
-  .grid.grid--6 .grid__item--span-11,
-  .grid.grid--6 .grid__item--span-12            { grid-column:span 6; }
+  .grid.grid--6 .grid__item--1                  { grid-column:span 1; }
+  .grid.grid--6 .grid__item--2                  { grid-column:span 2; }
+  .grid.grid--6 .grid__item--3                  { grid-column:span 3; }
+  .grid.grid--6 .grid__item--4                  { grid-column:span 4; }
+  .grid.grid--6 .grid__item--5                  { grid-column:span 5; }
+  .grid.grid--6 .grid__item--6                  { grid-column:span 6; }
+  .grid.grid--6 .grid__item--7,
+  .grid.grid--6 .grid__item--8,
+  .grid.grid--6 .grid__item--9,
+  .grid.grid--6 .grid__item--10,
+  .grid.grid--6 .grid__item--11,
+  .grid.grid--6 .grid__item--12                 { grid-column:span 6; }
 
   /***** Tablet override Grid 8 *****/
   .grid.grid--8                                 { grid-template-columns:repeat(8, 1fr); }
-  .grid.grid--8 .grid__item--span-1             { grid-column:span 1; }
-  .grid.grid--8 .grid__item--span-2             { grid-column:span 2; }
-  .grid.grid--8 .grid__item--span-3             { grid-column:span 3; }
-  .grid.grid--8 .grid__item--span-4             { grid-column:span 4; }
-  .grid.grid--8 .grid__item--span-5             { grid-column:span 5; }
-  .grid.grid--8 .grid__item--span-6             { grid-column:span 6; }
-  .grid.grid--8 .grid__item--span-7             { grid-column:span 7; }
-  .grid.grid--8 .grid__item--span-8             { grid-column:span 8; }
-  .grid.grid--8 .grid__item--span-9,
-  .grid.grid--8 .grid__item--span-10,
-  .grid.grid--8 .grid__item--span-11,
-  .grid.grid--8 .grid__item--span-12            { grid-column:span 8; }
+  .grid.grid--8 .grid__item--1                  { grid-column:span 1; }
+  .grid.grid--8 .grid__item--2                  { grid-column:span 2; }
+  .grid.grid--8 .grid__item--3                  { grid-column:span 3; }
+  .grid.grid--8 .grid__item--4                  { grid-column:span 4; }
+  .grid.grid--8 .grid__item--5                  { grid-column:span 5; }
+  .grid.grid--8 .grid__item--6                  { grid-column:span 6; }
+  .grid.grid--8 .grid__item--7                  { grid-column:span 7; }
+  .grid.grid--8 .grid__item--8                  { grid-column:span 8; }
+  .grid.grid--8 .grid__item--9,
+  .grid.grid--8 .grid__item--10,
+  .grid.grid--8 .grid__item--11,
+  .grid.grid--8 .grid__item--12                 { grid-column:span 8; }
 
   /***** Offsetting *****/
   .grid__item--start-1                          { grid-column:2; }
@@ -94,36 +94,31 @@ Tablet - This applies from 750px onwards
   .grid__item--start-10                         { grid-column:11; }
   .grid__item--start-11                         { grid-column:12; }
 
-  .grid__item--span-1                           { grid-column-end: span 1; }
-  .grid__item--span-2                           { grid-column-end: span 2; }
-  .grid__item--span-3                           { grid-column-end: span 3; }
-  .grid__item--span-4                           { grid-column-end: span 4; }
-  .grid__item--span-5                           { grid-column-end: span 5; }
-  .grid__item--span-6                           { grid-column-end: span 6; }
-  .grid__item--span-7                           { grid-column-end: span 7; }
-  .grid__item--span-8                           { grid-column-end: span 8; }
-  .grid__item--span-9                           { grid-column-end: span 9; }
-  .grid__item--span-10                          { grid-column-end: span 10; }
-  .grid__item--span-11                          { grid-column-end: span 11; }
-  .grid__item--span-12                          { grid-column-end: span 12; }
+  .grid__item--1                                { grid-column-end: span 1; }
+  .grid__item--2                                { grid-column-end: span 2; }
+  .grid__item--3                                { grid-column-end: span 3; }
+  .grid__item--4                                { grid-column-end: span 4; }
+  .grid__item--5                                { grid-column-end: span 5; }
+  .grid__item--6                                { grid-column-end: span 6; }
+  .grid__item--7                                { grid-column-end: span 7; }
+  .grid__item--8                                { grid-column-end: span 8; }
+  .grid__item--9                                { grid-column-end: span 9; }
+  .grid__item--10                               { grid-column-end: span 10; }
+  .grid__item--11                               { grid-column-end: span 11; }
+  .grid__item--12                               { grid-column-end: span 12; }
 }
-
 
 /***********************************************
-Screen - This applies from 1200px onwards
+Desktop - This applies from 1000px onwards
 ***********************************************/
-@media (min-width:1200px)                       {
-  
+@media (min-width:1000px)                       {
 }
-
 
 /***********************************************
 Desktop HD
 ***********************************************/
 @media (min-width:1440px)                       {
-
 }
-
 
 /***********************************************
 Tablet ONLY - This applies from 750px to 992px
@@ -131,7 +126,6 @@ Tablet ONLY - This applies from 750px to 992px
 @media only screen and (min-width:750px) and (max-width:1000px) {
 
 }
-
 
 /***********************************************
 Mobile ONLY - This applies from 0px to 749px

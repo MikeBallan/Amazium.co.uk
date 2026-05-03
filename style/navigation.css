@@ -33,10 +33,13 @@ body.no-scroll 																	{ overflow:hidden; }
 
 /* Navigation Menu */
 .navigation__menu 															{ margin:0; padding:0; list-style:none; font-family:'txt-title', sans-serif; font-size:var(--text-md); display:flex; flex-direction:column; gap:var(--space-6);
-	li 																						{ display:flex; }
+	li 																						{ display:flex;
+		&.active 																		{ color:var(--color-brand-500);
+			&:hover 																	{ color:var(--color-brand-500); }
+		}
+	}
 	a 																						{ text-decoration:none; display:flex; flex:1; gap:var(--space-2); align-items:center; position:relative; transition:all 0.2s ease; }
 }
-
 
 /***********************************************
 Tablet - This applies from 750px onwards
@@ -44,34 +47,29 @@ Tablet - This applies from 750px onwards
 @media (min-width:750px)                        {
 	.hamburger 																		{ display:none; }  
 	
-	.navigation 																	{ margin-top:20px; padding:0 40px; max-width:inherit; height:inherit; color:var(--color-ui-0); background-color:transparent; display:none; flex-direction:row; justify-content:space-between; align-items:center; position:absolute; left:0; }
+	.navigation 																	{ padding:20px 40px; max-width:inherit; height:inherit; color:var(--color-ui-900); background-color:transparent; flex-direction:row; justify-content:space-between; align-items:center; position:fixed; top:0; left:0;
+		&.navigation--active 												{ background-color:var(--color-brand-800); color:var(--color-ui-0); }
+	}
+
 	.navigation__title														{
 		.icon--logo																	{ width:40px; height:40px; }
 	}
 
 	.navigation__menu 														{ margin:0; padding:0; list-style:none; font-size:var(--text-sm); display:flex; flex-direction:row; gap:var(--space-6);
-		li 																					{ justify-content:center; }
-		a:hover 																		{ opacity:.8; }
-		a:after 																		{ content:''; height:2px; width:0%; background-color:var(--color-ui-0); border-radius:3px; position:absolute; bottom:-6px; left:50%; transform:translateX(-50%); opacity:0; transition:all 0.2s ease; }
-		a:hover:after, 
-		.active a:after 														{ width:100%; opacity:.5; }
+		li 																					{ justify-content:center;
+			&:hover 																	{ color:var(--color-brand-500); }
+		}
 	}
-
-	.Welcome .navigation													{ display:flex; }
 }
-
 
 /***********************************************
-Screen - This applies from 1200px onwards
+Desktop - This applies from 1000px onwards
 ***********************************************/
-@media (min-width:1200px) {
-
+@media (min-width:1000px)                       {
 }
-
 
 /***********************************************
 Desktop HD
 ***********************************************/
 @media (min-width:1440px)                       {
-
 }

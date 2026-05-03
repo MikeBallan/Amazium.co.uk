@@ -13,7 +13,9 @@ Mobile First - This applies from 0px to 749px *****/
 
 /***** Reset *****/
 @view-transition                                { navigation:auto; }
+
 *, *::before, *::after                          { box-sizing:border-box; }
+
 body                                            { margin:0; }
 html                                            { -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth; }
 
@@ -89,13 +91,11 @@ img                                             { border:0; vertical-align:middl
 /***** Icon Alignment *****/
 .icon--align-right                              { margin-left:auto; }
 
-
 /***** Code *****/
 code, pre                                       { font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size:var(--text-xs); line-height:var(--leading-xs); }
 pre                                             { overflow:auto; display:table; table-layout:fixed; width:100%; }
 pre code                                        { padding:20px; overflow:auto; width:100%; }
 code                                            { margin:0; padding:0.2em 0.4em; text-align:left; text-transform:initial; font-weight:initial; color:var(--color-ui-0); display:inline-block; vertical-align:middle; background-color:var(--color-ui-900); border:1px solid var(--color-ui-400); border-radius:var(--radius-md); overflow:hidden; white-space:pre; }
-
 
 /***** Tables *****/
 table                                           { border-collapse:collapse; width:100%; }
@@ -104,7 +104,6 @@ th, td                                          { text-align:left; padding:var(-
 /***** Forms (Minimal Reset) *****/
 input, button, textarea, select                 { font:inherit; color:inherit; }
 button                                          { cursor:pointer; background:none; border:none; }
-
 
 /***********************************************
 Reduced motion support

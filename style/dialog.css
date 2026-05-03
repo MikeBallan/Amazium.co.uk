@@ -47,18 +47,14 @@ Tablet - This applies from 768px onwards
   .dialog__footer                               { width:600px; }
 }
 
-
 /***********************************************
-Screen - This applies from 1200px onwards
+Desktop - This applies from 1000px onwards
 ***********************************************/
-@media (min-width:1200px) {
-
+@media (min-width:1000px)                       {
 }
-
 
 /***********************************************
 Desktop HD
 ***********************************************/
 @media (min-width:1440px)                       {
-
 }
